@@ -92,3 +92,15 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     <button type="button" class="btSaibaMais">Saiba Mais</button>
 </div>
 ~~~
+
+5º section: modelo mustang 1984 ||  `class` = "geracao" ||    `id` = "model-3"
+
+~~~html
+<div class="geracao" id="model-3">
+    <h2 class="titulo-model"> Mustang Geração 3º </h2>
+    <h3 class="sub-model"> A partir de US$ 15.000 </h3>
+    <img src="/src/img/model-3.png" alt="">
+    <button type="button" class="btMais"> Saiba Mais </button>
+</div>
+~~~
+
