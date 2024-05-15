@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* <=================HEADER===================> */
+
+body {
+    min-height: 100vh;
+}
+
+.menu-navegacao>ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-family: "DM sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 540;
+}
+
+.icones-menu button {
+    border: none;
+    background: none;
+}
+
+.icones-menu {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
