@@ -50,3 +50,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+/* <=================FOOTER===================> */
+
+.logo-conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.topico-contato {
+    display: flex;
+    gap: 3rem ;
+}
