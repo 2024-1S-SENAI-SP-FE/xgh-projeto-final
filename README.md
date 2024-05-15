@@ -82,3 +82,13 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
 </div>
 ~~~
 
+4º section: modelo mustang 1994 ||  `class` = "geracao" ||    `id` = "model-4"
+
+~~~html
+<div class="geracao" id="model-4">
+    <h2 class="titulo-model">Mustang 4º Geração</h2>
+    <h3 class="sub-model">A partir de US$ 25.000</h3>
+    <img src="/src/img/model-4.png" alt="">
+    <button type="button" class="btSaibaMais">Saiba Mais</button>
+</div>
+~~~
