@@ -56,15 +56,18 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
 </header>
 ~~~
 
-- No `body` incluimos uma `main`, cuja responsabilidade é conter as `div` de cada modelo de carro:
+- No `body` incluimos uma `main`, cuja responsabilidade é conter as `section` de cada modelo de carro.
+
+1º section: modelo mustang 2024 ||  `class` = "geracao" ||    `id` = "model-7"
 
 ~~~html
 <main>
-    <div class="geracao" id="model-4">
-        <h2 class="titulo-model">Mustang 4º Geração</h2>
-        <h3 class="sub-model">A partir de US$ 25.000</h3>
-        <img src="/img/model-4.png" alt="">
-    <button type="button" class="btMais">Saiba Mais</button>
-    </div>
+    <section class="geracao" id="model-7">
+        <h2 class="titulo-model">Mustang Geração 7º</h2>
+        <h3 class="sub-model">A partir de US$ 30.000</h3>
+        <img src="/src/img/model-7.png" alt="" />
+        <button type="button" class="btSaibaMais">Saiba Mais</button>
+    </section>
 </main>
 ~~~
+
