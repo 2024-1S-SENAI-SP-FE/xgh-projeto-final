@@ -56,6 +56,8 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
 </header>
 ~~~
 
+<hr>
+
 - No `body` incluimos uma `main`, cuja responsabilidade é conter as `section` de cada modelo de carro.
 
 1º section: modelo mustang 2024 ||  `class` = "geracao" ||    `id` = "model-7"
@@ -70,6 +72,7 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     </section>
 </main>
 ~~~
+<hr>
 
 2º section: modelo mustang 2014 ||  `class` = "geracao" ||    `id` = "model-6"
 
@@ -81,6 +84,7 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     <button type="button" class="btSaibaMais">Saiba Mais</button>
 </div>
 ~~~
+<hr>
 
 4º section: modelo mustang 1994 ||  `class` = "geracao" ||    `id` = "model-4"
 
@@ -92,6 +96,7 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     <button type="button" class="btSaibaMais">Saiba Mais</button>
 </div>
 ~~~
+<hr>
 
 5º section: modelo mustang 1984 ||  `class` = "geracao" ||    `id` = "model-3"
 
@@ -103,4 +108,18 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     <button type="button" class="btMais"> Saiba Mais </button>
 </div>
 ~~~
+<hr>
+
+6º section: modelo mustang 1974 ||  `class` = "geracao" ||    `id` = "model-2"
+
+~~~html
+<div class="geracao" id="model-2">
+    <h2 class="titulo-model">Mustang 2º Geração</h2>
+    <h3 class="sub-model">A partir de US$ 18,000 </h3>
+    <img src="/src/img/model-2.png" alt="">
+    <button type="button" class="btMais">Saiba Mais</button>
+</div>
+~~~
+<hr>
+
 
