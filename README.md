@@ -18,6 +18,8 @@ Neste arquivo está o corpo da página.
 
 Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista não ordenada contendo as `ancoras` de navegação : `Veiculos`, `Comemoração`, `Sobre Nós`, e finalizando com dois icones também em formato `svg` no qual o primeiro é para a tradução da página, e o segundo para que seja feito o `login` do usuário.
 
+![Ilustração do Header](/src/img/img-doc/ilustracao-header.jpeg)
+
 ~~~html
 <header>
     <nav class="menu-navegacao">
@@ -53,7 +55,6 @@ Dentro do `header` foi inserido um logo no formato `svg`, seguido por uma lista 
     </nav>
 </header>
 ~~~
-
 
 - No `body` incluimos uma `main`, cuja responsabilidade é conter as `div` de cada modelo de carro:
 
