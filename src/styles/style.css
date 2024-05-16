@@ -60,5 +60,12 @@ body {
 
 .topico-contato {
     display: flex;
-    gap: 3rem ;
+    gap: 3rem;
 }
+
+a{
+    text-decoration: none;
+}   
+/* .svg-social {
+    display: flex;
+} */
