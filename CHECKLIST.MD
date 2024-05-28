@@ -52,5 +52,25 @@ Para que às alterações feitas na sua branch, vão para branch desejada.
 git push
 ```
 
+- **Ao terminar tudo o que você tinha pra fazer, caso esteja usando algum computador público, siga os passos abaixo**
+
+- Use o seguinte comando, para sair da pasta do repositório local:
+
+```bash
+code -r ..
+``` 
+
+- Você pode usar um:
+```bash
+ls
+```
+Para ver as pastas que estão no diretório atual
+
+- Agora é só usar o seguinte comando, mas tenha certeza de que você está excluindo a pasta certa, pois não tem volta:
+
+```bash
+rm -r -f xgh-projeto-final
+```
+
 E... chau, lembrando que: "se você não vê o erro, ele não existe." 
-**© 2024 eXtreme Go Horse. Todos os direitos reservados.**
+**© 2024 eXtreme Go Horse. Todos os direitos reservados.** 
