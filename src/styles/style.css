@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 /* <=================HEADER===================> */
 
@@ -12,16 +12,20 @@ body {
     min-height: 100vh;
 }
 
+
+
 .menu-navegacao>ul {
     display: flex;
-    gap: 20px;
+    gap: 100px;
 }
 
+
 .menu-navegacao {
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 65px;
+    background-image: url(src\img\img-header.png)
 }
 
 .menu-navegacao a {
@@ -50,6 +54,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 /* <=================FOOTER===================> */
 
