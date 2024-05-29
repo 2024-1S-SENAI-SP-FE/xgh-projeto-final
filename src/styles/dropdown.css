@@ -1,3 +1,12 @@
+/* ====> Fontes dos h3 no dropdown<==== */
+
+/* 1960 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 1970 */
+
+
+
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -68,4 +77,41 @@ body {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+.font-1960{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-1970{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+.font-1980{
+    color: red;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-1990{
+    color: red;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-2000{
+    color: red;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-2010{
+    color: red;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-2020{
+    color: red;
+    font-weight: 500;
+    font-size: 1rem;
 }
