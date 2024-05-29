@@ -1,3 +1,21 @@
+/* ====> Fontes dos h3 no dropdown<==== */
+
+/* 1960 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 1970 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 1980 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+/* 1990 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Space+Grotesk:wght@300..700&display=swap');
+/* 2000 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Space+Grotesk:wght@300..700&display=swap');
+/* 2010 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+/* 2020 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -78,4 +96,48 @@ body {
 .dropdown:hover .dropbtn {
     background-color:#eeeeee;
     border-radius: 5px;
+}
+
+.font-1960{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-1970{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+.font-1980{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-1990{
+    font-family: "Patrick Hand", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+.font-2000{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-2010{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.font-2020{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
