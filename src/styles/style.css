@@ -7,30 +7,42 @@
 
 
 /* <=================HEADER===================> */
+/* @font-face {
+    font-family: 'gothamssm_medium';
+    src: url('/src/fonts/gothamssm_medium.otf');
+} */
 
 body {
     min-height: 100vh;
+
 }
 
-.header-home{
+.header-home {
     background-image: url('/src/img/img-header.png');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 100vw;
     background-position: top;
     height: 100vh;
-
 }
-.menu-navegacao>ul{
+
+.menu-navegacao>ul {
     display: inline-flex;
-      gap: 8rem;
+    gap: 7rem;
+    font-weight: bold;
+}
+
+.menu-navegacao>ul>li>a {
+    /* font-family: 'gothamssm_medium'; */
+    font-size: 1.1rem;
 }
 
 
 .menu-navegacao {
     display: flex;
-    justify-content: space-between;
     padding: 30px;
     align-items: center;
+    justify-content: space-around;
+
 }
 
 
@@ -60,9 +72,17 @@ body {
     align-items: center;
 }
 
+.logo-menu a svg {
+    width: 16vh;
+}
 
+.fonte-header {
+    flex-direction: column;
+}
 
-
+.fonte-header img {
+    width: 25vh;
+}
 
 /* <=================FOOTER===================> */
 .footer-design{
