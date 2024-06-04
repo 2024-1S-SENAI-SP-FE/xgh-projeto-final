@@ -76,11 +76,13 @@ body {
     width: 16vh;
 }
 
-.fonte-header {
+.nome-mustang {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.fonte-header img {
+.nome-mustang img {
     width: 25vh;
 }
 
