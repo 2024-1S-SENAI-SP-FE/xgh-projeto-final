@@ -9,7 +9,7 @@
 
 /* <=================HEADER===================> */
 
-body {
+ body {
     min-height: 100vh;
 
 }
@@ -53,17 +53,17 @@ body {
     font-size: 1rem;
     font-weight: 540;
 }
-
+ 
 .icones-menu button {
     border: none;
     background: none;
 }
-
+ 
 .icones-menu {
     display: inline-flex;
     gap: 10px;
 }
-
+ 
 .logo-menu {
     display: flex;
     align-items: center;
