@@ -8,6 +8,10 @@
 
 
 /* <=================HEADER===================> */
+/* @font-face {
+    font-family: 'gothamssm_medium';
+    src: url('/src/fonts/gothamssm_medium.otf');
+} */
 
  body {
     min-height: 100vh;
