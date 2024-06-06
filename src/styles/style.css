@@ -126,6 +126,14 @@
     object-position: 50% 50%;
 }
 
+.video-home {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
 /* SESSÃO 1 (geração 7) */
 .ancoraTexto1 {
     position: absolute;
