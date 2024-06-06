@@ -217,13 +217,20 @@ a{
     padding-bottom: 1rem;
 }
 
+.comemoracao{
+    padding: 5px;
+}
+
 .comemoracao:hover{
     background-color:#eeeeee;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 5px;      
 }
+
+.sobre-nos{
+    padding: 5px; 
+}
+
 .sobre-nos:hover{
     background-color:#eeeeee;
     border-radius: 5px;
-    padding: 3px;
 }
