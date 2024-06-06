@@ -113,6 +113,50 @@
 .nome-mustang img {
     width: 25vh;
 }
+/* <=================MAIN 'IMAGENS GERAÇÕES'===================> */
+.geracao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  box-shadow: 0px 2px 5px #0000001a;
+  position: relative;
+}
+
+.geracao img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.geracao .ancoraTextoBt {
+  position: absolute;
+  bottom: 10px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.212); /* Fundo semitransparente para contraste */
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.geracao h2, .geracao h3, .geracao button {
+  margin: 0 10px;
+}
+
+.geracao button {
+  padding: 10px 20px;
+  background-color: #4289d400;
+  color: #fffcfc;
+  border: #ffffff56 solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* <=================FOOTER===================> */
 
 .footer-design{
