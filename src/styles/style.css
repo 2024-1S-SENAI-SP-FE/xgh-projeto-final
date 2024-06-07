@@ -1,70 +1,47 @@
+
 @font-face {
     font-family: 'DM sans';
     src: url('/src/fonts/gothamssm_medium.otf') format('opentype');
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* <=================HEADER===================> */
-/* @font-face {
-    font-family: 'gothamssm_medium';
-    src: url('/src/fonts/gothamssm_medium.otf');
-} */
-/* @font-face {
-    font-family: 'gothamssm_medium';
-    src: url('/src/fonts/gothamssm_medium.otf');
-} */
-
- body {
-    min-height: 100vh;
-
-}
-
-.header-home {
-    background-image: url('/src/img/img-header.png');
-    background-repeat: no-repeat;
-    background-size: 106vw;
-    background-position: center;
+body {
     height: 100vh;
 }
 
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px 
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+/* <===========HEADER============> */
+
 .menu-navegacao>ul {
     display: inline-flex;
-    gap: 7rem;
-    font-weight: bold;
+    gap: 5rem;
+    font-weight: 100;
 }
-
-.menu-navegacao>ul>li>a {
-    /* font-family: 'gothamssm_medium'; */
-    font-size: 1.1rem;
-    display: inline-flex;
-    gap: 7rem;
-    font-weight: bold;
-}
-
-.menu-navegacao>ul>li>a {
-    /* font-family: 'gothamssm_medium'; */
-    font-size: 1.1rem;
-}
-
-
 
 .menu-navegacao {
+    z-index: 1;
+    position: relative;
     display: flex;
-    padding: 30px;
-    align-items: center;
-    padding: 30px;
     align-items: center;
     justify-content: space-around;
-
-
 }
-
-
 
 .menu-navegacao a {
     text-decoration: none;
@@ -74,7 +51,6 @@
     color: #000000;
     font-family: "DM sans", sans-serif;
     font-size: 1rem;
-    font-weight: 540;
 }
  
 .icones-menu button {
@@ -92,10 +68,6 @@
     align-items: center;
 }
 
-.logo-menu a svg {
-    width: 16vh;
-}
-
 .nome-mustang {
     display: flex;
     flex-direction: column;
@@ -103,25 +75,39 @@
 }
 
 .logo-menu a svg {
-    width: 16vh;
-}
-
-.nome-mustang {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100px;
 }
 
 .nome-mustang img {
-    width: 25vh;
+    width: 100px;
 }
-/* <=================MAIN 'IMAGENS GERAÇÕES'===================> */
+
+header {
+    z-index: 1000;
+}
+
+/* <=================SESSÃO HOME E VÍDEO===================> */
+
+#home {
+    height: 91vh;
+}
+
+#home img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
 
 .geracao{
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
+
 .geracao img{
-    /* position: relative; */
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -129,15 +115,15 @@
 }
 
 .video-home {
-    /* position: relative; */
     width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: 50% 50%;
 }
 
-/* SESSÃO 1 (geração 7) */
-.ancoraTexto1 {
+/* <==============TÍTULO E BOTÕES DAS SESSÕES==============> */
+
+.ancoraTexto {
     position: absolute;
     top: 15%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
@@ -147,18 +133,18 @@
     align-items: center;
     flex-direction: column;
     /* font-size: 1rem; */
-
 }
-.ancoraTexto1 h2{
+
+.ancoraTexto h2{
     font-size: 2rem;
 }
 
-.ancoraTexto1 h3{
+.ancoraTexto h3{
     margin-top: 20px;
     font-size: 1rem;
 }
 
-.btGeracao1{
+.btGeracao{
     position: absolute;
     top: 80%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
@@ -169,7 +155,9 @@
     gap: 2rem;
 }
 
-.btGeracao1 .btDetalhes{
+.btDetalhes{
+    cursor: pointer;
+    border: none;
     padding: 10px 20px;
     border-radius: 8px;
     background-color: #ffffff;
@@ -177,15 +165,16 @@
     height: 2.5rem;
     width: 17rem;
     font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
+    font-weight: 100;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btGeracao1 .btComprar{
+.btComprar{
+    cursor: pointer;
+    border: none;
     padding: 10px 20px;
     border-radius: 8px;
     background-color: #1E2022;
@@ -193,401 +182,24 @@
     height: 2.5rem;
     width: 17rem;
     font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
+    font-weight: 100;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* SESSÃO 2 (geração 6) */
-.ancoraTexto2 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
 
-}
-.ancoraTexto2 h2{
-    font-size: 2rem;
-}
+/* <===============BOTÃO SUPORTE=====+========> */
 
-.ancoraTexto2 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao2{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao2 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao2 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* SESSÃO 3 (geração 5) */
-.ancoraTexto3 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-
-}
-.ancoraTexto3 h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto3 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao3{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao3 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao3 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* SESSÃO 4 (geração 4) */
-.ancoraTexto4 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-
-}
-.ancoraTexto4 h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto4 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao4{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao4 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao4 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* SESSÃO 5 (geração 3) */
-.ancoraTexto5 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-
-}
-.ancoraTexto5 h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto5 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao5{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao5 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao5 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* SESSÃO 6 (geração 2) */
-.ancoraTexto6 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-
-}
-.ancoraTexto6 h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto6 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao6{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao6 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao6 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* SESSÃO 7 (geração 1) */
-.ancoraTexto7 {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-
-}
-.ancoraTexto7 h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto7 h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao7{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btGeracao7 .btDetalhes{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btGeracao7 .btComprar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-suporte {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background: none;
 }
 
 /* <=================FOOTER===================> */
