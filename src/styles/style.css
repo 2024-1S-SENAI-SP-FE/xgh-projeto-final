@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'DM sans';
-    src: url('fonts/gothamssm_medium.otf') format('opentype');
+    src: url('/src/fonts/gothamssm_medium.otf') format('opentype');
 }
 * {
     margin: 0;
