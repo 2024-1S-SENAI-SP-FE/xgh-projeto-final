@@ -161,9 +161,9 @@ header {
     cursor: pointer;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
+    border-radius: 4px;
+    background-color: #F4F4F4;
+    color: #393C41;
     height: 2.5rem;
     width: 17rem;
     font-family: "DM sans", sans-serif;
@@ -178,9 +178,9 @@ header {
     cursor: pointer;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #1E2022;
-    color: #ffffff;
+    border-radius: 4px;
+    background-color: #171a20;
+    color: #F4F4F4;
     height: 2.5rem;
     width: 17rem;
     font-family: "DM sans", sans-serif;
