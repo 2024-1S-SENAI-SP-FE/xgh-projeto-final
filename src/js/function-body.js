@@ -1,3 +1,32 @@
+function criaLink(){
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('href', '/src/styles/reset.css');
+    
+    const linkStyle = document.createElement('link');
+    linkStyle.setAttribute('rel', 'stylesheet');
+    linkStyle.setAttribute('href', '/src/styles/style.css');
+    
+    document.head.append(link, linkStyle);
+
+    corpo();
+}
+
+function corpo(){
+    const divFooter = document.createElement('div');
+    divFooter.setAttribute('id','footer');
+
+    const scriptFunctionLink = document.createElement('script');
+    scriptFunctionLink.setAttribute('src','/src/js/function-link.js');
+
+    const scriptFooter = document.createElement('script');
+    scriptFooter.setAttribute('src','/src/js/footer.js');
+
+    document.body.append(divFooter,scriptFunctionLink,scriptFooter);
+
+    createFooter();
+}
+
 // Função para criar o footer
 function createFooter() {
     // Criar o elemento footer
@@ -208,5 +237,5 @@ function createFooter() {
     footerPlaceholder.append(footer);
 }
 
-// chamada da função do footer após o carregamento do documento
-document.addEventListener('DOMContentLoaded', createFooter);
+// chamada da função criaLink assim que a página carregar
+document.addEventListener('DOMContentLoaded', criaLink);
