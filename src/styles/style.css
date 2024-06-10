@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: 'DM sans';
-    src: url('/src/fonts/gothamssm_medium.otf') format('opentype');
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
 }
 
 * {
@@ -50,7 +50,7 @@ body {
     display: inline-flex;
     align-items: center;
     color: #000000;
-    font-family: "DM sans", sans-serif;
+    font-family: NeueHaas, sans-serif;
     font-size: 1rem;
 }
  
@@ -137,6 +137,11 @@ header {
     /* font-size: 1rem; */
 }
 
+h2,
+h3 {
+    font-family: NeueHaas;
+}
+
 .ancoraTexto h2{
     font-size: 2rem;
 }
@@ -166,7 +171,7 @@ header {
     color: #393C41;
     height: 2.5rem;
     width: 17rem;
-    font-family: "DM sans", sans-serif;
+    font-family: NeueHaas, sans-serif;
     font-weight: 100;
     font-size: 14px;
     display: flex;
@@ -183,7 +188,7 @@ header {
     color: #F4F4F4;
     height: 2.5rem;
     width: 17rem;
-    font-family: "DM sans", sans-serif;
+    font-family: NeueHaas, sans-serif;
     font-weight: 100;
     font-size: 14px;
     display: flex;
