@@ -52,7 +52,6 @@ span {
     font-weight: 100;
     font-size: 14px;
     color: #FFFFFF;
-    padding: 8px 0 0 0;
 }
 
 .elementos {
@@ -60,8 +59,9 @@ span {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 4rem;
+    margin: 550px 0 0 0;
 }
 
 .botao {
@@ -80,6 +80,7 @@ span {
 }
 
 .content-end {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
