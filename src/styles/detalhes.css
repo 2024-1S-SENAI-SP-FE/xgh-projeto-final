@@ -12,8 +12,6 @@
     font-family: NeueHaas;
 }
 
-
-
 #home img {
     top: 0;
     left: 0;
@@ -61,7 +59,7 @@ span {
     justify-content: center;
     align-items: flex-start;
     gap: 4rem;
-    margin: 550px 0 0 0;
+    margin: 60  0px 0 0 0;
 }
 
 .botao {
