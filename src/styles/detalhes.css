@@ -30,20 +30,19 @@ h2 {
 
 h1 {
     font-size: 4rem;
-    margin: 120px 0 0 0;
 }
 
 .topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    position: absolute;
+    top: 20%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
 }
 
 .titulo {
     font-size: 24px;
     color: #FFFFFF;
-    padding: 0 24px 4px;
+    padding: 0 0 4px;
 }
 
 span {
@@ -54,12 +53,9 @@ span {
 
 .elementos {
     z-index: 1;
-    position: relative;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
-    gap: 4rem;
-    margin: 60  0px 0 0 0;
+    gap: 5rem;
 }
 
 .botao {
@@ -68,19 +64,24 @@ span {
     border-radius: 4px;
     padding: 10px 60px;
     background-color: #3E6AE1;
+    transition: .3s;
 }
+.botao:hover{
+    background-color: #2E5CA1;
+    
+}
+
 
 .cards {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .content-end {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    position: absolute;
+    top: 88%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
 }
