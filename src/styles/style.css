@@ -84,7 +84,7 @@ body {
 }
 
 header {
-    z-index: 1000;
+    z-index: 2;
 }
 
 /* <=================SESSÃO HOME E VÍDEO===================> */
@@ -279,4 +279,8 @@ h3 {
 .sobre-nos:hover{
     background-color:#eeeeee;
     border-radius: 5px;
+}
+
+#header{
+    z-index: 2;
 }
