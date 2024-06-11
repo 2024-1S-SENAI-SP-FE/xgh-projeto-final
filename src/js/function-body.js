@@ -7,9 +7,13 @@ function criaLink(){
     linkStyle.setAttribute('rel', 'stylesheet');
     linkStyle.setAttribute('href', '/src/styles/style.css');
 
+    const linkStyleDrop = document.createElement('link');
+    linkStyleDrop.setAttribute('rel', 'stylesheet');
+    linkStyleDrop.setAttribute('href', '/src/styles/dropdown.css');
+
     
     
-    document.head.append(link, linkStyle);
+    document.head.append(link, linkStyle, linkStyleDrop);
 
     corpo();
 }
@@ -24,7 +28,10 @@ function corpo(){
     const scriptFooter = document.createElement('script');
     scriptFooter.setAttribute('src','/src/js/footer.js');
 
-    document.body.append(divFooter,scriptFunctionLink,scriptFooter);
+    const scriptButtonDrop = document.createElement('script');
+    scriptButtonDrop.setAttribute('src','/src/js/botoes-dropdown.js');
+
+    document.body.append(divFooter,scriptFunctionLink,scriptFooter,scriptButtonDrop);
 
     createFooter();
 }
