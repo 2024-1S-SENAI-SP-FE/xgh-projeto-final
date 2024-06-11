@@ -1,0 +1,40 @@
+@font-face {
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: NeueHaas;
+    background-color: rgb(221, 221, 221);
+}
+
+p {
+    max-width: 55rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: NeueHaas;
+}
+
+span{
+    color: rgb(2, 2, 168);
+    border-bottom: 2.5px solid black;
+}
+
+.conteudo-video,
+.conteudo-comemoracao {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-video{
+    margin-top: 2rem;
+}
