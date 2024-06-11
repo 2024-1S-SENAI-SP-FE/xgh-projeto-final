@@ -1,3 +1,4 @@
+
 // Criar função header
 function createHeader(){
 
@@ -295,7 +296,7 @@ function createHeader(){
 
 
     // Appendes no dropdown-content
-    divDropdownContent.append(divCarItem,divCarItem2,divCarItem3,divCarItem4,divButtons5, divCarItem6, divCarItem7);
+    divDropdownContent.append(divCarItem,divCarItem2,divCarItem3,divCarItem4,divCarItem5, divCarItem6, divCarItem7);
 
     // Append no dropdown
     divDropdown.append(botaoDropbtn, divDropdownContent);

@@ -6,6 +6,8 @@ function criaLink(){
     const linkStyle = document.createElement('link');
     linkStyle.setAttribute('rel', 'stylesheet');
     linkStyle.setAttribute('href', '/src/styles/style.css');
+
+    
     
     document.head.append(link, linkStyle);
 
