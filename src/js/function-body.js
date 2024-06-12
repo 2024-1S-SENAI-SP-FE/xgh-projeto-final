@@ -3,10 +3,6 @@ function criaLink(){
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('href', '/src/styles/reset.css');
     
-    // const linkStyle = document.createElement('link');
-    // linkStyle.setAttribute('rel', 'stylesheet');
-    // linkStyle.setAttribute('href', '/src/styles/style.css');
-    
     const linkStyle = document.createElement('link');
     linkStyle.setAttribute('rel', 'stylesheet');
     linkStyle.setAttribute('href', '/src/styles/header-footer.css');
@@ -26,9 +22,6 @@ function corpo(){
 
     const divFooter = document.createElement('div');
     divFooter.setAttribute('id','footer');
-
-    // const scriptFunctionLink = document.createElement('script');
-    // scriptFunctionLink.setAttribute('src','/src/js/function-link.js');
 
     const scriptFooter = document.createElement('script');
     scriptFooter.setAttribute('src','/src/js/footer.js');
