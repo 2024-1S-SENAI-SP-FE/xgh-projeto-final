@@ -28,10 +28,12 @@ body{
     font-family: NeueHaas;
 }
 
-
-
-section {
+section{
     padding: 2.9rem;
+}
+
+.container-nos{
+    padding: 4rem;
 }
 
 .container-nos,
@@ -57,4 +59,8 @@ section {
     height: 60vh;
     background-size: cover;
     border-radius: 1.5rem;
+}
+
+.valores-empresa{
+    margin-bottom: 5rem;
 }
