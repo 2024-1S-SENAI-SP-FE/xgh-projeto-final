@@ -33,7 +33,7 @@ h1{
 }
 
 
-p {
+.texto-historia {
     max-width: 55rem;
     text-align: left;
     line-height: 1.5rem;
