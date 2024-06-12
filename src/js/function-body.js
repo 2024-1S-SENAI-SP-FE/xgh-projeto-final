@@ -15,10 +15,8 @@ function criaLink(){
     linkStyleDrop.setAttribute('rel', 'stylesheet');
     linkStyleDrop.setAttribute('href', '/src/styles/dropdown.css');
 
-    
-    
-    document.head.append(link, linkStyle, linkStyleDrop);
-
+    document.head.append(linkStyle, linkStyleDrop);
+    document.querySelector('title').insertAdjacentElement('beforebegin', link);
     corpo();
 }
 
