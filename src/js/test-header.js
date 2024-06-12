@@ -19,7 +19,7 @@ function createHeader(){
 
     // criar ancora-home
     const ancoraHome = document.createElement('a');
-    ancoraHome.setAttribute('href', '#');
+    ancoraHome.setAttribute('href', '../../../index.html');
 
     // criar svg-logo
     const svgLogo = document.createElementNS('http://www.w3.org/2000/svg','svg');
