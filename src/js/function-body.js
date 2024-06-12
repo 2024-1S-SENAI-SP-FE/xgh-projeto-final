@@ -3,9 +3,13 @@ function criaLink(){
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('href', '/src/styles/reset.css');
     
+    // const linkStyle = document.createElement('link');
+    // linkStyle.setAttribute('rel', 'stylesheet');
+    // linkStyle.setAttribute('href', '/src/styles/style.css');
+    
     const linkStyle = document.createElement('link');
     linkStyle.setAttribute('rel', 'stylesheet');
-    linkStyle.setAttribute('href', '/src/styles/style.css');
+    linkStyle.setAttribute('href', '/src/styles/header-footer.css');
 
     const linkStyleDrop = document.createElement('link');
     linkStyleDrop.setAttribute('rel', 'stylesheet');
@@ -19,11 +23,14 @@ function criaLink(){
 }
 
 function corpo(){
+    const divHeader= document.createElement('div');
+    divHeader.setAttribute('id','header');
+
     const divFooter = document.createElement('div');
     divFooter.setAttribute('id','footer');
 
-    const scriptFunctionLink = document.createElement('script');
-    scriptFunctionLink.setAttribute('src','/src/js/function-link.js');
+    // const scriptFunctionLink = document.createElement('script');
+    // scriptFunctionLink.setAttribute('src','/src/js/function-link.js');
 
     const scriptFooter = document.createElement('script');
     scriptFooter.setAttribute('src','/src/js/footer.js');
@@ -31,7 +38,7 @@ function corpo(){
     const scriptButtonDrop = document.createElement('script');
     scriptButtonDrop.setAttribute('src','/src/js/botoes-dropdown.js');
 
-    document.body.append(divFooter,scriptFunctionLink,scriptFooter,scriptButtonDrop);
+    document.body.append(divHeader,divFooter,scriptFooter,scriptButtonDrop);
 
     createFooter();
 }
