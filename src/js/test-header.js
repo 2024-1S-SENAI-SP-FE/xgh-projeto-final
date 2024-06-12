@@ -90,7 +90,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy = document.createElement('button');
     buttonBuy.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy64()');
+    buttonBuy.setAttribute('onclick', 'buy64()');
     buttonBuy.innerHTML = 'Comprar';
     
     // Appende car item 1
@@ -124,7 +124,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy2 = document.createElement('button');
     buttonBuy2.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy74()');
+    buttonBuy2.setAttribute('onclick', 'buy74()');
     buttonBuy2.innerHTML = 'Comprar';
 
     // appendes car-item2
@@ -158,7 +158,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy3 = document.createElement('button');
     buttonBuy3.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy84()');
+    buttonBuy3.setAttribute('onclick', 'buy84()');
     buttonBuy3.innerHTML = 'Comprar';
 
     // appendes car-item3
@@ -192,7 +192,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy4 = document.createElement('button');
     buttonBuy4.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy94()');
+    buttonBuy4.setAttribute('onclick', 'buy94()');
     buttonBuy4.innerHTML = 'Comprar';
 
     // appendes car-item4
@@ -226,7 +226,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy5 = document.createElement('button');
     buttonBuy5.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy04()');
+    buttonBuy5.setAttribute('onclick', 'buy04()');
     buttonBuy5.innerHTML = 'Comprar';
 
     // appendes car-item5
@@ -260,7 +260,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy6 = document.createElement('button');
     buttonBuy6.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy14()');
+    buttonBuy6.setAttribute('onclick', 'buy14()');
     buttonBuy6.innerHTML = 'Comprar';
 
     // appendes car-item6
@@ -294,7 +294,7 @@ function createHeader(){
     // criar button buy
     const buttonBuy7 = document.createElement('button');
     buttonBuy7.classList = 'buy';
-    buttonDetails.setAttribute('onclick', 'buy24()');
+    buttonBuy7.setAttribute('onclick', 'buy24()');
     buttonBuy7.innerHTML = 'Comprar';
 
     // appendes car-item7
