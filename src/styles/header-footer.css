@@ -132,7 +132,7 @@ header {
 .sobre-nos{
     padding: 5px; 
 }
-
+/* Erro de hover */
 .sobre-nos:hover{
     background-color:#eeeeee;
     border-radius: 5px;
