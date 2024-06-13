@@ -197,8 +197,66 @@ h3 {
 }
 
 
-/* <===============BOTÃO SUPORTE=====+========> */
 
+/* <===============ANIMAÇÃO DROPDOWN=====+========> */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .car-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.dropdown-content .car-item:hover {
+    background-color: #ffffff30;
+}
+
+.dropdown-content .car-item img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropdown-content .car-item h3 {
+    text-align: center;
+}
+
+.dropdown-content .car-item.active {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.dropdown-content .car-item.blur {
+    filter: blur(5px);
+}
+
+.show {
+    display: block;
+}
+
+/* <===============BOTÃO SUPORTE=====+========> */
 .btn-suporte {
     margin-right: 10px;
     margin-bottom: 5px;
