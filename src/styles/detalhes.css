@@ -13,17 +13,19 @@
 }
 
 #home {
-    height: 92vh;
+    height: 91vh;
     /* mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.5) 90%); */
 }
 
 #home img {
+    top: 0;
+    left: 0;
     position: absolute;
     object-fit: cover;
     background-repeat: no-repeat;
-    z-index: -1;
     height: 100vh;
     width: 100%;
+    z-index: -2;
 }
 
 h1,
