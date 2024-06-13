@@ -6,3 +6,10 @@ document.querySelector('#btn-suporte').addEventListener('click', ()=>{
         suporte.style.display = 'none';
     }
 })
+
+
+document.querySelector('#bt-close').addEventListener('click', ()=>{
+    const suporte = document.querySelector('#suporte');
+    suporte.style.display = 'none';
+    
+})
