@@ -249,7 +249,7 @@ h3 {
 }
 
 .dropdown-content .car-item.blur {
-    filter: blur(5px);
+    filter: blur(1px);
 }
 
 .show {
