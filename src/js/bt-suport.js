@@ -13,3 +13,11 @@ document.querySelector('#bt-close').addEventListener('click', ()=>{
     suporte.style.display = 'none';
     
 })
+
+document.querySelector('#btn-duvida').addEventListener('click', ()=>{
+    
+})
+
+document.querySelector('#btn-sugestao').addEventListener('click', ()=>{
+
+})

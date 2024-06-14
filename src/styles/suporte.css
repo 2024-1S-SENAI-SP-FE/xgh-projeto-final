@@ -92,6 +92,10 @@
     letter-spacing: 0.5px;
 }
 
+.chat button:hover{
+    background-color: #2121df;
+}
+
 .chat :nth-child(2){
     margin-left: 10px;
 }
