@@ -78,6 +78,7 @@
     padding-left: 12px;
 }
 
+/* Estilização dos botões */
 .chat button{
     display:inline;
     padding: 8px;
@@ -104,3 +105,52 @@
     margin-left: 10px;
 }
 
+/* Div de resposta1 */
+.resposta1-chat{
+    display: none;
+    background-color: #cdcdcd;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 160px;
+
+}
+
+.resposta1-chat :first-child{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+/* Div de resposta2 */
+.resposta2-chat{
+    display: none;
+    background-color: #cdcdcd;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 160px;
+
+}
+
+.resposta2-chat :first-child{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.resposta1-chat{
+    display: none;
+    background-color: #cdcdcd;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 160px;
+}
