@@ -1,3 +1,4 @@
+/* Div de suporte */
 #suporte {
     display: none;
     position: fixed;
@@ -16,10 +17,86 @@
 }
 
 .load{
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: 40%;
 }
 
 .btn-suporte{
     cursor: pointer;
 }
+
+/* Aba da janela suporte */
+.janela{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 8px;
+    margin-right: 11px;
+    margin-top: -11px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #2121dfa6;
+    margin-left: -11px;
+}
+
+/* Botão Fechar da aba */
+.button-janela img{
+    display:inline;
+    justify-content:flex-end;
+    align-content: space-between;
+    margin-top: 2px;
+    width: 25px;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+.img-robo{
+    width: 40px;
+}
+
+.chat{
+    background-color: #cdcdcd;
+    width: 280px;
+    height: 80px;
+    border-radius: 8px;
+    margin-top: -2px;
+    animation-name: chat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes chat{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0.2;
+    }
+
+}
+
+.chat h2{
+    font-size: 15px;
+    padding-top: 9px;
+    padding-left: 12px;
+}
+
+.chat button{
+    display:inline;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: #2121dfa6;
+    color: #cdcdcd;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.chat :nth-child(2){
+    margin-left: 10px;
+}
+
+.chat :nth-child(3){
+    margin-left: 10px;
+}
+
