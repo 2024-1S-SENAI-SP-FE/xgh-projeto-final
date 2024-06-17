@@ -57,11 +57,26 @@ function createHeader(){
     // criar botao-dropbtn
     const botaoDropbtn = document.createElement('button');
     botaoDropbtn.classList = 'dropbtn';
-    botaoDropbtn.innerHTML = 'Veículos';
+    botaoDropbtn.innerHTML = 'Veículos'; 
 
     // criar div dropdown-content
     const divDropdownContent = document.createElement('div');
     divDropdownContent.classList = 'dropdown-content';
+
+//função para estilizar internamente o dropdown  ~~ramonespier da silva
+    botaoDropbtn.addEventListener('mouseenter', () => {
+        document.querySelector('.menu-navegacao').classList.add('active');
+    });
+    divDropdownContent.addEventListener('mouseleave', () => {
+        document.querySelector('.menu-navegacao').classList.remove('active');
+    });
+    divLogoMenu.addEventListener('mouseleave', () => {
+        document.querySelector('.menu-navegacao').classList.remove('active');
+    });
+    ancoraHome.addEventListener('mouseleave', () => {
+        document.querySelector('.menu-navegacao').classList.remove('active');
+    });
+
 
     // criar div car-item 1
     const divCarItem = document.createElement('div');
