@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    top: 1rem;
+    top: 0.5rem;
 }
 
 .menu-navegacao a {
@@ -36,7 +36,7 @@
     background: none;
 }
  
-.icones-menu {
+.icones-menu { 
     display: inline-flex;
     gap: 10px;
 }
