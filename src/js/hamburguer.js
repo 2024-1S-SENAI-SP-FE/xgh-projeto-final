@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu');
 
     menuHamburguer.addEventListener('click', () => {
-        menu.classList.toggle('active')
-        menuHamburguer.classList.toggle('menuActive');
+        menu.classList.toggle('menuActive')
+        menuHamburguer.classList.toggle('hamActive');
     });
 });
