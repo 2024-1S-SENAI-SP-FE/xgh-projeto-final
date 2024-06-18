@@ -5,15 +5,15 @@
 
 /* <==============HOME==============> */
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: rgb(43, 43, 43);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -24,221 +24,224 @@
     font-family: NeueHaas;
 }
 
-#home {
-    bottom: 0;
-    height: 91.5vh;
-    /* mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.5) 90%); */
-}
+@media screen and (min-width: 1920px) {
 
-#home img {
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    z-index: -2;
-}
+    #home {
+        bottom: 0;
+        height: 91.5vh;
+        /* mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.5) 90%); */
+    }
 
-h1,
-h2 {
-    color: #FFFFFF;
-}
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
 
-h1 {
-    font-size: 4rem;
-}
+    h1,
+    h2 {
+        color: #FFFFFF;
+    }
 
-.topoHome {
-    position: absolute;
-    top: 20%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-    /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-}
+    h1 {
+        font-size: 4rem;
+    }
 
-.titulo {
-    font-size: 24px;
-    color: #FFFFFF;
-    padding: 0 0 4px;
-}
+    .topoHome {
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
 
-span {
-    font-weight: 100;
-    font-size: 14px;
-    color: #FFFFFF;
-}
+    .titulo {
+        font-size: 24px;
+        color: #FFFFFF;
+        padding: 0 0 4px;
+    }
 
-.elementos {
-    z-index: 1;
-    display: flex;
-    align-items: flex-start;
-    gap: 5rem;
-}
+    span {
+        font-weight: 100;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
 
-.botao {
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 60px;
-    background-color: #3E6AE1;
-    transition: .3s;
-}
+    .elementos {
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        gap: 5rem;
+    }
 
-.botao:hover {
-    background-color: #2E5CA1;
+    .botao {
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 60px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
 
-}
+    .botao:hover {
+        background-color: #2E5CA1;
 
-.cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    white-space: nowrap;
-}
+    }
 
-.content-end {
-    position: absolute;
-    top: 88%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-    /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-}
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
 
-/* <===============SEGUNDA SESSÃO================> */
+    .content-end {
+        position: absolute;
+        top: 88%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
 
-#design .topo {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 20%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-}
+    /* <===============SEGUNDA SESSÃO================> */
 
-.titulo1 {
-    font-size: 28px;
-    padding: 0 0 4px;
-}
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
 
-.titulo2 {
-    font-size: 14px;
-}
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
 
-#design {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    /* background-color: #000;
+    .titulo2 {
+        font-size: 14px;
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        /* background-color: #000;
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%); */
-}
+    }
 
-#design img {
-    position: absolute;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
 
-}
+    }
 
-/* <====================TERCEIRA SESSÃO=====================> */
+    /* <====================TERCEIRA SESSÃO=====================> */
 
-#interior .topo {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 12%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-}
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
 
-.titulo1 {
-    font-size: 28px;
-    padding: 0 0 4px;
-}
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
 
-.titulo2 {
-    font-size: 14px;
-}
+    .titulo2 {
+        font-size: 14px;
+    }
 
-#interior {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
 
-#interior img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
 
 
-#design .topo {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 15%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-}
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
 
-/* <==============QUARTA SESSÃO==============> */
+    /* <==============QUARTA SESSÃO==============> */
 
-#motor .topo {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 20%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-}
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
 
-.titulo1 {
-    font-size: 28px;
-    padding: 0 0 4px;
-}
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
 
-.titulo2 {
-    font-size: 14px;
-}
+    .titulo2 {
+        font-size: 14px;
+    }
 
-#motor {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
 
-#motor img {
-    position: absolute;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
-}
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
 
-#motor video {
-    position: absolute;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
 }
