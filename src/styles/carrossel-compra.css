@@ -36,7 +36,7 @@
     width:700px;
 }
 
-button {
+ #buttons {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -48,7 +48,7 @@ button {
      padding: 0.3rem;
     cursor: pointer;
     user-select: none;
-}
+} 
 
 .btretroceder {
     left: 10px;
