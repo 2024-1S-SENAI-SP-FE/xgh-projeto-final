@@ -1,0 +1,59 @@
+.alinhaCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+   position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+   
+}
+
+.carousel-inner {
+     display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.carousel-item iframe {
+    width: 100%;
+    border: none;
+    
+}
+
+.carousel-item img {
+    margin-left: 45px;
+    margin-top: 70px;
+    width:700px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d0d1d2;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size:25px;
+     padding: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btretroceder {
+    left: 10px;
+}
+
+.btavançar {
+    right: 10px;
+}
