@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Entre em sua Conta</h1>
+       
+        <section class="conteiner-geral">
+        <form>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="senha">
+                <label for="senha">Senha:</label>
+                <input type="password" id="password" name="senha" required><br>
+                <a href="esqueceu-senha">Esqueceu a senha?</a>
+            </div>
+            
+            <div class="bt-login">
+                <button class="btn" onclick="location.href='#'">login</button>
+                <br> <p>ou</p>
+            </div>
+            <div>
+                <button class="btn" onclick="location.href='cadastro.html'">cadastrar</button>
+            </div> 
+        </form>
+        </section>
+    </main>
+    
+</body>
+</html>
