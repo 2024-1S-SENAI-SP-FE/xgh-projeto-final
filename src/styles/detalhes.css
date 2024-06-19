@@ -251,6 +251,20 @@
         height: 100vh;
         width: 100%;
     }
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
 }
 
 /* mobile */
