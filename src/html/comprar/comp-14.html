@@ -5,25 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/styles/carrossel-compra.css">
+    <link rel="stylesheet" href="/src/styles/compra.css">
 </head>
 <body>
     <!-- div do Header -->
     <div id="header"></div>
     <!--  -->
-    <div class="alinhaCarousel">
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="/src/img/carrossel-imagens/Mustang-2014.png" alt="Imagem 1" >
-                </div>
-                <div class="carousel-item">
-                    <iframe src="https://360.3dmodels.org/view/9922/"  width="745" height="509" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+    <section class="container-geral">
+      <div class="container-carousel">
+          <div class="alinhaCarousel">
+              <div class="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item">
+                          <img src="/src/img/carrossel-imagens/Mustang-2014.png" alt="Imagem 1" >
+                      </div>
+                      <div class="carousel-item">
+                          <iframe src="https://360.3dmodels.org/view/9922/"  width="745" height="509" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                  <button id="buttons"   class="btavançar" onclick="proximoSlide()">❯</button>
+                  <button  id="buttons"   class="btretroceder" onclick="anteriorSlide()">❮</button>
+              </div>
+          </div>
+      </div>
+      <div class="container-conteudo">
+          <div class="setup-carros">
+            <div class="conteudo-texto">
+              <h1>Mustang GT 2014</h1>
+              <div class="lista-setup">
+                <ul>
+                  <li>
+                    <div class="potencia">
+                      <span class="nome-potencia">Potencia</span>
+                      <span class="info-potencia">426cv</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="torque">
+                      <span class="nome-torque"> Torque</span>
+                      <span class="info-torque">518Nm</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="motor">
+                      <span class="nome-motor">Motor</span>
+                      <span class="info-motor">Coyote 5.0L V8</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button id="buttons"   class="btavançar" onclick="proximoSlide()">❯</button>
-            <button  id="buttons"   class="btretroceder" onclick="anteriorSlide()">❮</button>
+          </div>
+          <div class="info-carro">
+            <div class="info-lista">
+              <ul>
+                <li>
+                  Interior de quatro lugares
+                </li>
+                <li>
+                  Duas Portas
+                </li>
+                <li>
+                  Tanque de combustível com capacidade de 59 L
+                </li>
+                <li>
+                  Câmbio manual de 6 marchas
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="select-cores">
+            <div class="titulo-cores">
+              <h1>Selecione a cor do seu Mustang</h1>
+            </div>
+              <div class="branco">
+                <input type="checkbox" id="branco">
+                <label for="branco">Branco</label>
+              </div>
+              <div class="azul">
+                <input type="checkbox" id="azul">
+                <label for="azul">Azul</label>
+              </div>
+              <div class="preto">
+                <input type="checkbox" id="preto">
+                <label for="preto">Preto</label>
+              </div>
+              <div class="vermelho">
+                <input type="checkbox" id="vermelho">
+                <label for="vermelho">Vermelho</label>
+              </div>
+              <div class="cinza">
+                <input type="checkbox" id="cinza">
+                <label for="cinza">Cinza</label>
+              </div>
+          </div>
+          <div class="conteudo-seguro">
+            <div class="titulo-seguro">
+              <h1>Garanta seus seguros</h1>
+            </div>
+            <div class="seguro-transporte">
+              <input type="checkbox" class="transporte">
+              <label for="transporte">Seguro de Transporte</label>
+            </div>
+            <div class="seguro">
+              <input type="checkbox" class="seguro-veiculo">
+              <label for="seguro-veiculo">Seguro do Veículo</label>
+            </div>
+          </div>
+          <div class="encomenda">
+            <div class="conteudo-encomenda">
+              <div class="titulo-encomenda">
+                <h1>Encomende seu Mustang GT 2014</h1>
+              </div>
+              <div class="btEncomenda">
+                <button type="button">Encomendar</button>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+    </section>
+
 
 
 
