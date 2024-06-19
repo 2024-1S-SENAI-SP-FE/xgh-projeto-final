@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/styles/carrossel-compra.css">
     <link rel="stylesheet" href="/src/styles/compra.css">
+    <link rel="stylesheet" href="/src/styles/api-frete.css">
 </head>
 <body>
     <!-- div do Header -->
@@ -113,6 +114,24 @@
               <label for="seguro-veiculo">Seguro do Veículo</label>
             </div>
           </div>
+          <!-- API de consulta -->
+          <div class="consulta-cep">
+            <div id="consulta-frete">
+              <h2>Consultar Frete</h2>
+              <label for="CEP">CEP: </label>
+              <input type="text" id="CEP">
+              <button type="button" id="btnConsulta">Consultar</button>
+            </div>
+            <h4>Endereço de Entrega</h4>
+            <p class="conteudo-api" id="logradouro"></p>
+            <p class="conteudo-api" id="bairro"></p>
+            <p class="conteudo-api" id="localidade"></p>
+            <p class="conteudo-api" id="uf"></p>
+            
+            <h4>Valor de Frete</h4>
+            <p class="conteudo-api" id="frete"></p>
+          </div>
+          <!-- ================ -->
           <div class="encomenda">
             <div class="conteudo-encomenda">
               <div class="titulo-encomenda">
@@ -132,6 +151,7 @@
     <script src="/src/js/test-header.js"></script>
     <script src="/src/js/function-body.js"></script>
     <script src="/src/js/carrossel-compra.js"></script>
+    <script src="/src/js/api-consulta-cep.js"></script>
     <!--  -->
 </body>
 </html>
