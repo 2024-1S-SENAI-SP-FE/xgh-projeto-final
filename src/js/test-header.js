@@ -1,6 +1,6 @@
 
 // Criar função header
-function createHeader(){
+function createHeader() {
 
     // criar a tag header
     const header = document.createElement('header');
@@ -21,10 +21,20 @@ function createHeader(){
     const ancoraHome = document.createElement('a');
     ancoraHome.setAttribute('href', '../../../index.html');
 
+    // criar div botao hamburguer
+    // const btHam = document.createElement('div');
+    // btHam.classList = 'menu-hamburguer';
+
+    // const menuUl = document.createElement('ul');
+    // menuUl.classList = 'menu';
+
+    // const a = document.createElement('a')
+    // a.classList 
+
     // criar svg-logo
-    const svgLogo = document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svgLogo.setAttribute('id','Camada_1');
-    svgLogo.setAttribute('data-name','Camada 1');
+    const svgLogo = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svgLogo.setAttribute('id', 'Camada_1');
+    svgLogo.setAttribute('data-name', 'Camada 1');
     svgLogo.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
     svgLogo.setAttribute('version', '1.1');
     svgLogo.setAttribute('viewBox', '0 0 250 129.4');
@@ -57,13 +67,13 @@ function createHeader(){
     // criar botao-dropbtn
     const botaoDropbtn = document.createElement('button');
     botaoDropbtn.classList = 'dropbtn';
-    botaoDropbtn.innerHTML = 'Veículos'; 
+    botaoDropbtn.innerHTML = 'Veículos';
 
     // criar div dropdown-content
     const divDropdownContent = document.createElement('div');
     divDropdownContent.classList = 'dropdown-content';
 
-//função para estilizar internamente o dropdown  ~~ramonespier da silva
+    //função para estilizar internamente o dropdown  ~~ramonespier da silva
     botaoDropbtn.addEventListener('mouseenter', () => {
         document.querySelector('.menu-navegacao').classList.add('active');
     });
@@ -91,7 +101,7 @@ function createHeader(){
     const h3Car1 = document.createElement('h3');
     h3Car1.classList = 'font-1960';
     h3Car1.innerHTML = 'Mustang 1964';
-    
+
     // criar div buttons
     const divButtons = document.createElement('div');
     divButtons.classList = 'buttons';
@@ -107,7 +117,7 @@ function createHeader(){
     buttonBuy.classList = 'buy';
     buttonBuy.setAttribute('onclick', 'buy64()');
     buttonBuy.innerHTML = 'Comprar';
-    
+
     // Appende car item 1
     divButtons.append(buttonDetails, buttonBuy);
     divCarItem.append(imgCar1, h3Car1, divButtons);
@@ -125,7 +135,7 @@ function createHeader(){
     const h3Car2 = document.createElement('h3');
     h3Car2.classList = 'font-1970';
     h3Car2.innerHTML = 'Mustang 1974';
-    
+
     // criar div buttons
     const divButtons2 = document.createElement('div');
     divButtons2.classList = 'buttons';
@@ -143,9 +153,9 @@ function createHeader(){
     buttonBuy2.innerHTML = 'Comprar';
 
     // appendes car-item2
-    divButtons2.append(buttonDetails2,buttonBuy2);
-    divCarItem2.append(imgCar2,h3Car2,divButtons2);
-    
+    divButtons2.append(buttonDetails2, buttonBuy2);
+    divCarItem2.append(imgCar2, h3Car2, divButtons2);
+
     // criar div car-item3
     const divCarItem3 = document.createElement('div');
     divCarItem3.classList = 'car-item';
@@ -159,7 +169,7 @@ function createHeader(){
     const h3Car3 = document.createElement('h3');
     h3Car3.classList = 'font-1980';
     h3Car3.innerHTML = 'Mustang 1984';
-    
+
     // criar div buttons
     const divButtons3 = document.createElement('div');
     divButtons3.classList = 'buttons';
@@ -177,9 +187,9 @@ function createHeader(){
     buttonBuy3.innerHTML = 'Comprar';
 
     // appendes car-item3
-    divButtons3.append(buttonDetails3,buttonBuy3);
-    divCarItem3.append(imgCar3,h3Car3,divButtons3);
-    
+    divButtons3.append(buttonDetails3, buttonBuy3);
+    divCarItem3.append(imgCar3, h3Car3, divButtons3);
+
     // criar div car-item4
     const divCarItem4 = document.createElement('div');
     divCarItem4.classList = 'car-item';
@@ -193,7 +203,7 @@ function createHeader(){
     const h3Car4 = document.createElement('h3');
     h3Car4.classList = 'font-1990';
     h3Car4.innerHTML = 'Mustang 1994';
-    
+
     // criar div buttons
     const divButtons4 = document.createElement('div');
     divButtons4.classList = 'buttons';
@@ -211,9 +221,9 @@ function createHeader(){
     buttonBuy4.innerHTML = 'Comprar';
 
     // appendes car-item4
-    divButtons4.append(buttonDetails4,buttonBuy4);
-    divCarItem4.append(imgCar4,h3Car4,divButtons4);
-    
+    divButtons4.append(buttonDetails4, buttonBuy4);
+    divCarItem4.append(imgCar4, h3Car4, divButtons4);
+
     // criar div car-item5
     const divCarItem5 = document.createElement('div');
     divCarItem5.classList = 'car-item';
@@ -227,7 +237,7 @@ function createHeader(){
     const h3Car5 = document.createElement('h3');
     h3Car5.classList = 'font-2000';
     h3Car5.innerHTML = 'Mustang 2004';
-    
+
     // criar div buttons
     const divButtons5 = document.createElement('div');
     divButtons5.classList = 'buttons';
@@ -245,9 +255,9 @@ function createHeader(){
     buttonBuy5.innerHTML = 'Comprar';
 
     // appendes car-item5
-    divButtons5.append(buttonDetails5,buttonBuy5);
-    divCarItem5.append(imgCar5,h3Car5,divButtons5);
-    
+    divButtons5.append(buttonDetails5, buttonBuy5);
+    divCarItem5.append(imgCar5, h3Car5, divButtons5);
+
     // criar div car-item6
     const divCarItem6 = document.createElement('div');
     divCarItem6.classList = 'car-item';
@@ -261,7 +271,7 @@ function createHeader(){
     const h3Car6 = document.createElement('h3');
     h3Car6.classList = 'font-2010';
     h3Car6.innerHTML = 'Mustang 2014';
-    
+
     // criar div buttons
     const divButtons6 = document.createElement('div');
     divButtons6.classList = 'buttons';
@@ -279,9 +289,9 @@ function createHeader(){
     buttonBuy6.innerHTML = 'Comprar';
 
     // appendes car-item6
-    divButtons6.append(buttonDetails6,buttonBuy6);
-    divCarItem6.append(imgCar6,h3Car6,divButtons6);
-    
+    divButtons6.append(buttonDetails6, buttonBuy6);
+    divCarItem6.append(imgCar6, h3Car6, divButtons6);
+
     // criar div car-item7
     const divCarItem7 = document.createElement('div');
     divCarItem7.classList = 'car-item';
@@ -295,7 +305,7 @@ function createHeader(){
     const h3Car7 = document.createElement('h3');
     h3Car7.classList = 'font-2020';
     h3Car7.innerHTML = 'Mustang 2024';
-    
+
     // criar div buttons
     const divButtons7 = document.createElement('div');
     divButtons7.classList = 'buttons';
@@ -313,12 +323,12 @@ function createHeader(){
     buttonBuy7.innerHTML = 'Comprar';
 
     // appendes car-item7
-    divButtons7.append(buttonDetails7,buttonBuy7);
-    divCarItem7.append(imgCar7,h3Car7,divButtons7);
+    divButtons7.append(buttonDetails7, buttonBuy7);
+    divCarItem7.append(imgCar7, h3Car7, divButtons7);
 
 
     // Appendes no dropdown-content
-    divDropdownContent.append(divCarItem,divCarItem2,divCarItem3,divCarItem4,divCarItem5, divCarItem6, divCarItem7);
+    divDropdownContent.append(divCarItem, divCarItem2, divCarItem3, divCarItem4, divCarItem5, divCarItem6, divCarItem7);
 
     // Append no dropdown
     divDropdown.append(botaoDropbtn, divDropdownContent);
@@ -339,14 +349,14 @@ function createHeader(){
     ancoraLi2.setAttribute('href', '/src/html/navegacao/sobrenos.html');
     ancoraLi2.classList = 'sobre-nos';
     ancoraLi2.innerHTML = 'Sobre Nós';
-    
+
     // append das li
     li1.append(ancoraLi1);
     li2.append(ancoraLi2);
 
 
     // Appende na Ul
-    ul.append(divDropdown, li1,li2);
+    ul.append(divDropdown, li1, li2);
 
     // criar div icones-menu
     const divIconesMenu = document.createElement('div');
@@ -354,23 +364,23 @@ function createHeader(){
 
     // criar div translate
     const divTranslate = document.createElement('div');
-    divTranslate.setAttribute('id','google_translate_element')
+    divTranslate.setAttribute('id', 'google_translate_element')
 
     // criar button troca-idioma
     const buttonTrocaIdioma = document.createElement('button');
-    buttonTrocaIdioma.setAttribute('type','button');
-    buttonTrocaIdioma.setAttribute('id','troca-idioma');
+    buttonTrocaIdioma.setAttribute('type', 'button');
+    buttonTrocaIdioma.setAttribute('id', 'troca-idioma');
 
     // criar svg idioma
-    const svgIdioma = document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svgIdioma.setAttribute('viewBox','0 0 24 24');
-    svgIdioma.setAttribute('width','25');
-    svgIdioma.setAttribute('xmlns','http://www.w3.org/2000/svg');
+    const svgIdioma = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svgIdioma.setAttribute('viewBox', '0 0 24 24');
+    svgIdioma.setAttribute('width', '25');
+    svgIdioma.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
 
     // criar path idioma
-    const pathIdioma = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const pathIdioma = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     // pathIdioma.setAttribute('fill','black');
-    pathIdioma.setAttribute('d','M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z');
+    pathIdioma.setAttribute('d', 'M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z');
 
     // appendes do button troca-idioma
     svgIdioma.append(pathIdioma);
@@ -381,16 +391,16 @@ function createHeader(){
     ancoraLogin.setAttribute('href', '/src/html/navegacao/login.html');
 
     // criar svg login
-    const svgLogin = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    const svgLogin = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svgLogin.classList = 'tds-icon tds-icon-person'
-    svgLogin.setAttribute('viewBox','0 0 24 24');
-    svgLogin.setAttribute('xmlns','http://www.w3.org/2000/svg');
-    svgLogin.setAttribute('width','25');
+    svgLogin.setAttribute('viewBox', '0 0 24 24');
+    svgLogin.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svgLogin.setAttribute('width', '25');
 
     // criar path login
-    const pathLogin = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const pathLogin = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     // pathLogin.setAttribute('fill','black');
-    pathLogin.setAttribute('d','M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24 2.42 0 4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748zm11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.456 8.456 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5 4.687 0 8.5 3.813 8.5 8.5a8.456 8.456 0 0 1-2.173 5.657zM12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z');
+    pathLogin.setAttribute('d', 'M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24 2.42 0 4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748zm11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.456 8.456 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5 4.687 0 8.5 3.813 8.5 8.5a8.456 8.456 0 0 1-2.173 5.657zM12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z');
 
     // appendes do login
     svgLogin.append(pathLogin);
@@ -400,7 +410,7 @@ function createHeader(){
     divIconesMenu.append(divTranslate, buttonTrocaIdioma, ancoraLogin);
 
     // Appendes no nav
-    nav.append(divLogoMenu,ul,divIconesMenu);
+    nav.append(divLogoMenu, ul, divIconesMenu);
 
     // Appendes no header
     header.append(nav)
