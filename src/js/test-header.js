@@ -22,14 +22,14 @@ function createHeader() {
     ancoraHome.setAttribute('href', '../../../index.html');
 
     // criar div botao hamburguer
-    // const btHam = document.createElement('div');
-    // btHam.classList = 'menu-hamburguer';
+    const btHam = document.createElement('div');
+    btHam.classList = 'menu-hamburguer';
 
-    // const menuUl = document.createElement('ul');
-    // menuUl.classList = 'menu';
+    const menuUl = document.createElement('ul');
+    menuUl.classList = 'menu';
 
-    // const a = document.createElement('a')
-    // a.classList 
+    const a = document.createElement('a')
+    a.classList 
 
     // criar svg-logo
     const svgLogo = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
