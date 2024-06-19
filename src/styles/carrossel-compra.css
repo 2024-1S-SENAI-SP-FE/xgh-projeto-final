@@ -40,12 +40,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #d0d1d2;
+    background-color: #e3e3e3;
     border-radius: 5px;
     border: none;
     color: black;
-    font-size:25px;
-     padding: 0.3rem;
+    font-size:20px;
+    padding: 5px;
     cursor: pointer;
     user-select: none;
 } 
