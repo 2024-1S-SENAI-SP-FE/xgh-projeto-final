@@ -122,6 +122,85 @@ header {
     object-fit: cover;
     object-position: 50% 50%;
 }
+/* <====================7° GERAÇÃO=======================> */
+
+#model-7 .titulo-model{
+    color: #F4F4F4;
+}
+
+#model-7 .sub-model{
+    color: #F4F4F4;
+}
+
+#model-7 .ancoraTexto {
+    top: 16%;
+}
+
+#model-7 .btGeracao {
+    top: 85%;
+}
+
+/* <====================6° GERAÇÃO=======================> */
+
+#model-6 .btGeracao {
+    top: 92%;
+}
+
+/* <====================5° GERAÇÃO=======================> */
+
+#model-5 .ancoraTexto {
+    top: 14%;
+}
+
+#model-5 .titulo-model{
+    color: #F4F4F4;
+}
+
+#model-5 .sub-model{
+    color: #F4F4F4;
+}
+
+#model-5 .btGeracao {
+    top: 85%;
+}
+
+/* <====================4° GERAÇÃO=======================> */
+
+#model-4 .btGeracao {
+    top: 85%;
+}
+
+/* <====================3° GERAÇÃO=======================> */
+
+#model-3 .btGeracao {
+    top: 90%;
+}
+
+/* <====================2° GERAÇÃO=======================> */
+
+
+#model-2 .titulo-model{
+    color: #F4F4F4;
+}
+
+#model-2 .sub-model{
+    color: #F4F4F4;
+}
+
+#model-2 .btGeracao {
+    top: 90%;
+}
+
+/* <====================1° GERAÇÃO=======================> */
+
+
+#model-1 .titulo-model{
+    color: #F4F4F4;
+}
+
+#model-1 .sub-model{
+    color: #F4F4F4;
+}
 
 /* <==============TÍTULO E BOTÕES DAS SESSÕES==============> */
 
@@ -177,6 +256,15 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s;
+}
+
+.btDetalhes:hover {
+    background-color: #c9c7c7;
+}
+
+.btComprar:hover {
+    background-color: #2e2e2e;
 }
 
 .btComprar{
@@ -194,6 +282,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s;
 }
 
 
