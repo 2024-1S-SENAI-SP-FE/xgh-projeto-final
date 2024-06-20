@@ -1,5 +1,8 @@
 .alinhaCarousel{
    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
 }
 
 .carousel {
@@ -30,13 +33,13 @@
 
 .carousel-item img {
     margin-left: 45px;
-    margin-top: 70px;
-    width:700px;
+    margin-top: 60px;
+    width:550px;
 }
 
  #buttons {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background-color: #e3e3e3;
     border-radius: 5px;
