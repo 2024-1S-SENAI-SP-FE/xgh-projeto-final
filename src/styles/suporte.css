@@ -19,6 +19,7 @@
 .load{
     margin-top: 20%;
     margin-left: 40%;
+    display: block;
 }
 
 .btn-suporte{
@@ -119,38 +120,53 @@
 
 .resposta1-chat :first-child{
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     font-weight: bold;
     font-size: 15px;
     padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
 }
-
-/* Div de resposta2 */
-.resposta2-chat{
-    display: none;
-    background-color: #cdcdcd;
-    width: 120px;
-    height: 50px;
-    border-radius: 8px;
-    margin-top: 12px;
-    margin-left: 160px;
-
-}
-
-.resposta2-chat :first-child{
+.resposta1-chat :nth-child(2){
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     font-weight: bold;
     font-size: 15px;
     padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.resposta1-chat :nth-child(3){
+    display: flex;
+    justify-content: justify;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+
+.resposta-cliente{
+    display:none;
 }
 
 .resposta1-chat{
     display: none;
     background-color: #cdcdcd;
-    width: 120px;
-    height: 50px;
+    width: 220px;
+    height: 140px;
     border-radius: 8px;
     margin-top: 12px;
-    margin-left: 160px;
+    margin-left: 2px;
 }
