@@ -32,7 +32,7 @@ body {
     .hamActive {
         display: none;
     }
-    
+
     .buttons {
         display: flex;
         gap: 10px;
@@ -87,17 +87,6 @@ body {
         animation-timing-function: ease-in;
     }
 
-    @keyframes test-animacao {
-        0% {
-            margin-top: -600px;
-            opacity: 0;
-        }
-
-        100% {
-            margin-top: 0px;
-            opacity: 1;
-        }
-    }
 
     .dropdown-content .car-item {
         display: inline-block;
@@ -111,6 +100,11 @@ body {
 
     .dropdown-content .car-item img {
         max-width: 200px
+    }
+
+    .comemo60-anos {
+        display: flex;
+        justify-content: center;
     }
 
     .dropdown-content .buttons {
@@ -145,10 +139,6 @@ body {
         transform: scale(1.0)
     }
 
-    .imagem-drop {
-        width: 18%;
-
-    }
 
     .font-1960 {
         font-family: "Noto Sans", sans-serif;
@@ -202,6 +192,7 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 450px) {
+
     .dropdown,
     .menu-navegacao {
         display: none;
