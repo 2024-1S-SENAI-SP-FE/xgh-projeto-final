@@ -23,13 +23,13 @@ function corpo(){
     const divFooter = document.createElement('div');
     divFooter.setAttribute('id','footer');
 
-    const scriptFooter = document.createElement('script');
-    scriptFooter.setAttribute('src','/src/js/footer.js');
+    // const scriptFooter = document.createElement('script');
+    // scriptFooter.setAttribute('src','/src/js/footer.js');
 
     const scriptButtonDrop = document.createElement('script');
     scriptButtonDrop.setAttribute('src','/src/js/botoes-dropdown.js');
 
-    document.body.append(divHeader,divFooter,scriptFooter,scriptButtonDrop);
+    document.body.append(divHeader,divFooter,scriptButtonDrop);
 
     createFooter();
 }
