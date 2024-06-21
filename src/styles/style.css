@@ -252,11 +252,13 @@ h3 {
     width: 17rem;
     font-family: NeueHaas, sans-serif;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .3s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .btDetalhes:hover {
@@ -278,11 +280,13 @@ h3 {
     width: 17rem;
     font-family: NeueHaas, sans-serif;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .3s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 
