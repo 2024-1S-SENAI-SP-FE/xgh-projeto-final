@@ -264,7 +264,7 @@ h3 {
 }
 
 .btComprar:hover {
-    background-color: #2e2e2e;
+    background-color: rgba(76, 107, 206, 0.8);
 }
 
 .btComprar{
@@ -272,7 +272,7 @@ h3 {
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
-    background-color: #171a20;
+    background-color: #3E6AE1;
     color: #F4F4F4;
     height: 2.5rem;
     width: 17rem;
