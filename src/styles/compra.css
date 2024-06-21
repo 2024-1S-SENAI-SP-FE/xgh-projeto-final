@@ -35,8 +35,11 @@ h1 {
 
 .conteudo {
     margin-top: 20px;
+    margin-right: 3rem;
     text-align: center;
-
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
 }
 
 .container-geral {
@@ -95,10 +98,15 @@ h1 {
     margin-bottom: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    box-shadow: 1px 7.5px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.7s;
 }
 
 .info-lista li:hover {
     background-color: #f7f7f7;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+    transition: 0.7s;
 }
 
 
@@ -136,7 +144,7 @@ h1 {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    box-shadow: 0px 7px 8px black
+    box-shadow: 0px 7px 8px black;
 }
 
 .bola-preta {
@@ -145,7 +153,7 @@ h1 {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    box-shadow: 0px 7px 8px black
+    box-shadow: 0px 7px 8px black;
 }
 
 .bola-vermelha {
@@ -154,7 +162,7 @@ h1 {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    box-shadow: 0px 7px 8px black
+    box-shadow: 0px 7px 8px black;
 }
 
 .bola-cinza {
@@ -213,19 +221,29 @@ h1 {
 }
 
 .seguro-transporte, .seguro {
-    border: 2px solid #3e6ae1;
+    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    transition: 0.7s;
+    box-shadow: 1px 7.5px 10px rgba(0, 0, 0, 0.6);
 }
 
-.seguro-transporte svg{
-
+.seguro-transporte:hover,
+.seguro:hover {
+    transform: scale(1.03h);
+    transition: 0.7s;
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.6);
+    background-color: #dedede5d;
 }
 
+.seguro-transporte svg,
+.seguro svg {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
 
 input[type="checkbox"] {

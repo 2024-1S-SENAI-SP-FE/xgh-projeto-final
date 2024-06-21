@@ -1,4 +1,7 @@
-
+.alinhaCarousel{
+    /* position: fixed; */
+    display: flex;
+}
 
 
 .carousel {
