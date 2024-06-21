@@ -39,10 +39,11 @@ h1{
 
 .texto-historia {
     max-width: 55rem;
-    text-align: left;
-    line-height: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-family: NeueHaas;
+    text-align: justify;
+    line-height: 1.9rem;
+    margin-bottom: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
 }
 
 
@@ -65,3 +66,4 @@ span {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+
