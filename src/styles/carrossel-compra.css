@@ -1,6 +1,8 @@
 .alinhaCarousel{
-    /* position: fixed; */
     display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 4rem;
 }
 
 
@@ -9,8 +11,7 @@
     width: 80%;
     max-width: 800px;
     overflow: hidden;
-    margin-top: 80px;
-    margin-left: 60px;
+   
    
 }
 
