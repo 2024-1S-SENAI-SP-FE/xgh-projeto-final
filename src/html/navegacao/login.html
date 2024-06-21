@@ -18,33 +18,35 @@
             <div class="container">
 
                 <h1>Entrar</h1>
-                <form>
+                <!-- <form action="" method="get"> -->
                     <div class="elementos">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email">
 
                         <label for="senha">Senha</label>
                         <input type="password" id="password" name="senha" required><br>
+                        <button class="btSenha" id="btSenha">ver</button>
 
                     </div>
 
                     <div class="botoes">
 
-                        <button class="btnLogin" onclick="location.href='#'">Login</button>
+                        <button class="btnLogin" id="btnLogin">Login</button>
 
                         <a href="esqueceu-senha">Problemas para fazer login?</a>
 
-                        <span>Ou</span>
+                        <span>ou</span>
 
-                        <button class="btnCadastra" onclick="location.href='cadastro.html'">Criar uma conta</button>
+                        <button class="btnCadastra" >Criar uma conta</button>
 
                     </div>
 
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </main>
 
+    <script src="/src/js/login.js"></script>
     <script src="/src/js/function-body.js"></script>
     <script src="/src/js/test-header.js"></script>
 </body>
