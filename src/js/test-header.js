@@ -47,7 +47,7 @@ function createHeader() {
 
     // criar img-nome
     const imgNome = document.createElement('img');
-    imgNome.setAttribute('src', '/src/img/mustang-name.png');
+    imgNome.setAttribute('src', '/src/img/mustang-name-white.png');
     imgNome.setAttribute('alt', 'nome da logo mustang');
     imgNome.classList = 'img-header';
 
