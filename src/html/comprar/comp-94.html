@@ -130,35 +130,45 @@
               <div class="seguro-transporte">
                 <input type="checkbox" class="transporte">
                 <label for="transporte">Seguro de Transporte</label>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70" height="70" fill="green"><path d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z"/></svg>
               </div>
               <div class="seguro">
                 <input type="checkbox" class="seguro-veiculo">
                 <label for="seguro-veiculo">Seguro do Veículo</label>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70" height="70" fill="green"><path d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z"/></svg>
               </div>
             </div>
           </div>
           <!-- API de consulta -->
           <div class="consulta-cep">
-            <div id="consulta-frete">
+            <div class="container-frete">
               <h1>Consulte o Frete</h1>
-              <label for="CEP">CEP: </label>
-              <input type="text" id="CEP">
-              <button type="button" id="btnConsulta">Consultar</button>
+              <div id="consulta-frete">
+                <label for="CEP">CEP: </label>
+                <input type="text" id="CEP">
+                <button type="button" id="btnConsulta">Consultar</button>
+              </div>
+              <div class="resultado-frete">
+                <div class="endereco">
+                  <h4>Endereço de Entrega</h4>
+                  <p class="conteudo-api" id="logradouro"></p>
+                  <p class="conteudo-api" id="bairro"></p>
+                  <p class="conteudo-api" id="localidade"></p>
+                  <p class="conteudo-api" id="uf"></p>
+                </div>
+                <hr>
+                <div class="valor">
+                  <h4>Valor de Frete</h4>
+                  <p class="conteudo-api" id="frete"></p>
+                </div>
+              </div>
             </div>
-            <h4>Endereço de Entrega</h4>
-            <p class="conteudo-api" id="logradouro"></p>
-            <p class="conteudo-api" id="bairro"></p>
-            <p class="conteudo-api" id="localidade"></p>
-            <p class="conteudo-api" id="uf"></p>
-            
-            <h4>Valor de Frete</h4>
-            <p class="conteudo-api" id="frete"></p>
           </div>
           <!-- ================ -->
           <div class="encomenda">
             <div class="conteudo-encomenda">
               <div class="titulo-encomenda">
-                <h1>Encomende seu Mustang GT 1994</h1>
+                <h1>Encomende seu Mustang GT 1964</h1>
               </div>
               <div class="btEncomenda">
                 <button type="button">Encomendar</button>
@@ -166,7 +176,7 @@
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
 
 
