@@ -233,7 +233,7 @@ h1 {
 
 .seguro-transporte:hover,
 .seguro:hover {
-    transform: scale(1.03h);
+    transform: scale(1.03);
     transition: 0.7s;
     box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.6);
     background-color: #dedede5d;
