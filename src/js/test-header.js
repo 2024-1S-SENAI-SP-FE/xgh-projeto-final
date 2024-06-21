@@ -326,9 +326,29 @@ function createHeader() {
     divButtons7.append(buttonDetails7, buttonBuy7);
     divCarItem7.append(imgCar7, h3Car7, divButtons7);
 
+    
+    // criar div car-item8
+    const divCarItem8 = document.createElement('div');
+    divCarItem8.classList = 'car-item';
 
+    // criar img Car 8
+    const imgCar8 = document.createElement('img');
+    imgCar8.setAttribute('src', '/src/img/dropdown-veiculos/Mustang-60-Anos_2024_-Logo (1).png');
+    imgCar8.setAttribute('alt', 'imagem do logo comemoração mustang');
+
+    // criar ancora car 8
+    const ancora8 = document.createElement('a');
+    ancora8.classList = 'comemora60-anos';
+    ancora8.setAttribute('href','/src/html/navegacao/comemoracao.html' );
+    
+    // appendes car-item8
+    ancora8.append(imgCar8);
+    divCarItem8.append(ancora8);
+
+
+    
     // Appendes no dropdown-content
-    divDropdownContent.append(divCarItem, divCarItem2, divCarItem3, divCarItem4, divCarItem5, divCarItem6, divCarItem7);
+    divDropdownContent.append(divCarItem, divCarItem2, divCarItem3, divCarItem4, divCarItem5, divCarItem6, divCarItem7,divCarItem8);
 
     // Append no dropdown
     divDropdown.append(botaoDropbtn, divDropdownContent);
