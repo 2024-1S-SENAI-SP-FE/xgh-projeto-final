@@ -102,9 +102,11 @@ body {
         max-width: 200px
     }
 
-    .comemo60-anos {
+    .comemora60-anos {
         display: flex;
         justify-content: center;
+        align-items: center;
+
     }
 
     .dropdown-content .buttons {
