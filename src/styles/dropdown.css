@@ -136,6 +136,7 @@ body {
     }
 
     .dropdown:hover .dropbtn {
+        transition: .50s;
         background-color: #eeeeee;
         border-radius: 5px;
         transform: scale(1.0)
