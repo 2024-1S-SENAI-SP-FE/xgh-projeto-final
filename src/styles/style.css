@@ -1,8 +1,9 @@
-
 @font-face {
     font-family: NeueHaas;
     src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 * {
     margin: 0;
@@ -26,66 +27,6 @@ body {
         width: 8px;
     }
 
-
-/* <===========HEADER============> */
-
-.menu-navegacao>ul {
-    display: inline-flex;
-    gap: 5rem;
-    font-weight: 100;
-}
-
-.menu-navegacao {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 1rem;
-}
-
-.menu-navegacao a {
-    text-decoration: none;
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-    color: #000000;
-    font-family: NeueHaas, sans-serif;
-    font-size: 1rem;
-}
- 
-.icones-menu button {
-    border: none;
-    background: none;
-}
- 
-.icones-menu {
-    display: inline-flex;
-    gap: 10px;
-}
- 
-.logo-menu {
-    display: flex;
-    align-items: center;
-}
-
-.nome-mustang {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-menu a svg {
-    width: 100px;
-}
-
-.nome-mustang img {
-    width: 100px;
-}
-
-header {
-    z-index: 2;
-}
 
 /* <=================SESSÃO HOME E VÍDEO===================> */
 
@@ -218,7 +159,8 @@ header {
 
 h2,
 h3 {
-    font-family: NeueHaas;
+    font-family: NeueHaas, sans-serif;
+    font-weight: 100;
 }
 
 .ancoraTexto h2{
@@ -250,8 +192,8 @@ h3 {
     color: #393C41;
     height: 2.5rem;
     width: 17rem;
-    font-family: NeueHaas, sans-serif;
-    font-weight: 100;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -278,8 +220,8 @@ h3 {
     color: #F4F4F4;
     height: 2.5rem;
     width: 17rem;
-    font-family: NeueHaas, sans-serif;
-    font-weight: 100;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
     font-size: 16px;
     display: flex;
     justify-content: center;
