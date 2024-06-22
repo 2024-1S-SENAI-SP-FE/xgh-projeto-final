@@ -73,18 +73,25 @@ function createHeader() {
     const divDropdownContent = document.createElement('div');
     divDropdownContent.classList = 'dropdown-content';
 
-    //função para estilizar internamente o dropdown  ~~ramonespier da silva
+    //função para estilizar internamente o dropdown  ~~ramonespier da silva & alves da silva
     botaoDropbtn.addEventListener('mouseenter', () => {
         document.querySelector('.menu-navegacao').classList.add('active');
+        document.querySelector('.img-header').classList.add('active');
     });
+
+    divDropdownContent.addEventListener('mouseenter', () => {
+        document.querySelector('.menu-navegacao').classList.add('active');
+        document.querySelector('.img-header').classList.add('active');
+    });
+
     divDropdownContent.addEventListener('mouseleave', () => {
         document.querySelector('.menu-navegacao').classList.remove('active');
+        document.querySelector('.img-header').classList.remove('active');
     });
-    divLogoMenu.addEventListener('mouseleave', () => {
+
+    botaoDropbtn.addEventListener('mouseleave', () => {
         document.querySelector('.menu-navegacao').classList.remove('active');
-    });
-    ancoraHome.addEventListener('mouseleave', () => {
-        document.querySelector('.menu-navegacao').classList.remove('active');
+        document.querySelector('.img-header').classList.remove('active');
     });
 
 
