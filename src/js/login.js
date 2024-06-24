@@ -27,6 +27,8 @@ function validLogin(){
     const password = document.querySelector('#password').value;
     let loginSucess = false;
 
+    
+
     for(let i = 0; i < usuarios.length; i++){
         if(usuarios[i].id === email && usuarios[i].senha === password){
             loginSucess = true;
