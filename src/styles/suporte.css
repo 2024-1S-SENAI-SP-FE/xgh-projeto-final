@@ -159,6 +159,20 @@
 
 .resposta-cliente{
     display:none;
+    background-color: #cdcdcd;
+    width: 100px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 8px;
+    margin-left: 180px;
+}
+
+.resposta-cliente p{
+    font-size: 15px;
+    padding-top: 8px;
+    text-align: center;
+   
+
 }
 
 .resposta1-chat{
