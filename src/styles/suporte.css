@@ -160,11 +160,11 @@
 .resposta-cliente{
     display:none;
     background-color: #cdcdcd;
-    width: 100px;
+    width: 170px;
     height: 30px;
     margin-top: 8px;
     border-radius: 8px;
-    margin-left: 180px;
+    margin-left: 110px;
 }
 
 .resposta-cliente p{
