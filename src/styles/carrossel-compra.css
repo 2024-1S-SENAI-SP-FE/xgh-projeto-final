@@ -21,14 +21,17 @@
 }
 
 .carousel-inner {
-     display: flex;
+    display: flex;
     transition: transform 0.5s ease-in-out;
     
 }
 
 .carousel-item {
+    position: relative;
+    display: inline-block;
     min-width: 100%;
     box-sizing: border-box;
+
 }
 
 
@@ -44,7 +47,7 @@
     width:550px;
 }
 
- #buttons {
+#buttons {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
@@ -53,10 +56,23 @@
     border: none;
     color: black;
     font-size:20px;
-    padding: 5px;
+    padding: 4px;
     cursor: pointer;
-    user-select: none;
-} 
+    
+}
+   
+
+.btscarcom{
+    display: none;
+
+}
+
+
+
+.carousel-item:hover .btscarcom {
+    display: flex; 
+
+}
 
 .btretroceder {
     left: 10px;
