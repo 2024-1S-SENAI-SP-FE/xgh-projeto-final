@@ -35,27 +35,37 @@
      <script>
         // Botão de cadastro
         document.querySelector('#btn-cadastrar').addEventListener('click', ()=>{
-            cadastrar();
-            })
-
-            function cadastrar(){
-                const nome = document.querySelector('#nome-cadastro').value;
-                const email = document.querySelector('#email-cadastro').value;
+            validaSenha();
+        })
+        
+            function validaSenha(){
                 const senha = document.querySelector('#senha-cadastro').value;
-                const confirmSenha = document.querySelector('#confirmaSenha-cadastro').value;
+                const confirmaSenha = document.querySelector('#confirmaSenha-cadastro').value;
 
-                if(senha === confirmSenha){
-                    usuarios.push({
-                        id: email,
-                        nome: nome,
-                        senha: senha
-                        });
+                if(senha === confirmaSenha){
+                    // Envia os dados para o servidor
+                    const cadastrarPost = {
+                        "nome": document.querySelector('#nome-cadastro').value,
+                        "email": document.querySelector('#email-cadastro').value,
+                        "senha": document.querySelector('#senha-cadastro').value,
+                    }
+                    cadastrarUsuario(cadastrarPost)
                 }else{
-                    window.alert('Senhas não conferem');
+                    window.alert('Senhas não conferem')
                 }
-                
-            }
 
+                function cadastrarUsuario(cadastrarPost){
+                    const requisicaoPost = new Request('http://localhost:3000/usuarios', {
+                        "method": "POST",
+                        "headers": {
+                        "Content-type": "application/json"
+                        },
+                        "body": JSON.stringify(cadastrarPost)
+                    })
+                    fetch(requisicaoPost)
+                }
+                document.querySelector('#btn-cadastrar').addEventListener('click', cadastraUser(cadastrarPost))
+            }
      </script>
 </body>
 </html>
