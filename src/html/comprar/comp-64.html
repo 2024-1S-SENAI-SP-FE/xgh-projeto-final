@@ -33,6 +33,10 @@
                   src="/src/img/carrossel-imagens/Mustang-1964.png"
                   alt="Imagem 1"
                 />
+                <div class="btscarcom">
+                  <button id="buttons" class="btavançar" onclick="proximoSlide()">❯</button>
+                  <button id="buttons" class="btretroceder" onclick="anteriorSlide()">❮</button>
+                </div>
               </div>
               <div class="carousel-item">
                 <iframe
@@ -43,14 +47,12 @@
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <div class="btscarcom">
+                  <button id="buttons" class="btavançar" onclick="proximoSlide()">❯</button>
+                  <button id="buttons" class="btretroceder" onclick="anteriorSlide()">❮</button>
+                </div>
               </div>
             </div>
-            <button id="buttons" class="btavançar" onclick="proximoSlide()">
-              ❯
-            </button>
-            <button id="buttons" class="btretroceder" onclick="anteriorSlide()">
-              ❮
-            </button>
           </div>
         </div>
       </div>
@@ -185,6 +187,7 @@
     <script src="/src/js/test-header.js"></script>
     <script src="/src/js/function-body.js"></script>
     <script src="/src/js/carrossel-compra.js"></script>
+    <script src="/src/js/botoes-carrossel-compra.js"></script>
     <script src="/src/js/api-consulta-cep.js"></script>
     <!--  -->
   </body>
