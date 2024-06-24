@@ -88,3 +88,5 @@ if (botaoClicado === btnDuvida) {
         btnSugestao.disabled = true;
         }
     }
+
+    
