@@ -4,5 +4,8 @@
   },
   "scripts": {
     "start": "npx json-server --watch data/users.json --port 3000"
+  },
+  "devDependencies": {
+    "cypress": "^13.12.0"
   }
 }
