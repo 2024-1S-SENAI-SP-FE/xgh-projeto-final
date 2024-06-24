@@ -1,12 +1,15 @@
+// obtendo click de botão para chamar a função validLogin
 document.querySelector('#btnLogin').addEventListener('click', ()=>{
     validLogin();
 })
 
+// Função reponsável pela aquisição dos inputs e chamada de requisição do tipo POST
 function validLogin(){
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
     let loginSucess = false;
 
+    // Criando requisição e suas especificações
     const requisicaoGet = new Request('http://localhost:3000/usuarios', {
             "method": "GET",
             "headers": {
@@ -14,8 +17,11 @@ function validLogin(){
             }
         });
 
+    // responsável pelo envio da requisição para o servidor
     fetch(requisicaoGet)
+    // 1° then responsável por tratar a resposta como json
     .then(resposta => resposta.json())
+    // 2° then responsável por verificar se o login é válido
     .then(resposta => {
         for(let i = 0; i < resposta.length; i++){
             if(resposta[i].email === email && resposta[i].senha === password){
@@ -23,6 +29,7 @@ function validLogin(){
                 break;
             }
         }
+        // caso login seja válido essa condição emitirá um alerta e encaminha o usuário para a HOME
         if(loginSucess){
             // resultElement.innerHTML= "Login bem sucedido"
             window.alert('Login bem-sucedido');
