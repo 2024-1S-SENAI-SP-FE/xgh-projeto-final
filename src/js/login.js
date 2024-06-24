@@ -1,19 +1,23 @@
-
+// JSON de usuários
 const usuarios = [
     {
         "id": "test@test.com", 
+        "nome": "",
         "senha": "senha1"
     },
     {
-        "id": "user2", 
-        "senha": "senha2"
+        "id": "", 
+        "nome": "",
+        "senha": ""
     },
     {
-        "id": "user3", 
-        "senha": "senha3"
+        "id": "", 
+        "nome": "",
+        "senha": ""
     }
 ];
 
+// Validação de Login
 document.querySelector('#btnLogin').addEventListener('click', ()=>{
     validLogin();
 })
@@ -42,6 +46,7 @@ function validLogin(){
     }
 }
 
+// Botão de visualização de senha
 document.querySelector('#btSenha').addEventListener('click', () => {
     const passwordInput = document.querySelector('#password');
     if(passwordInput.type === 'password'){
