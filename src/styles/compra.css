@@ -443,7 +443,6 @@ hr {
 }
 
 .btnCompra:hover {
-    background-color: #2a4f8a;
     transition: 0.7s;
-    transform: scale(1.09);
+    transform: scale(1.04);
 }
