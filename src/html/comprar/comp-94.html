@@ -139,23 +139,23 @@
             <div class="titulo-cores">
               <h1>Selecione a cor do seu Mustang</h1>
             </div>
-              <div class="conteudo-cores">
-                <div class="branco">
-                  <div class="bola-branca"></div>
-                </div>
-                <div class="azul">
-                 <div class="bola-azul"></div>
-                </div>
-                <div class="preto">
-                  <div class="bola-preta"></div>
-                </div>
-                <div class="vermelho">
-                  <div class="bola-vermelha"></div>
-                </div>
-                <div class="cinza">
-                  <div class="bola-cinza"></div>
-                </div>
+            <div class="conteudo-cores">
+              <div class="branco">
+                <div class="bola-branca"></div>
               </div>
+              <div class="azul">
+                <div class="bola-azul"></div>
+              </div>
+              <div class="preto">
+                <div class="bola-preta"></div>
+              </div>
+              <div class="vermelho">
+                <div class="bola-vermelha"></div>
+              </div>
+              <div class="cinza">
+                <div class="bola-cinza"></div>
+              </div>
+            </div>
           </div>
           <div class="conteudo-seguro">
             <div class="titulo-seguro">
@@ -165,12 +165,20 @@
               <div class="seguro-transporte">
                 <input type="checkbox" class="transporte">
                 <label for="transporte">Seguro de Transporte</label>
-                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70" height="70" fill="green"><path d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70"
+                  height="70" fill="green">
+                  <path
+                    d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z" />
+                </svg>
               </div>
               <div class="seguro">
                 <input type="checkbox" class="seguro-veiculo">
                 <label for="seguro-veiculo">Seguro do Veículo</label>
-                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70" height="70" fill="green"><path d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70"
+                  height="70" fill="green">
+                  <path
+                    d="M19.944,2.642,12,.009,4.056,2.642A3,3,0,0,0,2,5.49V12c0,7.524,9.2,11.679,9.594,11.852l.354.157.368-.122C12.712,23.755,22,20.577,22,12V5.49A3,3,0,0,0,19.944,2.642Zm-7.5,11.347a1.873,1.873,0,0,1-1.335.553h-.033a1.872,1.872,0,0,1-1.345-.6l-2.306-2.4L8.868,10.16,11.112,12.5l5.181-5.181,1.414,1.414Z" />
+                </svg>
               </div>
             </div>
           </div>
@@ -194,7 +202,7 @@
                 <hr>
                 <div class="valor">
                   <h4>Valor de Frete</h4>
-                  <p class="conteudo-api" id="frete">0</p>
+                  <p class="conteudo-api" id="frete"></p>
                 </div>
               </div>
             </div>
@@ -203,22 +211,23 @@
           <div class="encomenda">
             <div class="conteudo-encomenda">
               <div class="btEncomenda">
-               <a href="" class="btnCompra">Encomendar</a>
+                <button type="button" class="btnCompra">Encomendar</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </section>
   
   
   
+    <!-- scripts header-footer -->
+    <script src="/src/js/test-header.js"></script>
+    <script src="/src/js/function-body.js"></script>
+    <script src="/src/js/carrossel-compra.js"></script>
+    <script src="/src/js/botoes-carrossel-compra.js"></script>
+    <script src="/src/js/api-consulta-cep.js"></script>
+    <script src="/src/js/compra.js"></script>
+    <!--  -->
+  </body>
   
-      <!-- scripts header-footer -->
-      <script src="/src/js/test-header.js"></script>
-      <script src="/src/js/function-body.js"></script>
-      <script src="/src/js/carrossel-compra.js"></script>
-      <script src="/src/js/api-consulta-cep.js"></script>
-      <script src="/src/js/compra.js"></script>
-      <!--  -->
-    </body>
   </html>

@@ -154,11 +154,11 @@ h1 {
 .preto.active,
 .vermelho.active,
 .cinza.active {
-  transform: scale(1.1);
-  transition: 0.7s;
-  z-index: 1;
-  opacity: 1;
-  cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s;
+    z-index: 1;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .conteudo-cores {
@@ -243,6 +243,11 @@ h1 {
     cursor: pointer;
 }
 
+.conteudo-cores {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+}
 
 
 /*  */
@@ -412,19 +417,20 @@ hr {
 /*  */
 
 /* SEXTA SEÇÃO */
-.conteudo-encomenda{
+.conteudo-encomenda {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.btEncomenda{
+.btEncomenda {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.btnCompra{
+.btnCompra {
     background-color: #3e6ae1;
     color: #ffffff;
     padding: 1rem;
@@ -436,9 +442,8 @@ hr {
     transition: 0.7s;
 }
 
-.btnCompra:hover{
+.btnCompra:hover {
     background-color: #2a4f8a;
     transition: 0.7s;
     transform: scale(1.09);
 }
-
