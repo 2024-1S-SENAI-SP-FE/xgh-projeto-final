@@ -32,3 +32,28 @@ document.querySelector('#btnConsulta').addEventListener('click', function(){
     }
 
 });
+
+document.querySelector('#btnConsulta').addEventListener('click', function() {
+    const myToken = '7de32f21d1de7895a4bd24232e759e599eeb8397'; 
+    const cep = document.querySelector('#CEP').value;
+
+
+    fetch(`https://www.cepcerto.com/ws/json-frete-personalizado/04266060/${cep}/5.0/7de32f21d1de7895a4bd24232e759e599eeb8397`, {
+        method: 'GET',
+        headers: {
+            'Content-type': 'application/json',
+            'Authorization': `Bearer ${myToken}`
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        let outFrete = "";
+        outFrete += JSON.stringify(data.valorFrete, null, 2);
+        const frete = document.querySelector('#frete');
+        frete.innerHTML = outFrete;
+
+        document.querySelector('#frete').innerHTML = JSON.stringify(data.valorFrete, null, 2);
+    })
+    .catch(error => console.error('Error:', error));
+});
