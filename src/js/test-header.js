@@ -17,19 +17,37 @@ function createHeader() {
     const divNomeMustang = document.createElement('div');
     divNomeMustang.classList = 'nome-mustang';
 
+    //menu hamburguer
+
+    // const menuHamburguer = document.createElement('button');
+    // menuHamburguer.id = 'menu-hamburguer';
+    // menuHamburguer.className = 'menu-hamburguer';
+    // menuHamburguer.innerHTML = `
+    // <span></span>
+    // <span></span>
+    // <span></span>
+    // `;
+
+    // document.body.appendChild(menuHamburguer);
+
+    // document.querySelector('#menu-hamburguer').addEventListener('click', () => {
+        
+        //menu-navegacao
+        // const menu = document.createElement('div');
+        // menu.id = 'menu';
+        // menu.className = 'menu';
+        // const menuContent = document.createElement('div');
+        // menuContent.className = 'menu-conteudo';
+        // menu.appendChild(menuContent);
+
+        // menu aberto
+    //     const ul = document.createElement('ul')
+    //     const itensMenu = []
+    // })
+
     // criar ancora-home
     const ancoraHome = document.createElement('a');
     ancoraHome.setAttribute('href', '../../../index.html');
-
-    // criar div botao hamburguer
-    const btHam = document.createElement('div');
-    btHam.classList = 'menu-hamburguer';
-
-    const menuUl = document.createElement('ul');
-    menuUl.classList = 'menu';
-
-    const a = document.createElement('a')
-    a.classList 
 
     // criar svg-logo
     const svgLogo = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
