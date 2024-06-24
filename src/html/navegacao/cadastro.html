@@ -54,18 +54,23 @@
                     window.alert('Senhas não conferem')
                 }
 
-                function cadastrarUsuario(cadastrarPost){
-                    const requisicaoPost = new Request('http://localhost:3000/usuarios', {
-                        "method": "POST",
-                        "headers": {
-                        "Content-type": "application/json"
-                        },
-                        "body": JSON.stringify(cadastrarPost)
-                    })
-                    fetch(requisicaoPost)
-                }
-                document.querySelector('#btn-cadastrar').addEventListener('click', cadastraUser(cadastrarPost))
             }
+            function cadastrarUsuario(cadastrarPost){
+                const requisicaoPost = new Request('http://localhost:3000/usuarios', {
+                    "method": "POST",
+                    "headers": {
+                    "Content-type": "application/json"
+                    },
+                    "body": JSON.stringify(cadastrarPost)
+                })
+                fetch(requisicaoPost)
+            }
+            document.querySelector('#btn-cadastrar').addEventListener('click', cadastraUser(cadastrarPost))
+            // document.querySelector('#btn-cadastrar').addEventListener('click',()=>{
+            //     window.alert('Cadastrado com Sucesso!');
+            //     window.location.href = 'http://127.0.0.1:5501/src/html/navegacao/login.html'
+
+            // })
      </script>
 </body>
 </html>
