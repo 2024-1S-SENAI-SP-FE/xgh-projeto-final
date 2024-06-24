@@ -60,7 +60,6 @@ h1 {
     flex: 1 1 auto;
     overflow-y: auto;
     padding: 1rem;
-    transition: 0.7s;
 }
 
 .setup-carros,
@@ -72,10 +71,6 @@ h1 {
     margin-right: 3rem;
 }
 
-.conteudo:hover {
-    transform: scale(1.01);
-    transition: 0.7s;
-}
 
 .container-geral {
     display: flex;
@@ -99,6 +94,8 @@ h1 {
     display: inline-flex;
     flex-direction: column;
     padding: 0.8rem;
+    transition: 0.6s;
+    border-radius: 12px;
 }
 
 .nome-torque,
@@ -147,6 +144,22 @@ h1 {
 
 
 /* TERCEIRA SEÇÃO  */
+.branco:hover,
+.azul:hover,
+.preto:hover,
+.vermelho:hover,
+.cinza:hover,
+.branco.active,
+.azul.active,
+.preto.active,
+.vermelho.active,
+.cinza.active {
+  transform: scale(1.1);
+  transition: 0.7s;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+}
 
 .conteudo-cores {
     display: flex;
@@ -164,6 +177,7 @@ h1 {
     opacity: 0.5;
     transition: 0.7s;
 }
+
 
 .bola-branca {
     display: flex;
@@ -228,6 +242,8 @@ h1 {
     opacity: 1;
     cursor: pointer;
 }
+
+
 
 /*  */
 
@@ -319,8 +335,9 @@ input[type="checkbox"] {
 .container-frete input {
     margin-left: 5px;
     width: 13rem;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: 2px solid #3e6ae1;
+    padding: 5px;
 }
 
 #CEP:focus {
@@ -346,7 +363,8 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .conteudo-api {
@@ -392,3 +410,35 @@ hr {
 }
 
 /*  */
+
+/* SEXTA SEÇÃO */
+.conteudo-encomenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btEncomenda{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btnCompra{
+    background-color: #3e6ae1;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: #ffffff;
+    transition: 0.7s;
+}
+
+.btnCompra:hover{
+    background-color: #2a4f8a;
+    transition: 0.7s;
+    transform: scale(1.09);
+}
+
