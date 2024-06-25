@@ -2,6 +2,7 @@
     font-family: NeueHaas;
     src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
 }
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
@@ -14,310 +15,1491 @@
 body {
     height: 100vh;
 }
-    ::-webkit-scrollbar-track{
-        background-color: transparent;
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+@media screen and (min-width: 1366px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
+
+    #home {
+        height: 88vh;
     }
-    
-    ::-webkit-scrollbar-thumb{
-        background-color: rgba(0, 0, 0, 0.5); 
-        border-radius: 10px 
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
     }
-    
-    ::-webkit-scrollbar{
-        width: 8px;
+
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
     }
 
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
 
-/* <=================SESSÃO HOME E VÍDEO===================> */
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
 
-#home {
-    height: 88vh;
+    /* <====================7° GERAÇÃO=======================> */
+
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
+
+    #model-7 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================6° GERAÇÃO=======================> */
+
+    #model-6 .btGeracao {
+        top: 92%;
+    }
+
+    /* <====================5° GERAÇÃO=======================> */
+
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
+
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================4° GERAÇÃO=======================> */
+
+    #model-4 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================3° GERAÇÃO=======================> */
+
+    #model-3 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================2° GERAÇÃO=======================> */
+
+
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
+
+
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
+
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
+
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
+
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
+
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
+
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
+
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
+
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }
 
-#home img{
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+@media screen and (max-width: 320px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
+
+    #home {
+        height: 88vh;
+    }
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    /* <====================7° GERAÇÃO=======================> */
+
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
+
+    #model-7 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================6° GERAÇÃO=======================> */
+
+    #model-6 .btGeracao {
+        top: 92%;
+    }
+
+    /* <====================5° GERAÇÃO=======================> */
+
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
+
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================4° GERAÇÃO=======================> */
+
+    #model-4 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================3° GERAÇÃO=======================> */
+
+    #model-3 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================2° GERAÇÃO=======================> */
+
+
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
+
+
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
+
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
+
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
+
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
+
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
+
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
+
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
+
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }
 
-.geracao{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
+
+    #home {
+        height: 88vh;
+    }
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    /* <====================7° GERAÇÃO=======================> */
+
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
+
+    #model-7 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================6° GERAÇÃO=======================> */
+
+    #model-6 .btGeracao {
+        top: 92%;
+    }
+
+    /* <====================5° GERAÇÃO=======================> */
+
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
+
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================4° GERAÇÃO=======================> */
+
+    #model-4 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================3° GERAÇÃO=======================> */
+
+    #model-3 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================2° GERAÇÃO=======================> */
+
+
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
+
+
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
+
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
+
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
+
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
+
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
+
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
+
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
+
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }
 
-.geracao img{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 50% 50%;
+@media screen and (min-width: 321px) and (max-width: 450px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
+
+    #home {
+        height: 88vh;
+    }
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    /* <====================7° GERAÇÃO=======================> */
+
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
+
+    #model-7 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================6° GERAÇÃO=======================> */
+
+    #model-6 .btGeracao {
+        top: 92%;
+    }
+
+    /* <====================5° GERAÇÃO=======================> */
+
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
+
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================4° GERAÇÃO=======================> */
+
+    #model-4 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================3° GERAÇÃO=======================> */
+
+    #model-3 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================2° GERAÇÃO=======================> */
+
+
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
+
+
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
+
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
+
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
+
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
+
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
+
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
+
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
+
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }
 
-.video-home {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
-/* <====================7° GERAÇÃO=======================> */
+@media screen and (min-width: 451px) and (max-width: 800px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
 
-#model-7 .titulo-model{
-    color: #F4F4F4;
-}
+    #home {
+        height: 88vh;
+    }
 
-#model-7 .sub-model{
-    color: #F4F4F4;
-}
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
 
-#model-7 .ancoraTexto {
-    top: 16%;
-}
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
 
-#model-7 .btGeracao {
-    top: 85%;
-}
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
 
-/* <====================6° GERAÇÃO=======================> */
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
 
-#model-6 .btGeracao {
-    top: 92%;
-}
+    /* <====================7° GERAÇÃO=======================> */
 
-/* <====================5° GERAÇÃO=======================> */
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
 
-#model-5 .ancoraTexto {
-    top: 14%;
-}
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
 
-#model-5 .titulo-model{
-    color: #F4F4F4;
-}
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
 
-#model-5 .sub-model{
-    color: #F4F4F4;
-}
+    #model-7 .btGeracao {
+        top: 85%;
+    }
 
-#model-5 .btGeracao {
-    top: 85%;
-}
+    /* <====================6° GERAÇÃO=======================> */
 
-/* <====================4° GERAÇÃO=======================> */
+    #model-6 .btGeracao {
+        top: 92%;
+    }
 
-#model-4 .btGeracao {
-    top: 85%;
-}
+    /* <====================5° GERAÇÃO=======================> */
 
-/* <====================3° GERAÇÃO=======================> */
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
 
-#model-3 .btGeracao {
-    top: 90%;
-}
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
 
-/* <====================2° GERAÇÃO=======================> */
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
 
+    #model-5 .btGeracao {
+        top: 85%;
+    }
 
-#model-2 .titulo-model{
-    color: #F4F4F4;
-}
+    /* <====================4° GERAÇÃO=======================> */
 
-#model-2 .sub-model{
-    color: #F4F4F4;
-}
+    #model-4 .btGeracao {
+        top: 85%;
+    }
 
-#model-2 .btGeracao {
-    top: 90%;
-}
+    /* <====================3° GERAÇÃO=======================> */
 
-/* <====================1° GERAÇÃO=======================> */
+    #model-3 .btGeracao {
+        top: 90%;
+    }
 
-
-#model-1 .titulo-model{
-    color: #F4F4F4;
-}
-
-#model-1 .sub-model{
-    color: #F4F4F4;
-}
-
-/* <==============TÍTULO E BOTÕES DAS SESSÕES==============> */
-
-.ancoraTexto {
-    position: absolute;
-    top: 15%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* font-size: 1rem; */
-}
-
-h2,
-h3 {
-    font-family: NeueHaas, sans-serif;
-    font-weight: 100;
-}
-
-.ancoraTexto h2{
-    font-size: 2rem;
-}
-
-.ancoraTexto h3{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-.btGeracao{
-    position: absolute;
-    top: 80%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.btDetalhes{
-    cursor: pointer;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: #F4F4F4;
-    color: #393C41;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.btDetalhes:hover {
-    background-color: #c9c7c7;
-}
-
-.btComprar:hover {
-    background-color: rgba(76, 107, 206, 0.8);
-}
-
-.btComprar{
-    cursor: pointer;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: #3E6AE1;
-    color: #F4F4F4;
-    height: 2.5rem;
-    width: 17rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
+    /* <====================2° GERAÇÃO=======================> */
 
 
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
 
 
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
 
-/* <===============BOTÃO SUPORTE=====+========> */
-.btn-suporte {
-    margin-right: 10px;
-    margin-bottom: 5px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border: none;
-    background: none;
-}
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
 
-/* <=================FOOTER===================> */
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
 
-.footer-design{
-    background-color: #1E2022;
- 
-}
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
 
-.logo-conteiner {
-    display: flex;
-    justify-content: center;
-}
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
 
-.logo-conteiner>svg{
-    margin-top: 40px;
-}
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
 
-.logo-conteiner>svg{
-    margin-top: 40px;
-}
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
 
-.topico-contato {
-    justify-content: space-around;
-    display: flex;
-    color:#F0F5F9;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px;
-    gap: 20rem;
-}
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
 
-.developers{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
 
-.midia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
 
-.topico-contato h3{
-    margin-bottom: 15px;
-    color: white;
-}
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
 
-.copyright{
-    color: #828282;
-    display: flex;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-bottom: 1rem;
-}
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
 
-.comemoracao{
-    padding: 5px;
-}
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
 
-.comemoracao:hover{
-    background-color:#eeeeee;
-    border-radius: 5px;      
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }
 
-.sobre-nos{
-    padding: 5px; 
-}
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+    /* <=================SEÇÃO HOME E VÍDEO===================> */
 
-.sobre-nos:hover{
-    background-color:#eeeeee;
-    border-radius: 5px;
-}
+    #home {
+        height: 88vh;
+    }
 
-#header{
-    z-index: 2;
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .geracao {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .geracao img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .video-home {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    /* <====================7° GERAÇÃO=======================> */
+
+    #model-7 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-7 .ancoraTexto {
+        top: 16%;
+    }
+
+    #model-7 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================6° GERAÇÃO=======================> */
+
+    #model-6 .btGeracao {
+        top: 92%;
+    }
+
+    /* <====================5° GERAÇÃO=======================> */
+
+    #model-5 .ancoraTexto {
+        top: 14%;
+    }
+
+    #model-5 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-5 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================4° GERAÇÃO=======================> */
+
+    #model-4 .btGeracao {
+        top: 85%;
+    }
+
+    /* <====================3° GERAÇÃO=======================> */
+
+    #model-3 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================2° GERAÇÃO=======================> */
+
+
+    #model-2 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .sub-model {
+        color: #F4F4F4;
+    }
+
+    #model-2 .btGeracao {
+        top: 90%;
+    }
+
+    /* <====================1° GERAÇÃO=======================> */
+
+
+    #model-1 .titulo-model {
+        color: #F4F4F4;
+    }
+
+    #model-1 .sub-model {
+        color: #F4F4F4;
+    }
+
+    /* <==============TÍTULO E BOTÕES DAS SEÇÕES==============> */
+
+    .ancoraTexto {
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: 1rem; */
+    }
+
+    h2,
+    h3 {
+        font-family: NeueHaas, sans-serif;
+        font-weight: 100;
+    }
+
+    .ancoraTexto h2 {
+        font-size: 2rem;
+    }
+
+    .ancoraTexto h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .btGeracao {
+        position: absolute;
+        top: 80%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btDetalhes {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #F4F4F4;
+        color: #393C41;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .btDetalhes:hover {
+        background-color: #c9c7c7;
+    }
+
+    .btComprar:hover {
+        background-color: rgba(76, 107, 206, 0.8);
+    }
+
+    .btComprar {
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #3E6AE1;
+        color: #F4F4F4;
+        height: 2.5rem;
+        width: 17rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    /* <===============BOTÃO SUPORTE=====+========> */
+    .btn-suporte {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+
+    .comemoracao {
+        padding: 5px;
+    }
+
+    .comemoracao:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    .sobre-nos {
+        padding: 5px;
+    }
+
+    .sobre-nos:hover {
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #header {
+        z-index: 2;
+    }
+
 }

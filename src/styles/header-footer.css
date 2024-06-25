@@ -7,6 +7,10 @@
 @media screen and (min-width: 1366px) {
     /* HEADER  */
 
+    #home-mobile{
+        display: none;
+    }
+
     .menu-navegacao>ul {
         display: inline-flex;
         gap: 5rem;
@@ -147,70 +151,15 @@
 
 @media screen and (max-width: 320px) {
 
-
-
-    /* HEADER  */
-
-    .menu-navegacao>ul {
-        display: inline-flex;
-        gap: 5rem;
-        font-weight: 100;
+    #home-mobile {
+        background-color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 20px;
+        border: solid 1px black;
+        border-radius: 50%;
     }
-
-    .menu-navegacao {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        top: 0.5rem;
-    }
-
-    .menu-navegacao a {
-        text-decoration: none;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        color: #000000;
-        font-family: NeueHaas, sans-serif;
-        font-size: 1rem;
-    }
-
-    .icones-menu button {
-        border: none;
-        background: none;
-    }
-
-    .icones-menu {
-        display: inline-flex;
-        gap: 10px;
-    }
-
-    .logo-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .nome-mustang {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-menu a svg {
-        width: 100px;
-    }
-
-    .nome-mustang img {
-        width: 100px;
-    }
-
-    header {
-        z-index: 2;
-    }
-
-
-
 
     /* FOOTER  */
 
@@ -272,16 +221,6 @@
     .sobre-nos {
         padding: 5px;
     }
-
-    /* Erro de hover */
-    .sobre-nos:hover {
-        background-color: #eeeeee;
-        border-radius: 5px;
-    }
-
-    #header {
-        z-index: 2;
-    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
@@ -289,6 +228,11 @@
 
 
     /* HEADER  */
+
+    #home-mobile{
+        display: none;
+    }
+
 
     .menu-navegacao>ul {
         display: inline-flex;
@@ -430,74 +374,20 @@
 
 @media screen and (min-width: 321px) and (max-width: 450px) {
 
-
-
-    /* HEADER  */
-
-    .menu-navegacao>ul {
-        display: inline-flex;
-        gap: 5rem;
-        font-weight: 100;
+    #home-mobile {
+        background-color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 20px;
+        border: solid 1px black;
+        border-radius: 50%;
     }
-
-    .menu-navegacao {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        top: 0.5rem;
-    }
-
-    .menu-navegacao a {
-        text-decoration: none;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        color: #000000;
-        font-family: NeueHaas, sans-serif;
-        font-size: 1rem;
-    }
-
-    .icones-menu button {
-        border: none;
-        background: none;
-    }
-
-    .icones-menu {
-        display: inline-flex;
-        gap: 10px;
-    }
-
-    .logo-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .nome-mustang {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-menu a svg {
-        width: 100px;
-    }
-
-    .nome-mustang img {
-        width: 100px;
-    }
-
-    header {
-        z-index: 2;
-    }
-
-
-
 
     /* FOOTER  */
 
     .footer-design {
+        width: 100vw;
         background-color: #000;
     }
 
@@ -506,21 +396,17 @@
         justify-content: center;
     }
 
-    .logo-conteiner>svg {
-        margin-top: 40px;
-    }
-
-    .logo-conteiner>svg {
-        margin-top: 40px;
+    .logo-conteiner > svg {
+        margin-top: 15px;
     }
 
     .topico-contato {
-        justify-content: space-around;
         display: flex;
+        justify-content: space-around;
         color: #F0F5F9;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 10px;
-        gap: 20rem;
+        gap: 20px;
     }
 
     .developers {
@@ -531,8 +417,6 @@
 
     .midia {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .topico-contato h3 {
@@ -545,7 +429,7 @@
         display: flex;
         justify-content: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding-bottom: 1rem;
+        padding-bottom: 5px;
     }
 
     .comemoracao {
@@ -578,70 +462,20 @@
 
     /* HEADER  */
 
-    .menu-navegacao>ul {
-        display: inline-flex;
-        gap: 5rem;
-        font-weight: 100;
+    #home-mobile {
+        background-color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 20px;
+        border: solid 1px black;
+        border-radius: 50%;
     }
-
-    .menu-navegacao {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        top: 0.5rem;
-    }
-
-    .menu-navegacao a {
-        text-decoration: none;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        color: #000000;
-        font-family: NeueHaas, sans-serif;
-        font-size: 1rem;
-    }
-
-    .icones-menu button {
-        border: none;
-        background: none;
-    }
-
-    .icones-menu {
-        display: inline-flex;
-        gap: 10px;
-    }
-
-    .logo-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .nome-mustang {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-menu a svg {
-        width: 100px;
-    }
-
-    .nome-mustang img {
-        width: 100px;
-    }
-
-    header {
-        z-index: 2;
-    }
-
-
-
 
     /* FOOTER  */
 
     .footer-design {
+        width: 100vw;
         background-color: #000;
     }
 
@@ -650,21 +484,17 @@
         justify-content: center;
     }
 
-    .logo-conteiner>svg {
-        margin-top: 40px;
-    }
-
-    .logo-conteiner>svg {
-        margin-top: 40px;
+    .logo-conteiner > svg {
+        margin-top: 15px;
     }
 
     .topico-contato {
-        justify-content: space-around;
         display: flex;
+        justify-content: space-around;
         color: #F0F5F9;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 10px;
-        gap: 20rem;
+        gap: 20px;
     }
 
     .developers {
@@ -675,8 +505,6 @@
 
     .midia {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .topico-contato h3 {
@@ -689,7 +517,7 @@
         display: flex;
         justify-content: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding-bottom: 1rem;
+        padding-bottom: 5px;
     }
 
     .comemoracao {
@@ -722,70 +550,19 @@
 
     /* HEADER  */
 
-    .menu-navegacao>ul {
-        display: inline-flex;
-        gap: 5rem;
-        font-weight: 100;
+    #home-mobile {
+        background-color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 20px;
+        border: solid 1px black;
+        border-radius: 50%;
     }
-
-    .menu-navegacao {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        top: 0.5rem;
-    }
-
-    .menu-navegacao a {
-        text-decoration: none;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        color: #000000;
-        font-family: NeueHaas, sans-serif;
-        font-size: 1rem;
-    }
-
-    .icones-menu button {
-        border: none;
-        background: none;
-    }
-
-    .icones-menu {
-        display: inline-flex;
-        gap: 10px;
-    }
-
-    .logo-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .nome-mustang {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-menu a svg {
-        width: 100px;
-    }
-
-    .nome-mustang img {
-        width: 100px;
-    }
-
-    header {
-        z-index: 2;
-    }
-
-
-
 
     /* FOOTER  */
-
     .footer-design {
+        width: 100vw;
         background-color: #000;
     }
 
@@ -794,21 +571,17 @@
         justify-content: center;
     }
 
-    .logo-conteiner>svg {
-        margin-top: 40px;
-    }
-
-    .logo-conteiner>svg {
-        margin-top: 40px;
+    .logo-conteiner > svg {
+        margin-top: 15px;
     }
 
     .topico-contato {
-        justify-content: space-around;
         display: flex;
+        justify-content: space-around;
         color: #F0F5F9;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 10px;
-        gap: 20rem;
+        gap: 20px;
     }
 
     .developers {
@@ -819,8 +592,6 @@
 
     .midia {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .topico-contato h3 {
@@ -833,7 +604,7 @@
         display: flex;
         justify-content: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding-bottom: 1rem;
+        padding-bottom: 5px;
     }
 
     .comemoracao {
