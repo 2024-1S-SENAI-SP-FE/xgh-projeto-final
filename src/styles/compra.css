@@ -50,6 +50,14 @@ h1 {
     margin-top: 2.5rem;
 }
 
+h2{
+    font-family: NeueHaas;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
 .conteudo {
     margin-top: 20px;
     height: 85vh;
@@ -342,7 +350,12 @@ input[type="checkbox"] {
     width: 13rem;
     border-radius: 10px;
     border: 2px solid #3e6ae1;
-    padding: 5px;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.container-frete:hover{
+    cursor: pointer;
 }
 
 #CEP:focus {
@@ -391,12 +404,6 @@ input[type="checkbox"] {
 
 }
 
-.valor:hover,
-.endereco:hover {
-    transform: scale(1.01);
-    transition: 0.7s;
-    background-color: #dedede5d;
-}
 
 .endereco h4 {
     font-family: NeueHaas;
@@ -443,6 +450,6 @@ hr {
 }
 
 .btnCompra:hover {
+    background-color: #2a4c7f;
     transition: 0.7s;
-    transform: scale(1.04);
 }
