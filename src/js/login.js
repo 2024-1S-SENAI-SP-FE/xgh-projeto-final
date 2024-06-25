@@ -3,6 +3,7 @@ document.querySelector('#btnLogin').addEventListener('click', ()=>{
     validLogin();
 })
 
+function validLogin() {
 // Função reponsável pela aquisição dos inputs e chamada de requisição do tipo POST
 function validLogin(){
     const email = document.querySelector('#email').value;
@@ -49,6 +50,11 @@ document.querySelector('#btSenha').addEventListener('click', () => {
     if (passwordInput.type === 'text') {
         passwordInput.type = 'password';
     } else {
+    if (passwordInput.type === 'text') {
+        passwordInput.type = 'password';
+    } else {
         passwordInput.type = 'text';
     }
+    }
 })
+
