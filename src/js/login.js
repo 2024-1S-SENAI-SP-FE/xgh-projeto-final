@@ -3,8 +3,6 @@ document.querySelector('#btnLogin').addEventListener('click', ()=>{
     validLogin();
 })
 
-function validLogin() {
-// Função reponsável pela aquisição dos inputs e chamada de requisição do tipo POST
 function validLogin(){
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
