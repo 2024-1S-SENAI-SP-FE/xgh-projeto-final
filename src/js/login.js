@@ -48,11 +48,7 @@ document.querySelector('#btSenha').addEventListener('click', () => {
     if (passwordInput.type === 'text') {
         passwordInput.type = 'password';
     } else {
-    if (passwordInput.type === 'text') {
-        passwordInput.type = 'password';
-    } else {
         passwordInput.type = 'text';
-    }
     }
 })
 
