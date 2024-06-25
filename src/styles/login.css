@@ -9,11 +9,12 @@
 
 h1 {
     font-family: "DM Sans", sans-serif;
+    padding-bottom: 36px;
     font-size: 2.4rem;
 }
 
 main {
-    height: 69vh;
+    height: 87vh;
 }
 
 .login {
@@ -47,6 +48,7 @@ main {
 }
 
 .elementos {
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -58,20 +60,39 @@ a{
 }
 
 span {
-    margin: 2rem;
+    margin: 1.8rem;
 }
 
 .btnLogin {
     color: #fff;
     background-color: #3E6AE1;
     margin-bottom: 2rem;
+    margin-top: 16px;
 }
 
 input {
-    margin: 8px 0 0 0;
+    padding-left: 10px;
+    margin: 8px 0 8px 0;
     border: none;
     background-color: #F4F4F4;
     height: 2.4rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.senha button {
+    padding-right: 10px;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    background-color: #F4F4F4;
 }
 
 input:focus {
@@ -80,4 +101,82 @@ input:focus {
 
 label {
     color: #5c5e62;
+}
+
+/* <==============HEADER===============> */
+
+.menu-navegacao>ul {
+    display: inline-flex;
+    gap: 5rem;
+    font-weight: 100;
+}
+
+.menu-navegacao {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0.5rem;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-family: NeueHaas, sans-serif;
+    font-size: 1rem;
+}
+
+.icones-menu button {
+    padding-right   : 16px;
+    border: none;
+    background: none;
+}
+
+.icones-menu {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.logo-menu {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nome-mustang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-menu a svg {
+    width: 100px;
+}
+
+.nome-mustang img {
+    width: 100px;
+}
+
+header {
+    z-index: 2;
+}
+
+.img-header {
+    filter: grayscale(100%) brightness(0%);
+}
+
+/* <===================FOOTER====================> */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #393c41;
 }
