@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro</title>
+    <title>Mustang - Registrar</title>
     <link rel="stylesheet" href="/src/styles/cadastro.css">
     <link rel="shorcut icon" href="/src/img/logo.svg">
     <!-- <link rel="stylesheet" href="estilos.css"> -->
 </head>
+
 <body>
 
     <header>
@@ -42,74 +44,80 @@
         </nav>
     </header>
 
-    <div class="container-cadastro">
-        <h1>Cadastro</h1>
-        <!-- <form id="formCadastro"> -->
-            <div class="grupo-input">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome-cadastro" name="nome" required>
+    <main>
+        <div class="cadastro">
+            <div class="container-cadastro">
+                <h1>Criar uma conta</h1>
+                <!-- <form id="formCadastro"> -->
+                <div class="grupo-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome-cadastro" name="nome" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email-cadastro" name="email" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha-cadastro" name="senha" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="confirmaSenha">Confirme a Senha</label>
+                    <input type="password" id="confirmaSenha-cadastro" name="confirmaSenha" required>
+                </div>
+                <button type="button" id="btn-cadastrar">Cadastrar</button>
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+                <p id="mensagem"></p>
+                <!-- </form> -->
             </div>
-            <div class="grupo-input">
-                <label for="email">Email</label>
-                <input type="email" id="email-cadastro" name="email" required>
-            </div>
-            <div class="grupo-input">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha-cadastro" name="senha" required>
-            </div>
-            <div class="grupo-input">
-                <label for="confirmaSenha">Confirme a Senha</label>
-                <input type="password" id="confirmaSenha-cadastro" name="confirmaSenha" required>
-            </div>
-            <button type="button" id="btn-cadastrar">Cadastrar</button>
-            <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
-            <p id="mensagem"></p>
-        <!-- </form> -->
-    </div>
+        </div>
+    </main>
 
     <footer>
         <p class="copyright">© 2024 eXtreme Go Horse. Todos os direitos reservados.</p>
     </footer>
+
     <!-- <script src="/src/js/login.js"></script> -->
-     <script>
+    <script>
         // Botão de cadastro
-        document.querySelector('#btn-cadastrar').addEventListener('click', ()=>{
+        document.querySelector('#btn-cadastrar').addEventListener('click', () => {
             validaSenha();
         })
-        
-            function validaSenha(){
-                const senha = document.querySelector('#senha-cadastro').value;
-                const confirmaSenha = document.querySelector('#confirmaSenha-cadastro').value;
 
-                if(senha === confirmaSenha){
-                    // Envia os dados para o servidor
-                    const cadastrarPost = {
-                        "nome": document.querySelector('#nome-cadastro').value,
-                        "email": document.querySelector('#email-cadastro').value,
-                        "senha": document.querySelector('#senha-cadastro').value,
-                    }
-                    cadastrarUsuario(cadastrarPost)
-                }else{
-                    window.alert('Senhas não conferem')
+        function validaSenha() {
+            const senha = document.querySelector('#senha-cadastro').value;
+            const confirmaSenha = document.querySelector('#confirmaSenha-cadastro').value;
+
+            if (senha === confirmaSenha) {
+                // Envia os dados para o servidor
+                const cadastrarPost = {
+                    "nome": document.querySelector('#nome-cadastro').value,
+                    "email": document.querySelector('#email-cadastro').value,
+                    "senha": document.querySelector('#senha-cadastro').value,
                 }
-
+                cadastrarUsuario(cadastrarPost)
+            } else {
+                window.alert('Senhas não conferem')
             }
-            function cadastrarUsuario(cadastrarPost){
-                const requisicaoPost = new Request('http://localhost:3000/usuarios', {
-                    "method": "POST",
-                    "headers": {
+
+        }
+        function cadastrarUsuario(cadastrarPost) {
+            const requisicaoPost = new Request('http://localhost:3000/usuarios', {
+                "method": "POST",
+                "headers": {
                     "Content-type": "application/json"
-                    },
-                    "body": JSON.stringify(cadastrarPost)
-                })
-                fetch(requisicaoPost)
-            }
-            document.querySelector('#btn-cadastrar').addEventListener('click', cadastraUser(cadastrarPost))
-            // document.querySelector('#btn-cadastrar').addEventListener('click',()=>{
-            //     window.alert('Cadastrado com Sucesso!');
-            //     window.location.href = 'http://127.0.0.1:5501/src/html/navegacao/login.html'
+                },
+                "body": JSON.stringify(cadastrarPost)
+            })
+            fetch(requisicaoPost)
+        }
+        document.querySelector('#btn-cadastrar').addEventListener('click', cadastraUser(cadastrarPost))
+        // document.querySelector('#btn-cadastrar').addEventListener('click',()=>{
+        //     window.alert('Cadastrado com Sucesso!');
+        //     window.location.href = 'http://127.0.0.1:5501/src/html/navegacao/login.html'
 
-            // })
-     </script>
+        // })
+    </script>
 </body>
+
 </html>
