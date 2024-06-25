@@ -32,6 +32,10 @@ section{
     padding: 2.9rem;
 }
 
+section:last-child{
+    padding: 0;
+}
+
 .container-nos{
     padding: 4rem;
 }
