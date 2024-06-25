@@ -42,7 +42,7 @@ body {
 
 /* GERAL  */
 
-h1 {
+h1,h2 {
     font-family: NeueHaas;
     font-size: 1.8rem;
     text-align: center;
@@ -445,4 +445,98 @@ hr {
 .btnCompra:hover {
     transition: 0.7s;
     transform: scale(1.04);
+}
+
+.forma-pagamento{
+    display: none;
+}
+
+.selecao-pagamento{
+    display: flex;
+    width: 400px;
+
+}
+
+.selecao-pagamento button{
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.btnBoleto{
+    padding-left: -250px;
+    background-color: #ffffff;
+}
+
+.btnCartao{
+    margin-left: 200px;
+    background-color: #ffffff;
+}
+
+.btnBoleto:hover{
+    text-decoration:underline 3px;
+}
+
+.btnCartao:hover{
+    text-decoration:underline 3px;
+}
+
+/* ================ */
+/* Divs de forma de pagamento */
+
+.pag-boleto{
+    display: none;
+}
+
+.pag-cartao{
+    display: none;
+}
+
+/* ============== */
+/* Estilização dos forms */
+
+form {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-form {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 8px #3e6ae1;
+    text-transform: uppercase;
+}
+
+#email{
+    text-transform: none;
+}
+
+.validade-cartao select{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 8px #3e6ae1;
+}
+
+.validade-cartao{
+    display: flex;
+}
+
+#btnFinalizar{
+    display: none;
 }
