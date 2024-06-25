@@ -46,9 +46,9 @@ function validLogin(){
 // Botão de visualização de senha
 document.querySelector('#btSenha').addEventListener('click', () => {
     const passwordInput = document.querySelector('#password');
-    if(passwordInput.type === 'password'){
+    if (passwordInput.type === 'text') {
+        passwordInput.type = 'password';
+    } else {
         passwordInput.type = 'text';
-        }else{
-            passwordInput.type = 'password';
-            }
+    }
 })
