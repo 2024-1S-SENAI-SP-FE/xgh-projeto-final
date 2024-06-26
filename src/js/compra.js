@@ -6,6 +6,7 @@ elements.forEach(element => {
   element.style.display = 'none';
 });
 
+// função criada para armazenar a cor selecionada
 function pegaCor() {
   let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
   if (activeElement) {
@@ -14,7 +15,7 @@ function pegaCor() {
   return null;
 }
 
-// Adiciona evento de clique aos divs
+// Adiciona evento de clique aos divs de cores
 document.querySelectorAll('.conteudo-cores > div').forEach(div => {
   div.addEventListener('click', function() {
       document.querySelectorAll('.conteudo-cores > div').forEach(d => {
@@ -28,9 +29,12 @@ document.querySelectorAll('.conteudo-cores > div').forEach(div => {
 
 // Revisão de compra
 document.querySelector('#btnCompra').addEventListener('click', () => {
+  
   const cor = pegaCor();
+  const frete = document.querySelector('#frete').innerHTML;
   console.log(`${cor}`);
   document.querySelector('#cor-selecionada').innerHTML = `Cor selecionada : ${cor}`;
+  document.querySelector('#valor-de-frete').innerHTML = `Valor de frete : US$${frete}`;
 
 });
 
