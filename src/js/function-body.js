@@ -11,7 +11,11 @@ function criaLink(){
     linkStyleDrop.setAttribute('rel', 'stylesheet');
     linkStyleDrop.setAttribute('href', '/src/styles/dropdown.css');
 
-    document.head.append(linkStyle, linkStyleDrop);
+    // const tradutor = document.createElement('script');
+    // tradutor.setAttribute('type', 'text/javascript');
+    // tradutor.setAttribute('src', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
+
+    document.head.append( linkStyle, linkStyleDrop);
     document.querySelector('title').insertAdjacentElement('beforebegin', link);
     corpo();
 }
