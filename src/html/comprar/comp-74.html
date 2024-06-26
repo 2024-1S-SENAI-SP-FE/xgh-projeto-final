@@ -164,7 +164,73 @@
           <div class="encomenda">
             <div class="conteudo-encomenda">
               <div class="btEncomenda">
-                <button type="button" class="btnCompra">Encomendar</button>
+                <button type="button" class="btnCompra" id="btnCompra">Encomendar</button>
+              </div>
+              <div id="forma-pagamento" class="forma-pagamento">
+                <h2>Forma de Pagamento</h2>
+                <div id="selecao-pagamento" class="selecao-pagamento">
+                  <button type="button" id="btnBoleto" class="btnBoleto">Boleto</button>
+                  <button type="button" id="btnCartao" class="btnCartao">Cartão</button>
+                </div>
+                <div id="pag-boleto" class="pag-boleto">
+                  <form id="boleto-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" class="input-form" id="nome" name="nome" required>
+        
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="input-form" id="cpf" name="cpf" required maxlength="11">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" class="input-form" id="email" name="email" required>
+                    
+                  </form>
+                  <button class="btnCompra" id="btnFinalizarBoleto">Finalizar Compra</button>
+                </div>
+  
+                <div id="pag-cartao" class="pag-cartao">
+  
+                  <form id="cartao-form">
+                    <label for="nome-cartao">Nome no Cartão:</label>
+                    <input type="text" class="input-form" id="nome-cartao" name="nome-cartao" required >
+        
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" class="input-form" id="numero-cartao" name="numero-cartao" required maxlength="20">
+        
+                    <label for="validade-cartao">Validade:</label>
+                    <div class="validade-cartao">
+                      <select id="mes" name="mes" required>
+                        <option value="" disabled selected>Mês</option>
+                        <option value="01">Jan</option>
+                        <option value="02">Fev</option>
+                        <option value="03">Mar</option>
+                        <option value="04">Abr</option>
+                        <option value="05">Mai</option>
+                        <option value="06">Jun</option>
+                        <option value="07">Jul</option>
+                        <option value="08">Ago</option>
+                        <option value="09">Set</option>
+                        <option value="10">Out</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dez</option>
+                      </select>
+                      <select id="ano" name="ano" required>
+                        <option value="" disabled selected>Ano</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                      </select>
+                    </div>
+  
+                    <label for="cvv">CVV:</label>
+                    <input type="text" class="input-form" id="cvv" name="cvv" required minlength="3" maxlength="3">
+  
+                  </form>
+                  <button class="btnCompra" id="btnFinalizarCartao">Finalizar Compra</button>
+                </div>
               </div>
             </div>
           </div>
@@ -179,7 +245,7 @@
     <script src="/src/js/carrossel-compra.js"></script>
     <script src="/src/js/botoes-carrossel-compra.js"></script>
     <script src="/src/js/api-consulta-cep.js"></script>
-    <script src="/src/js/compra.js"></script>
+    <script src="/src/js/compra.js" ></script>
     <!--  -->
   </body>
   
