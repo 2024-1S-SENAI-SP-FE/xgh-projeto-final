@@ -3,6 +3,8 @@
     src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,22 @@ h1 {
     margin-bottom: 2.5rem;
     font-family: NeueHaas;
 }
-body{
+
+body {
     background-color: rgb(228, 228, 228);
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
 }
 
 .texto-sobre {
@@ -24,8 +40,13 @@ body{
     font-size: 1.1rem;
     max-width: 600px;
     line-height: 1.5;
-    text-align: left;
-    font-family: NeueHaas;
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+}
+
+.texto-sobre b{
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
 }
 
 section{
