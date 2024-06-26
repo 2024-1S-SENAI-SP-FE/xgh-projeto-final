@@ -6,6 +6,23 @@
     <title>Recuperar Senha</title>
     <link rel="stylesheet" href="/src/styles/login.css">
     <link rel="shorcut icon" href="/src/img/logo.svg">
+    <style>
+        .container {
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+
+        form{
+            width: 300px;
+        }
+
+        .botoes,
+        .btnLogin{
+            margin-top: 10px;
+            width: 300px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -46,11 +63,13 @@
                 <form action="">
                     <label for="email">Email</label><br>
                     <input type="email" name="email" id="email">
+                    <div class="botoes">
+                        <button type="button" id="btnRecuperar" class="btnLogin">Enviar</button>
+                    </div>
+                    <label for="resultado">Senha</label><br>
+                    <input type="text" name="resultado" id="senhaRecuperada" class="resultado">
+                    <!-- <div id="senhaRecuperada" class="resultado"></div> -->
                 </form>
-                <div class="botoes">
-                    <button type="button" id="btnRecuperar" class="btnLogin">Enviar</button>
-                </div>
-                <div id="senhaRecuperada"></div>
             </div>
         </div>
 
