@@ -461,7 +461,7 @@ hr {
 
 .selecao-pagamento {
     display: flex;
-    width: 400px;
+    width: 375px;
 
 }
 
@@ -595,8 +595,74 @@ label {
 }
 
 /* REVISAR COMPRA */
-/* .resumo-compra{
+.resumo-compra{
     display: none;
-} */
+}
+.conteudo-resumo {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.conteudo-resumo h6 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex: 1;
+    text-align: left;
+}
+
+
+.conteudo-resumo p,
+#container-cor,
+#container-frete {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+#valor-carro,
+#valor-seguro-transporte,
+#seguro-veiculo,
+#container-cor,
+#container-frete {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 1rem;
+}
+
+
+.conteudo-resumo hr {
+    border: 1px solid #d0d1d2;
+    border-radius: 100%;
+    width: 380px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#btnFinalizar{
+    background-color: #3e6ae1;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: #ffffff;
+    transition: 0.7s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#btnFinalizar:hover{
+    background-color: rgb(50, 196, 50);
+    /* background-color: #2a4c7f; */
+    transition: 0.7s;
+    transform: scale(1.04);
+}
+
 
 /*  */
