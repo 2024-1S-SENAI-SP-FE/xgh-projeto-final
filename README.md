@@ -29,3 +29,52 @@ O estilo da página web é definido no arquivo `style.css`, localizado na pasta 
 ### Visualização do Projeto
 
 Para visualizar o projeto, abra o arquivo `index.html` em um navegador da web.
+
+
+### Automatização do Header e do Footer em todas as páginas
+
+Esta parte da  documentação descreve a estrutura do `HTML` e `CSS`, que compõem o cabeçalho `<header>` e o rodapé `<footer>` do site. Além disso, uma função `JavaScript` foi criada para automatizar a inserção desses elementos em todas as páginas do site.
+
+#### Estrutura HTML do Cabeçalho
+
+O cabeçalho inclui uma barra de navegação com os seguintes componentes:
+
+1- Logo e Nome do Site:
+
+- SVG do logotipo do Mustang.
+- Imagem do nome do Mustang.
+
+2- Menu de Navegação:
+
+- Um botão de dropdown que exibe diferentes modelos de veículos.
+- Links para páginas "Comemoração" e "Sobre nós"
+
+3- Ícones de Funcionalidades:
+
+- Elemento do Google Translate.
+- Botão para trocar idioma.
+- Link para a página de login.
+- Div para indicar o status de login.
+
+#### Estrutura HTML do Rodapé
+
+O rodapé inclui os seguintes componentes:
+
+1- Logotipo:
+
+- SVG do logotipo do Mustang.
+
+2- Redes Sociais:
+
+- Ícones das redes sociais com links para as respectivas páginas.
+
+3- Informações Adicionais:
+
+- Endereço e contato da empresa.
+
+#### Automação com JavaScript
+
+Para automatizar a inserção do cabeçalho e do rodapé em todas as páginas do site, utilizamos uma função JavaScript que adiciona dinamicamente esses componentes ao carregar a página. E desta forma, garante consistência e facilidade de manutenção do layout do site.
+
+
+
