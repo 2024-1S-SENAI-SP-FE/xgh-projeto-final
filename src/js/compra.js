@@ -1,11 +1,30 @@
+function pegaCor() {
+  let activeElement = document.querySelector('.conteudo-cores > div.active > div');
+  if (activeElement) {
+      return activeElement.innerHTML;
+  }
+  return null;
+}
+
+// Adiciona evento de clique aos divs
 document.querySelectorAll('.conteudo-cores > div').forEach(div => {
-    div.addEventListener('click', function() {
+  div.addEventListener('click', function() {
       document.querySelectorAll('.conteudo-cores > div').forEach(d => {
-        d.classList.remove('active');
+          d.classList.remove('active');
       });
       this.classList.add('active');
-    });
+      let activeElement = pegaCor();
+      console.log(`${activeElement}`);
   });
+});
+
+// Revisão de compra
+document.querySelector('#btnCompra').addEventListener('click', () => {
+  const cor = pegaCor();
+  console.log(`${cor}`);
+  document.querySelector('#cor-selecionada').innerHTML = cor;
+
+});
 
   // Div forma de pagamento OFICIAL 
 // document.querySelector('#btnCompra').addEventListener('click', ()=>{
@@ -79,3 +98,4 @@ document.querySelector('#btnFinalizarBoleto').addEventListener('click',()=>{
       document.querySelector('#nome-cartao').focus();
     }
   });
+
