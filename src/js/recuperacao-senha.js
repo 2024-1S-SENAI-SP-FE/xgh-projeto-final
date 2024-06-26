@@ -21,7 +21,7 @@ function consultaReq() {
                 const emailRecuperado = resposta[i].email;
                 const senhaRecuperada = resposta[i].senha;
                 window.alert('Senha recuperada com sucesso!');
-                document.querySelector('#senhaRecuperada').innerHTML = `Senha = ${senhaRecuperada};`
+                document.querySelector('#senhaRecuperada').value = `${senhaRecuperada};`
             }else{
                 window.alert('Email não encontrado')
             }
