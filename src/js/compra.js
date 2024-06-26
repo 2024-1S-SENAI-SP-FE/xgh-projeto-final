@@ -33,8 +33,8 @@ document.querySelector('#btnCompra').addEventListener('click', () => {
   const cor = pegaCor();
   const frete = document.querySelector('#frete').innerHTML;
   console.log(`${cor}`);
-  document.querySelector('#cor-selecionada').innerHTML = `Cor selecionada : ${cor}`;
-  document.querySelector('#valor-de-frete').innerHTML = `Valor de frete : US$${frete}`;
+  document.querySelector('#cor-selecionada').innerHTML = `${cor}`;
+  document.querySelector('#valor-de-frete').innerHTML = `US$${frete}`;
 
 });
 
