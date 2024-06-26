@@ -1192,10 +1192,6 @@ body {
 @media screen and (min-width: 451px) and (max-width: 800px) {
     /* <=================SEÇÃO HOME E VÍDEO===================> */
 
-    .dropdown-content {
-        display: none;
-    }
-
     #home {
         height: 76vh;
     }
@@ -1483,10 +1479,6 @@ body {
 
 @media screen and (min-width: 801px) and (max-width: 1100px) {
     /* <=================SEÇÃO HOME E VÍDEO===================> */
-
-    .dropdown-content {
-        display: none;
-    }
 
     #home {
         height: 79vh;
