@@ -29,7 +29,7 @@ document.querySelector('#btnCompra').addEventListener('click', ()=>{
 document.querySelector('#btnBoleto').addEventListener('click', ()=>{
   document.querySelector('#pag-boleto').style.display = 'block'
   document.querySelector('#pag-cartao').style.display = 'none'
-  document.querySelector('#btnFinalizarBoleto').style.display = 'block'
+  document.querySelector('#btnRevizarBoleto').style.display = 'block'
   document.querySelector('#nome').focus();
 })
 
@@ -37,14 +37,14 @@ document.querySelector('#btnBoleto').addEventListener('click', ()=>{
 document.querySelector('#btnCartao').addEventListener('click', ()=>{
   document.querySelector('#pag-boleto').style.display = 'none'
   document.querySelector('#pag-cartao').style.display = 'block'
-  document.querySelector('#btnFinalizarCartao').style.display = 'block'
+  document.querySelector('#btnRevizarCartao').style.display = 'block'
   document.querySelector('#nome-cartao').focus();
   
 })
 
 
 // Botão de Finalizar Compra
-document.querySelector('#btnFinalizarBoleto').addEventListener('click',()=>{
+document.querySelector('#btnRevizarBoleto').addEventListener('click',()=>{
   const pagBoleto = document.querySelector('#pag-boleto').style.display;
 
   const nomeBoleto = document.querySelector('#nome').value;
@@ -62,7 +62,7 @@ document.querySelector('#btnFinalizarBoleto').addEventListener('click',()=>{
   });
 
   // Botão de Finalizar Cartao
-  document.querySelector('#btnFinalizarCartao').addEventListener('click', ()=>{
+  document.querySelector('#btnRevizarCartao').addEventListener('click', ()=>{
     const pagCartao = document.querySelector('#pag-cartao').style.display;
 
     const nomeCartao = document.querySelector('#nome-cartao').value;
