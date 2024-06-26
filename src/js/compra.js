@@ -29,7 +29,7 @@ document.querySelector('#btnCompra').addEventListener('click', ()=>{
 document.querySelector('#btnBoleto').addEventListener('click', ()=>{
   document.querySelector('#pag-boleto').style.display = 'block'
   document.querySelector('#pag-cartao').style.display = 'none'
-  document.querySelector('#btnFinalizar').style.display = 'block'
+  document.querySelector('#btnFinalizarBoleto').style.display = 'block'
   document.querySelector('#nome').focus();
 })
 
@@ -37,41 +37,45 @@ document.querySelector('#btnBoleto').addEventListener('click', ()=>{
 document.querySelector('#btnCartao').addEventListener('click', ()=>{
   document.querySelector('#pag-boleto').style.display = 'none'
   document.querySelector('#pag-cartao').style.display = 'block'
-  document.querySelector('#btnFinalizar').style.display = 'block'
+  document.querySelector('#btnFinalizarCartao').style.display = 'block'
   document.querySelector('#nome-cartao').focus();
   
 })
 
 
 // Botão de Finalizar Compra
-document.querySelector('#btnFinalizar').addEventListener('click',()=>{
+document.querySelector('#btnFinalizarBoleto').addEventListener('click',()=>{
   const pagBoleto = document.querySelector('#pag-boleto').style.display;
-  const pagCartao = document.querySelector('#pag-cartao').style.display;
 
-  const nomeBoleto = document.querySelector('#nome').innerHTML;
-  const cpfBoleto = document.querySelector('#cpf').innerHTML;
-  const emailBoleto = document.querySelector('#email').innerHTML;
-  
-  const nomeCartao = document.querySelector('#nome-cartao').innerHTML;
-  const numeroCartao = document.querySelector('#numero-cartao').innerHTML;
-  const mesCartao = document.querySelector('#mes').innerHTML;
-  const anoCartao = document.querySelector('#ano').innerHTML;
-  const cvvCartao = document.querySelector('#cvv').innerHTML;
+  const nomeBoleto = document.querySelector('#nome').value;
+  const cpfBoleto = document.querySelector('#cpf').value;
+  const emailBoleto = document.querySelector('#email').value;
+
 
   // verificar correção de erro
-  if (pagBoleto !== 'none') {
-    if (nomeBoleto !== '' && cpfBoleto !== '' && emailBoleto !== '') {
+  if (nomeBoleto !== '' && cpfBoleto !== '' && emailBoleto !== '') {
     window.alert('Compra realizada com sucesso!');
-    } else {
+  } else {
     window.alert('Preencha todos os campos para finalizar a compra!');
     document.querySelector('#nome').focus();
     }
-  } else {
-    if (nomeCartao !== '' && numeroCartao !== '' && mesCartao !== '' && anoCartao !== '' && cvvCartao !== '') {
+  });
+
+  // Botão de Finalizar Cartao
+  document.querySelector('#btnFinalizarCartao').addEventListener('click', ()=>{
+    const pagCartao = document.querySelector('#pag-cartao').style.display;
+
+    const nomeCartao = document.querySelector('#nome-cartao').value;
+    const numeroCartao = document.querySelector('#numero-cartao').value;
+    const mesCartao = document.querySelector('#mes').value;
+    const anoCartao = document.querySelector('#ano').value;
+    const cvvCartao = document.querySelector('#cvv').value;
+
+    // verificar correção de erro
+    if((nomeCartao !== '') && (numeroCartao !== '') && (mesCartao !== '') && (anoCartao !== '') && (cvvCartao !== '')){
       window.alert('Compra realizada com sucesso!');
     } else {
       window.alert('Preencha todos os campos para finalizar a compra!');
       document.querySelector('#nome-cartao').focus();
     }
-  }
-});
+  });
