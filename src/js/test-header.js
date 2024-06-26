@@ -364,13 +364,11 @@ function createHeader() {
     // criar ancora car 8
     const ancora8 = document.createElement('a');
     ancora8.classList = 'comemora60-anos';
-    ancora8.setAttribute('href','/src/html/navegacao/comemoracao.html' );
-    
+    ancora8.setAttribute('href','/src/html/navegacao/comemoracao.html');
+
     // appendes car-item8
     ancora8.append(imgCar8);
     divCarItem8.append(ancora8);
-
-
     
     // Appendes no dropdown-content
     divDropdownContent.append(divCarItem, divCarItem2, divCarItem3, divCarItem4, divCarItem5, divCarItem6, divCarItem7,divCarItem8);
