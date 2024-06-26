@@ -24,6 +24,14 @@
     font-family: NeueHaas;
 }
 
+button {
+    cursor: pointer;
+}
+
+.invisivel {
+    display: none;
+}
+
 /* pc */
 
 @media screen and (min-width: 1024px) {

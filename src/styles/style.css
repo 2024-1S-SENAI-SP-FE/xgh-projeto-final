@@ -28,6 +28,14 @@ body {
     width: 8px;
 }
 
+button {
+    cursor: pointer;
+}
+
+.invisivel {
+    display: none;
+}
+
 @media screen and (min-width: 1366px) {
     /* <=================SEÇÃO HOME E VÍDEO===================> */
 
@@ -228,6 +236,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        width: 40%;
     }
 
     .btDetalhes {
@@ -238,16 +247,14 @@ body {
         background-color: #F4F4F4;
         color: #393C41;
         height: 2.5rem;
-        width: 17rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     .btDetalhes:hover {
@@ -266,16 +273,13 @@ body {
         background-color: #3E6AE1;
         color: #F4F4F4;
         height: 2.5rem;
-        width: 17rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
@@ -514,6 +518,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        width: 70%;
     }
 
     .btDetalhes {
@@ -523,17 +528,15 @@ body {
         border-radius: 4px;
         background-color: #F4F4F4;
         color: #393C41;
-        height: 1.8rem;
-        width: 9rem;
+        height: 2rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 700;
-        font-size: 10px;
+        font-weight: 500;
+        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     .btDetalhes:hover {
@@ -551,17 +554,15 @@ body {
         border-radius: 4px;
         background-color: #3E6AE1;
         color: #F4F4F4;
-        height: 2.3rem;
-        width: 10rem;
+        height: 2rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
+        font-weight: 500;
+        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
@@ -1390,6 +1391,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        width: 40%;
     }
 
     .btDetalhes {
@@ -1400,16 +1402,13 @@ body {
         background-color: #F4F4F4;
         color: #393C41;
         height: 2.5rem;
-        width: 17rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
+        font-weight: 500;
+        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     .btDetalhes:hover {
@@ -1428,16 +1427,14 @@ body {
         background-color: #3E6AE1;
         color: #F4F4F4;
         height: 2.5rem;
-        width: 17rem;
+        width: 100%;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
+        font-weight: 500;
+        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
