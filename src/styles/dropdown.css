@@ -695,34 +695,6 @@ body {
 
     }
 
-    .buttons .mustang-comemoracao{
-        background-color: transparent;
-        text-decoration: underline;
-        font-family: "DM sans", sans-serif;
-        text-underline-offset: 0.2em;
-        color: #666666;
-        border: none;
-        cursor: pointer;
-        transition: transform 0.3s;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-left: 1.2rem;
-        font-size: 13px ;
-
-    }
-
-    .alinha-simbolo{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding-left: 8px;
-    }
-
-    .buttons .mustang-comemoracao:hover{
-        color: #000000;
-        transform: scale(1.0)
-    }
 
     .dropdown-content .buttons button:hover {
         color: #000000;
@@ -733,11 +705,16 @@ body {
         display: block;
     }
 
+
     .dropdown:hover .dropbtn {
         transition: .50s;
         background-color: #eeeeee;
         border-radius: 5px;
         transform: scale(1.0)
+    }
+
+    .comemora60-anos img{
+      padding-bottom: 1.5rem;
     }
 
 
