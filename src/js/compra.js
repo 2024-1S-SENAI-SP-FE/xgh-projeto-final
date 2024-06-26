@@ -30,7 +30,7 @@ document.querySelectorAll('.conteudo-cores > div').forEach(div => {
 document.querySelector('#btnCompra').addEventListener('click', () => {
   const cor = pegaCor();
   console.log(`${cor}`);
-  document.querySelector('#cor-selecionada').innerHTML = cor;
+  document.querySelector('#cor-selecionada').innerHTML = `Cor selecionada : ${cor}`;
 
 });
 
