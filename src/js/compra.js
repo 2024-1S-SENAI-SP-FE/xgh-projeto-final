@@ -1,5 +1,13 @@
+// Seleciona todos os elementos com a classe 'span-cor'
+const elements = document.querySelectorAll('.span-cor');
+
+// Aplica display 'none' a cada um dos elementos com a classe span-cor
+elements.forEach(element => {
+  element.style.display = 'none';
+});
+
 function pegaCor() {
-  let activeElement = document.querySelector('.conteudo-cores > div.active > div');
+  let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
   if (activeElement) {
       return activeElement.innerHTML;
   }
