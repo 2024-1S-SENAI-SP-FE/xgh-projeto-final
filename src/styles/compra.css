@@ -378,6 +378,7 @@ input[type="checkbox"] {
     border-radius: 2rem;
     width: 6rem;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .resultado-frete {
@@ -450,6 +451,7 @@ hr {
     font-size: 1rem;
     border: #ffffff;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 .btnCompra:hover {
