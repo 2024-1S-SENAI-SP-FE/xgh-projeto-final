@@ -39,7 +39,8 @@ body {
 
 /* GERAL  */
 
-h1,h2 {
+h1,
+h2 {
     font-family: NeueHaas;
     font-size: 1.8rem;
     text-align: center;
@@ -47,13 +48,6 @@ h1,h2 {
     margin-top: 2.5rem;
 }
 
-h2{
-    font-family: NeueHaas;
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-}
 
 .conteudo {
     margin-top: 20px;
@@ -351,12 +345,14 @@ input[type="checkbox"] {
     padding-left: 10px;
 }
 
-.container-frete:hover{
+.container-frete:hover {
     cursor: pointer;
 }
-#CEP{
+
+#CEP {
     box-shadow: 0 0 3px #3e6ae1;
 }
+
 #CEP:focus {
     outline: none;
     box-shadow: 0 0 8px #3e6ae1;
@@ -456,62 +452,64 @@ hr {
     transition: 0.7s;
     transform: scale(1.04);
 }
+
 /*  */
 
-.forma-pagamento{
+.forma-pagamento {
     display: none;
 }
 
-.selecao-pagamento{
+.selecao-pagamento {
     display: flex;
     width: 400px;
 
 }
 
-.selecao-pagamento button{
+.selecao-pagamento button {
     border: none;
     outline: none;
     font-size: 18px;
 }
 
-.btnBoleto{
+.btnBoleto {
     padding-left: -250px;
     background-color: #ffffff;
     transition: 0.5s;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    text-decoration:underline 3px #ffffff;
+    text-decoration: underline 3px #ffffff;
 }
 
-.btnCartao{
+.btnCartao {
     margin-left: 200px;
     background-color: #ffffff;
     transition: 0.5s;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    text-decoration:underline 3px #ffffff;
+    text-decoration: underline 3px #ffffff;
 }
 
 
-.btnBoleto:hover{
-    text-decoration:underline 3px #3e6ae1;
+.btnBoleto:hover {
+    text-decoration: underline 3px #3e6ae1;
     transition: 0.5s;
     font-family: "DM Sans", sans-serif;
 }
 
-.btnCartao:hover{
-    text-decoration:underline 3px #3e6ae1;
+.btnCartao:hover {
+    text-decoration: underline 3px #3e6ae1;
     transition: 0.5s;
     font-family: "DM Sans", sans-serif;
 }
+
 /* ================ */
 /* Divs de forma de pagamento */
 
-.pag-boleto{
+.pag-boleto {
     display: none;
 }
 
-.pag-cartao{
+.pag-cartao {
     display: none;
 }
 
@@ -529,7 +527,7 @@ label {
     font-weight: bold;
 }
 
-.input-form{
+.input-form {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -541,6 +539,7 @@ label {
     text-transform: uppercase;
     outline: none;
 }
+
 .input-form:focus {
     width: 100%;
     padding: 8px;
@@ -555,11 +554,11 @@ label {
     transition: 0.4s;
 }
 
-#email{
+#email {
     text-transform: none;
 }
 
-.validade-cartao select{
+.validade-cartao select {
     width: 50%;
     padding: 8px;
     margin-bottom: 10px;
@@ -571,7 +570,7 @@ label {
     outline: none;
 }
 
-.validade-cartao select:focus{
+.validade-cartao select:focus {
     width: 50%;
     padding: 8px;
     margin-bottom: 10px;
@@ -584,18 +583,46 @@ label {
     transition: 0.4s;
 }
 
-.validade-cartao{
+.validade-cartao {
     display: flex;
 }
 
-#btnRevizarCartao, #btnRevizarBoleto{
+#btnRevizarCartao,
+#btnRevizarBoleto {
     display: none;
     margin-left: 120px;
     margin-top: 10px;
 }
 
-/* ========================== */
-/* Resumo de compra */
-.resumo-compra{
-    display: none;
+/* REVISAR COMPRA */
+
+.container-resumo{
+    display: flex;
 }
+
+#resumo-compra div {
+   text-align:justify;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+#resumo-compra div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+#resumo-compra p {
+    display: flex;
+    justify-content: right;
+    font-family: "DM Sans", sans-serif;
+}
+
+#resumo-compra h6 {
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: left;
+    font-family: NeueHaas;
+}
+
+/*  */
