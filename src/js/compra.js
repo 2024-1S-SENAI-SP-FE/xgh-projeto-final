@@ -74,7 +74,7 @@ document.querySelector('#btnCartao').addEventListener('click', ()=>{
 })
 
 
-// Botão de Finalizar Compra
+// Botão de Revizar Compra
 document.querySelector('#btnRevizarBoleto').addEventListener('click',()=>{
   const pagBoleto = document.querySelector('#pag-boleto').style.display;
 
@@ -85,14 +85,15 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click',()=>{
 
   // verificar correção de erro
   if (nomeBoleto !== '' && cpfBoleto !== '' && emailBoleto !== '') {
-    window.alert('Compra realizada com sucesso!');
+    // window.alert('Compra realizada com sucesso!');
+    document.querySelector('#resumo-compra').style.display = 'block';
   } else {
     window.alert('Preencha todos os campos para finalizar a compra!');
     document.querySelector('#nome').focus();
     }
   });
 
-  // Botão de Finalizar Cartao
+  // Botão de Revizar Cartao
   document.querySelector('#btnRevizarCartao').addEventListener('click', ()=>{
     const pagCartao = document.querySelector('#pag-cartao').style.display;
 
@@ -101,10 +102,11 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click',()=>{
     const mesCartao = document.querySelector('#mes').value;
     const anoCartao = document.querySelector('#ano').value;
     const cvvCartao = document.querySelector('#cvv').value;
-
+    
     // verificar correção de erro
     if((nomeCartao !== '') && (numeroCartao !== '') && (mesCartao !== '') && (anoCartao !== '') && (cvvCartao !== '')){
-      window.alert('Compra realizada com sucesso!');
+      // window.alert('Compra realizada com sucesso!');
+      document.querySelector('#resumo-compra').style.display = 'block';
     } else {
       window.alert('Preencha todos os campos para finalizar a compra!');
       document.querySelector('#nome-cartao').focus();

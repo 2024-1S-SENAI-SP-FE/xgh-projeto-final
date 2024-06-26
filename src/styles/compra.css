@@ -593,3 +593,9 @@ label {
     margin-left: 120px;
     margin-top: 10px;
 }
+
+/* ========================== */
+/* Resumo de compra */
+.resumo-compra{
+    display: none;
+}
