@@ -595,34 +595,8 @@ label {
 }
 
 /* REVISAR COMPRA */
-
-.container-resumo{
-    display: flex;
-}
-
-#resumo-compra div {
-   text-align:justify;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 10px;
-}
-#resumo-compra div:last-child {
-    display: flex;
-    justify-content: center;
-}
-
-#resumo-compra p {
-    display: flex;
-    justify-content: right;
-    font-family: "DM Sans", sans-serif;
-}
-
-#resumo-compra h6 {
-    display: flex;
-    font-size: 1.1rem;
-    justify-content: left;
-    font-family: NeueHaas;
-}
+/* .resumo-compra{
+    display: none;
+} */
 
 /*  */
