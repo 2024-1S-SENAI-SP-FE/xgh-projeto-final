@@ -177,8 +177,8 @@
         <div class="encomenda">
           <div class="conteudo-encomenda">
             <div class="btEncomenda">
-              <button type="button" class="btnCompra" id="btnCompra">Encomendar</button>
             </div>
+            <button type="button" class="btnCompra" id="btnCompra">Encomendar</button>
 
             <div id="forma-pagamento" class="forma-pagamento">
                 <h2>Forma de Pagamento</h2>
@@ -196,8 +196,9 @@
         
                     <label for="email">Email:</label>
                     <input type="email" class="input-form" id="email" name="email" required>
-      
+                    
                   </form>
+                  <button class="btnCompra" id="btnFinalizarBoleto">Finalizar Compra</button>
                 </div>
 
                 <div id="pag-cartao" class="pag-cartao">
@@ -242,10 +243,10 @@
                     <input type="text" class="input-form" id="cvv" name="cvv" required minlength="3" maxlength="3">
 
                   </form>
+                  <button class="btnCompra" id="btnFinalizarCartao">Finalizar Compra</button>
                 </div>
-            </div>
+              </div>
 
-            <button class="btnCompra" id="btnFinalizar">Finalizar Compra</button>
           </div>
         </div>
       </div>
