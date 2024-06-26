@@ -478,21 +478,33 @@ hr {
 .btnBoleto{
     padding-left: -250px;
     background-color: #ffffff;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration:underline 3px #ffffff;
 }
 
 .btnCartao{
     margin-left: 200px;
     background-color: #ffffff;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration:underline 3px #ffffff;
 }
 
+
 .btnBoleto:hover{
-    text-decoration:underline 3px;
+    text-decoration:underline 3px #3e6ae1;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
 }
 
 .btnCartao:hover{
-    text-decoration:underline 3px;
+    text-decoration:underline 3px #3e6ae1;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
 }
-
 /* ================ */
 /* Divs de forma de pagamento */
 
