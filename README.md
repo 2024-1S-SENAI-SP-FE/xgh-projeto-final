@@ -77,4 +77,56 @@ O rodapé inclui os seguintes componentes:
 Para automatizar a inserção do cabeçalho e do rodapé em todas as páginas do site, utilizamos uma função JavaScript que adiciona dinamicamente esses componentes ao carregar a página. E desta forma, garante consistência e facilidade de manutenção do layout do site.
 
 
+### Organização dos arquivos do projeto
+
+
+Os arquivos deste projeto estão organizados em pastas, assim tendo uma fácil localização para saber aonde cada arquivo está inserido. Além de ser algo semântico, é um tipo de estrutura agradável aos olhos de quem vê.
+
+ **Pastas e seus conteúdos**
+
+1- **Data**
+
+- Nesta pasta está localizado o arquivo do tipo `JSON`, que está sendo utilizado na página de login para sua funcionalidade proposta.
+
+2- **Src**
+
+- Nesta pasta contém os arquivos que são o coração do projeto, onde tudo foi  desenvolvido e criado.
+
+2-3 **Fonts**
+- Nesta pasta contém as fontes que estão sendo utilizadas no site todo.
+
+2-4 **Html**
+- Nesta pasta contém todas as páginas `HTML` que dão estrutura para o site.
+
+2-5 **Img**
+- Nesta pasta contém todas as imagens do projeto, e ela está subdividida em pastas, que estão organizadas de acordo com a sua serventia para cada página.
+
+2-5 **Js**
+- Nesta pasta estão todos os arquivos `JS` do projeto que possuem uma grande importância para a dinâmica de funcionalidade.
+
+2-6 **Styles**
+- Nesta pasta estão todos os arquivos `CSS` de estilização, e está introduzido o Design, estrutura de alinhamento e os efeitos que são um show a parte para a visualização dos usuários.
+
+2-7 **Video**
+- Nesta pasta contém os vídeos que estão sendo exibidos nas páginas.
+
+
+3- **Arquivos na Raíz do Projeto**
+
+3-1 **Arquivos `.MD`**
+
+- Os arquivos `.md` como por exemplo o `CHECKLIST.MD` e `README.md` são arquivos de documentação do projeto.
+
+3-2 **Index.html**
+
+Colocar o `index.html` na raiz torna mais fácil para desenvolvedores e servidores localizarem o ponto de entrada principal do site.
+
+3-3 **Package `.json`**
+
+- São pacotes de arquivo do tipo `json`.
+
+
+
+
+
 
