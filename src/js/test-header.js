@@ -407,15 +407,16 @@ function createHeader() {
     const divIconesMenu = document.createElement('div');
     divIconesMenu.classList = 'icones-menu';
 
-    // criar div translate
-    const divTranslate = document.createElement('div');
-    divTranslate.setAttribute('id', 'google_translate_element')
-
     // criar button troca-idioma
     const buttonTrocaIdioma = document.createElement('button');
     buttonTrocaIdioma.setAttribute('type', 'button');
     buttonTrocaIdioma.setAttribute('id', 'troca-idioma');
 
+    // criar div translate
+    const divTranslate = document.createElement('div');
+    divTranslate.setAttribute('id', 'google_translate_element')
+    divTranslate.setAttribute('class', 'invisivel');
+    
     // criar svg idioma
     const svgIdioma = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svgIdioma.setAttribute('viewBox', '0 0 24 24');
