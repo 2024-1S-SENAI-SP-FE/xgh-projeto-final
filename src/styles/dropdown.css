@@ -326,7 +326,8 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-left: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1.5rem;
         font-size: 13px ;
 
     }
