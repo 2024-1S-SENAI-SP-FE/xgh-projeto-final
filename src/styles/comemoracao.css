@@ -26,7 +26,7 @@ body {
     width: 8px;
 }
 
-h1{
+h1 {
     margin-top: 4rem;
     margin-bottom: 3rem;
     font-weight: bolder;
@@ -34,6 +34,9 @@ h1{
     font-family: NeueHaas;
 }
 
+.comemoracao-text {
+    height: 110vh;
+}
 
 .texto-historia {
     max-width: 55rem;
@@ -44,15 +47,11 @@ h1{
     font-weight: 600;
 }
 
-
-
 span {
     color: rgb(2, 2, 168);
     border-bottom: 2.5px solid black;
 }
 
-
-.conteudo-video,
 .conteudo-comemoracao {
     display: flex;
     text-align: center;
@@ -60,10 +59,8 @@ span {
     align-items: center;
 }
 
-.container-video {
-    margin-top: 2rem;
-    /* margin-bottom: 5rem; */
-    width: 123.5vh;
+.conteudo-video {
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
-
-
