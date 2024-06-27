@@ -4,70 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustang 2004</title>
     <link rel="stylesheet" href="/src/styles/detalhes.css">
     <link rel="shorcut icon" href="/src/img/logo.svg">
-    <title>Mustang 2004</title>
 </head>
 
 <body>
     <a href="/index.html" id="home-mobile">↩</a>
     <!-- div do Header -->
     <div id="header"></div>
-    <!--  -->
+
     <style>
-        h1 {
-            font-size: 3rem;
+        .dropbtn {
+            color: #FFFFFF
         }
 
-        h2 {
-            text-align: center;
-        }
-
-        #interior .titulo1,
-        .titulo2 {
+        .menu-navegacao a {
             color: #FFFFFF;
         }
 
-        .titulo1 {
-            font-size: 2.7rem;
+        .logo-menu a svg {
+            fill: #FFFFFF;
         }
 
-        .titulo2 {
-            font-size: 1rem;
+        #troca-idioma {
+            fill: #FFFFFF;
         }
 
-        /* NAV */
+        .tds-icon-person {
+            fill: #FFFFFF;
+        }
 
-        .dropbtn {
-                color: #FFFFFF
-            }
-            .menu-navegacao a {
-                color: #FFFFFF;
-            }
+        .active .dropbtn,
+        .active a {
+            color: black;
+        }
 
-            .logo-menu a svg {
-                fill: #FFFFFF;
-            }
+        .active .logo-menu a svg,
+        .active #troca-idioma,
+        .active .tds-icon-person {
+            fill: #000;
+        }
 
-            #troca-idioma {
-                fill: #FFFFFF;
-            }
-            .tds-icon-person {
-                fill: #FFFFFF;
-            }
-
-            .active .dropbtn,
-            .active a {
-                color: black;
-            }
-
-            .active .logo-menu a svg,
-            .active #troca-idioma,
-            .active .tds-icon-person {
-                fill: #000;
-            }
-
-            .dropdown:hover .dropbtn {
+        .dropdown:hover .dropbtn {
             background-color: #ececec;
         }
 
@@ -84,8 +63,8 @@
         .active .img-header {
             filter: grayscale(100%) brightness(0%);
         }
-        
     </style>
+
     <section id="home">
 
         <div class="topoHome">
@@ -116,9 +95,9 @@
 
                 <div class="botoes">
                     <a href="/src/html/comprar/comp-04.html">
-                       <button class="botao">
-                        <span>Encomendar</span>
-                    </button> 
+                        <button class="botao">
+                            <span>Encomendar</span>
+                        </button>
                     </a>
                 </div>
 
