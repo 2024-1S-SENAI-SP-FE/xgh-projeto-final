@@ -113,3 +113,16 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click',()=>{
     }
   });
 
+  // Finalizar
+
+  document.querySelector('#btnFinalizar').addEventListener('click', ()=>{
+    document.querySelector('#finaliza-compra').style.display = 'flex';
+  })
+
+  // bt close finalizar 
+
+  // document.querySelector('#bt-close').addEventListener('click', ()=>{
+  //   const suporte = document.querySelector('#suporte');
+  //   suporte.style.display = 'none';
+
+
