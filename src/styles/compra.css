@@ -666,3 +666,25 @@ label {
 
 
 /*  */
+
+/* SECTION FINALIZA COMPRA */
+
+
+
+#finaliza-compra{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    border-radius: 2rem;
+    border: 2px solid #3e6ae1;
+}
+
+#finaliza-compra h2{
+    margin-top: 0;
+}
