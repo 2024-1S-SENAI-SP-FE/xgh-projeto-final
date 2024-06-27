@@ -23,8 +23,8 @@
 body {
     font-family: NeueHaas, sans-serif;
 }
-
-@media screen and (min-width: 1101px) and (max-width: 1305px) {
+/* @media screen and (min-width: 1101px) and (max-width: 1305) */
+@media screen and (min-width: 1101px) and (max-width: 1400px) {
 
     .buttons {
         display: flex;
