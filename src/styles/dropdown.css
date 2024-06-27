@@ -103,15 +103,9 @@ body {
     }
 
     .dropdown-content .car-item img {
-        max-width: 200px
+        max-width: 200px;
     }
 
-    .comemora60-anos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     .dropdown-content .buttons {
         margin-top: 10px;
@@ -281,16 +275,6 @@ body {
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
     }
-    @keyframes animacao {
-        0% {
-            margin-top: -600px;
-            opacity: 0;
-        }
-        100% {
-            margin-bottom: 0;
-            opacity: 1;
-        }
-    }
 
 
     .dropdown-content .car-item {
@@ -308,11 +292,10 @@ body {
     }
 
     .comemora60-anos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       padding-top: 2rem;
 
-    }
+    } 
+
 
     .dropdown-content .buttons {
         margin-top: 10px;
@@ -508,10 +491,8 @@ body {
         max-width: 200px
     }
 
-    .comemora60-anos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .comemora60-anos img{
+        padding-top: 1.5rem;
 
     }
 
@@ -755,7 +736,7 @@ body {
     }
 
     .comemora60-anos img{
-      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
     }
 
 
@@ -937,7 +918,7 @@ body {
     }
 
     .comemora60-anos img{
-      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
     }
 
 
