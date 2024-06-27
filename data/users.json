@@ -11,6 +11,12 @@
       "nome": "test2",
       "email": "test2@test.com",
       "senha": "123456"
+    },
+    {
+      "id": "e3ba",
+      "nome": "test",
+      "email": "test3@test.com",
+      "senha": "123456"
     }
   ]
 }

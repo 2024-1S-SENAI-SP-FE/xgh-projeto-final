@@ -74,10 +74,20 @@ body {
         overflow: auto;
         padding-top: 60px;
         z-index: -1;
-        animation-name: test-animacao;
+        animation-name: animacao;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+    }
+    @keyframes animacao {
+        0% {
+            margin-top: -600px;
+            opacity: 0;
+        }
+        100% {
+            margin-bottom: 0;
+            opacity: 1;
+        }
     }
 
 
@@ -266,10 +276,20 @@ body {
         overflow: auto;
         padding-top: 60px;
         z-index: -1;
-        animation-name: test-animacao;
+        animation-name: animacao;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+    }
+    @keyframes animacao {
+        0% {
+            margin-top: -600px;
+            opacity: 0;
+        }
+        100% {
+            margin-bottom: 0;
+            opacity: 1;
+        }
     }
 
 
@@ -457,10 +477,20 @@ body {
         overflow: auto;
         padding-top: 60px;
         z-index: -1;
-        animation-name: test-animacao;
+        animation-name: animacao;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+    }
+    @keyframes animacao {
+        0% {
+            margin-top: -600px;
+            opacity: 0;
+        }
+        100% {
+            margin-bottom: 0;
+            opacity: 1;
+        }
     }
 
 
@@ -648,10 +678,21 @@ body {
         overflow: auto;
         padding-top: 60px;
         z-index: -1;
-        animation-name: test-animacao;
+        animation-name: animacao;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+    }
+
+    @keyframes animacao {
+        0% {
+            margin-top: -600px;
+            opacity: 0;
+        }
+        100% {
+            margin-bottom: 0;
+            opacity: 1;
+        }
     }
 
 
@@ -819,10 +860,21 @@ body {
         overflow: auto;
         padding-top: 60px;
         z-index: -1;
-        animation-name: test-animacao;
+        animation-name: animacao;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+    }
+
+    @keyframes animacao {
+        0% {
+            margin-top: -600px;
+            opacity: 0;
+        }
+        100% {
+            margin-bottom: 0;
+            opacity: 1;
+        }
     }
 
 
