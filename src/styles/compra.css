@@ -472,7 +472,7 @@ hr {
 .selecao-pagamento {
     display: flex;
     width: 375px;
-
+    justify-content: space-between;
 }
 
 .selecao-pagamento button {
