@@ -23,6 +23,10 @@ main {
     justify-content: center;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     margin-top: 2rem;
     flex-direction: column;
@@ -61,13 +65,13 @@ a{
 }
 
 span {
-    margin: 1.8rem;
+    margin: 1.5rem;
 }
 
 .btnLogin {
     color: #fff;
     background-color: #3E6AE1;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-top: 16px;
 }
 
@@ -94,6 +98,10 @@ input {
     height: 40px;
     border: none;
     background-color: #F4F4F4;
+}
+
+.btnCadastra a{
+    text-decoration: none;
 }
 
 input:focus {
@@ -137,14 +145,13 @@ label {
 }
 
 .icones-menu button {
-    padding-right   : 16px;
+    padding-right: 16px;
     border: none;
     background: none;
 }
 
 .icones-menu {
     display: inline-flex;
-    gap: 10px;
 }
 
 .logo-menu {
