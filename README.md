@@ -125,6 +125,10 @@ Colocar o `index.html` na raiz torna mais fácil para desenvolvedores e servidor
 
 - São pacotes de arquivo do tipo `json`.
 
+3-4 **.gitignore**
+
+- Este arquivo foi criado para ocultar outros arquivos para não subirem para o remoto.
+
 
 
 
