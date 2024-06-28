@@ -85,6 +85,15 @@
 .mustang-troca{
     display: block;
 }
-.mustang-cor{
+.mustang-cor1{
+    display: none;
+}
+.mustang-cor2{
+    display: none;
+}
+.mustang-cor3{
+    display: none;
+}
+.mustang-cor4{
     display: none;
 }

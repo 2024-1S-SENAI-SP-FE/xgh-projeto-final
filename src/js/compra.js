@@ -6,36 +6,52 @@ elements.forEach(element => {
   element.style.display = 'none';
 });
 
-// função criada para armazenar a cor selecionada
 function pegaCor() {
   let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
   if (activeElement) {
-    return activeElement.innerHTML;
+    if (activeElement.innerHTML === 'Branco'){
+      document.querySelector('.mustang-troca').style.display = 'none';
+      document.querySelector('.mustang-cor1').style.display = 'none';
+      document.querySelector('.mustang-cor2').style.display = 'none';
+      document.querySelector('.mustang-cor3').style.display = 'none';
+      document.querySelector('.mustang-cor4').style.display = 'block';
+      console.log(`${activeElement}`)
+      return activeElement.innerHTML;
+    }else if(activeElement.innerHTML === 'Azul'){
+      document.querySelector('.mustang-troca').style.display = 'block';
+      document.querySelector('.mustang-cor1').style.display = 'none';
+      document.querySelector('.mustang-cor2').style.display = 'none';
+      document.querySelector('.mustang-cor3').style.display = 'none';
+      document.querySelector('.mustang-cor4').style.display = 'none';
+      return activeElement.innerHTML;
+    }else if(activeElement.innerHTML === 'Preto'){
+      document.querySelector('.mustang-troca').style.display = 'none';
+      document.querySelector('.mustang-cor1').style.display = 'none';
+      document.querySelector('.mustang-cor2').style.display = 'block';
+      document.querySelector('.mustang-cor3').style.display = 'none';
+      document.querySelector('.mustang-cor4').style.display = 'none';
+      
+      return activeElement.innerHTML;
+    }else if(activeElement.innerHTML === 'Vermelho'){
+      document.querySelector('.mustang-troca').style.display = 'none';
+      document.querySelector('.mustang-cor1').style.display = 'none';
+      document.querySelector('.mustang-cor2').style.display = 'none';
+      document.querySelector('.mustang-cor3').style.display = 'block';
+      document.querySelector('.mustang-cor4').style.display = 'none';
+      
+      return activeElement.innerHTML;
+    }else if(activeElement.innerHTML === 'Cinza'){
+      document.querySelector('.mustang-troca').style.display = 'none';
+      document.querySelector('.mustang-cor1').style.display = 'block';
+      document.querySelector('.mustang-cor2').style.display = 'none';
+      document.querySelector('.mustang-cor3').style.display = 'none';
+      document.querySelector('.mustang-cor4').style.display = 'none';
+
+      return activeElement.innerHTML;
+    }
   }
   return null;
 }
-
-// function pegaCor() {
-//   let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
-//   if (activeElement) {
-//     if (activeElement === 'Branco'){
-
-//     }else if(activeElement === 'Azul'){
-
-//       return activeElement.innerHTML;
-//     }else if(activeElement === 'Preto'){
-
-//       return activeElement.innerHTML;
-//     }else if(activeElement === 'Vermelho'){
-
-//       return activeElement.innerHTML;
-//     }else if(activeElement === 'Cinza'){
-
-//       return activeElement.innerHTML;
-//     }
-//   }
-//   return null;
-// }
 
 // Adiciona evento de clique aos divs de cores
 document.querySelectorAll('.conteudo-cores > div').forEach(div => {
