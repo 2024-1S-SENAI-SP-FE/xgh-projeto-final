@@ -66,6 +66,7 @@ h2 {
     padding: 1rem;
 }
 
+
 .setup-carros,
 .info-carros,
 .select-cores,
@@ -443,7 +444,8 @@ hr {
 .btnCompra {
     background-color: #3e6ae1;
     color: #ffffff;
-    padding: 1rem;
+    width: 14rem;
+    padding: 10px;
     border-radius: 10px;
     font-family: "DM Sans", sans-serif;
     font-weight: bold;
@@ -454,9 +456,11 @@ hr {
 }
 
 .btnCompra:hover {
-    background-color: #2a4c7f;
+    /* background-color: #2a4c7f; */
     transition: 0.7s;
-    transform: scale(1.04);
+    transform: scale(1.01);
+    box-shadow: 0 0 5px  #3e6ae1,
+    0 0 10px #3e6ae1;
 }
 
 /*  */
@@ -667,9 +671,10 @@ label {
 
 #btnFinalizar:hover {
     background-color: #32c432;
-    /* background-color: #2a4c7f; */
     transition: 0.7s;
     transform: scale(1.04);
+    box-shadow: 0 0 5px  #32c432,
+    0 0 10px  #32c432;
 }
 
 
