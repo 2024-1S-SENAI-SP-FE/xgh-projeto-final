@@ -22,9 +22,10 @@ function consultaReq() {
                 const senhaRecuperada = resposta[i].senha;
                 window.alert('Senha recuperada com sucesso!');
                 document.querySelector('#senhaRecuperada').value = `${senhaRecuperada};`
-            }else{
-                window.alert('Email não encontrado')
             }
+            // }else{
+            //     window.alert('Email não encontrado')
+            // }
         }
     })
 }

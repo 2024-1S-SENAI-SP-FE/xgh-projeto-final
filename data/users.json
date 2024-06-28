@@ -17,6 +17,18 @@
       "nome": "test",
       "email": "test3@test.com",
       "senha": "123456"
+    },
+    {
+      "id": "5ba9",
+      "nome": "test1",
+      "email": "test1@test.com",
+      "senha": "test1"
+    },
+    {
+      "id": "dc54",
+      "nome": "test2",
+      "email": "test2@test.com",
+      "senha": "test2"
     }
   ]
 }

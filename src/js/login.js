@@ -33,7 +33,7 @@ function validLogin(){
             // resultElement.innerHTML= "Login bem sucedido"
             window.alert('Login bem-sucedido');
             // trocar endereço de acordo com a máquina
-            window.location.href = "http://127.0.0.1:5500/index.html"
+            window.location.href = "http://127.0.0.1:5501/index.html"
             // ====================linha a verificar
             document.querySelector('#divLogado').style.display = "block"
         }else{
