@@ -34,7 +34,7 @@ document.querySelector('#btnCompra').addEventListener('click', () => {
   const frete = document.querySelector('#frete').innerHTML;
   console.log(`${cor}`);
   document.querySelector('#cor-selecionada').innerHTML = `${cor}`;
-  document.querySelector('#valor-de-frete').innerHTML = `$${frete}`;
+  document.querySelector('#valor-de-frete').innerHTML = `R$${frete}`;
 
 });
 
