@@ -15,6 +15,28 @@ function pegaCor() {
   return null;
 }
 
+// function pegaCor() {
+//   let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
+//   if (activeElement) {
+//     if (activeElement === 'Branco'){
+
+//     }else if(activeElement === 'Azul'){
+
+//       return activeElement.innerHTML;
+//     }else if(activeElement === 'Preto'){
+
+//       return activeElement.innerHTML;
+//     }else if(activeElement === 'Vermelho'){
+
+//       return activeElement.innerHTML;
+//     }else if(activeElement === 'Cinza'){
+
+//       return activeElement.innerHTML;
+//     }
+//   }
+//   return null;
+// }
+
 // Adiciona evento de clique aos divs de cores
 document.querySelectorAll('.conteudo-cores > div').forEach(div => {
   div.addEventListener('click', function () {
@@ -34,7 +56,7 @@ document.querySelector('#btnCompra').addEventListener('click', () => {
   const frete = document.querySelector('#frete').innerHTML;
   console.log(`${cor}`);
   document.querySelector('#cor-selecionada').innerHTML = `${cor}`;
-  document.querySelector('#valor-de-frete').innerHTML = `$${frete}`;
+  document.querySelector('#valor-de-frete').innerHTML = `R$${frete}`;
 
 });
 
