@@ -140,6 +140,10 @@ body {
         font-size: 13px ;
 
     }
+    .comemora60-anos {
+        padding-top: 1.5rem;
+ 
+     } 
 
     .alinha-simbolo{
         display: flex;
@@ -292,7 +296,7 @@ body {
     }
 
     .comemora60-anos {
-       padding-top: 2rem;
+       padding-top: 1.5rem;
 
     } 
 
@@ -492,7 +496,7 @@ body {
         max-width: 200px
     }
 
-    .comemora60-anos img{
+    .comemora60-anos {
         padding-top: 1.5rem;
 
     }
@@ -694,9 +698,7 @@ body {
     }
 
     .comemora60-anos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-top: 1.5rem;
 
     }
 
@@ -876,9 +878,7 @@ body {
     }
 
     .comemora60-anos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-top: 1.5rem;
 
     }
 
