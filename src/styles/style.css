@@ -37,6 +37,8 @@ button {
     display: none;
 }
 
+
+
 @media screen and (min-width: 1366px) {
     /* <=================SEÇÃO HOME E VÍDEO===================> */
 
@@ -817,14 +819,13 @@ button {
         height: 2.5rem;
         width: 17rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .btDetalhes:hover {
@@ -845,14 +846,13 @@ button {
         height: 2.5rem;
         width: 17rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
@@ -1116,14 +1116,13 @@ button {
         height: 2.1rem;
         width: 8rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .btDetalhes:hover {
@@ -1144,14 +1143,13 @@ button {
         height: 2.5rem;
         width: 10rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
@@ -1688,14 +1686,13 @@ button {
         height: 2.5rem;
         width: 17rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .btDetalhes:hover {
@@ -1716,14 +1713,13 @@ button {
         height: 2.5rem;
         width: 17rem;
         font-family: "DM Sans", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     /* <===============BOTÃO SUPORTE=====+========> */
