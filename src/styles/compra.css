@@ -56,7 +56,7 @@ h2 {
 
 .conteudo {
     margin-top: 20px;
-    height: 85vh;
+    height: 86vh;
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
@@ -81,7 +81,22 @@ h2 {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    backdrop-filter: blur(80px);
+}
+
+.blur-geral::before {
+    transition: 0.6s;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1;
 }
 
 /*  */
@@ -459,8 +474,8 @@ hr {
     /* background-color: #2a4c7f; */
     transition: 0.7s;
     transform: scale(1.01);
-    box-shadow: 0 0 5px  #3e6ae1,
-    0 0 10px #3e6ae1;
+    box-shadow: 0 0 5px #3e6ae1,
+        0 0 10px #3e6ae1;
 }
 
 /*  */
@@ -673,8 +688,8 @@ label {
     background-color: #32c432;
     transition: 0.7s;
     transform: scale(1.04);
-    box-shadow: 0 0 5px  #32c432,
-    0 0 10px  #32c432;
+    box-shadow: 0 0 5px #32c432,
+        0 0 10px #32c432;
 }
 
 
@@ -682,7 +697,7 @@ label {
 
 /* SECTION FINALIZA COMPRA */
 
-.conteudo-finalizar{
+.conteudo-finalizar {
     position: fixed;
     top: 28%;
     left: 16%;
@@ -696,52 +711,58 @@ label {
     position: absolute;
     top: 20%;
     left: 50%;
+    color: #ffffff;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 8rem;
     display: none;
-    flex-direction: column;              
-    width: 40rem;
+    flex-direction: column;
+    width: 50vmax;
+    height: 20vmax;
     border-radius: 2rem;
     border: 2px solid #32c432;
     margin-top: 5rem;
+    animation: grow 1s;
+    z-index: 2;
 }
-
-  
-
-@keyframes grow {
-    0% {
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
-    }
-    100% {
-        border-radius: 2rem;
-        width: 50vmax;
-        height: 20vmax;
-    }
-}  
-
 
 .hover-finaliza {
     animation: grow 0.6s;
     color: #ffffff;
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, -50%);
     background-color: #32c432;
     padding: 8rem;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     border-radius: 2rem;
-    margin-top: 4.8rem;    
+    margin-top: 5rem;
     transition: 0.6s;
-    width:50vmax;
+    width: 50vmax;
     height: 20vmax;
+    z-index: 2;
 }
 
-.svg-finalizar{
+@keyframes grow {
+    0% {
+        width: 2px;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    100% {
+        border-radius: 2rem;
+        width: 50vmax;
+        height: 20vmax;
+        background-color: #32c432;
+    }
+}
+
+
+
+.svg-finalizar {
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -749,11 +770,9 @@ label {
     margin-bottom: 1rem;
 }
 
-.hover-svg{
-    fill: white;
-}
 
-#Capa_1{
+#Capa_1 {
+    fill: white;
     margin-top: 5px;
 }
 
@@ -770,6 +789,3 @@ label {
     font-weight: 500;
     font-size: 1rem;
 }
-
-
-
