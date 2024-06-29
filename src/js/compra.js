@@ -152,7 +152,6 @@ document.querySelector('#btnRevizarCartao').addEventListener('click', () => {
 });
 
 // Finalizar
-
 document.querySelector('#btnFinalizar').addEventListener('click', () => {
   document.querySelector('#finaliza-compra').style.display = 'flex';
 })
@@ -161,22 +160,35 @@ document.querySelector('#btnFinalizar').addEventListener('click', function () {
   var conteudo = document.querySelector('.container-finalizar');
   conteudo.style.display = 'flex';
 
-  var classAtual = document.querySelector('.container-finalizar');
+  var classAtual = document.querySelector('#finaliza-compra');
   setTimeout(function () {
     classAtual.classList.toggle('hover-finaliza');
   }, 600);
 
   setTimeout(function() {
-    var container = document.querySelector('#finaliza-compra')
+    var container = document.querySelector('.hover-finaliza')
       container.style.display = 'none';
-  }, 8000); 
+  }, 7000); 
 });
 
-// Muda cor svg 
-document.querySelector('#btnFinalizar').addEventListener('click', function () {
-  var classAtual = document.querySelector('#Capa_1');
+//Adicionando Blur
+document.querySelector('#btnFinalizar').addEventListener('click', function() {
+  var blur = document.querySelector('.container-geral');
+  setTimeout(function(){
+    blur.classList.toggle('blur-geral'); 
+  },100);
+
   setTimeout(function () {
-    classAtual.classList.toggle('hover-svg');
-  }, 600);
-});
+    blur.classList.remove('blur-geral'); 
+  }, 7000);
+})
+
+
+// // Muda cor svg 
+// document.querySelector('#btnFinalizar').addEventListener('click', function () {
+//   var classAtual = document.querySelector('#Capa_1');
+//   setTimeout(function () {
+//     classAtual.classList.toggle('hover-svg');
+//   }, 600);
+// });
 
