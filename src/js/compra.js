@@ -9,7 +9,7 @@ elements.forEach(element => {
 function pegaCor() {
   let activeElement = document.querySelector('.conteudo-cores > div.active > div > span');
   if (activeElement) {
-    if (activeElement.innerHTML === 'Branco'){
+    if (activeElement.innerHTML === 'Branco') {
       document.querySelector('.mustang-troca').style.display = 'none';
       document.querySelector('.mustang-cor1').style.display = 'none';
       document.querySelector('.mustang-cor2').style.display = 'none';
@@ -17,30 +17,30 @@ function pegaCor() {
       document.querySelector('.mustang-cor4').style.display = 'block';
       console.log(`${activeElement}`)
       return activeElement.innerHTML;
-    }else if(activeElement.innerHTML === 'Azul'){
+    } else if (activeElement.innerHTML === 'Azul') {
       document.querySelector('.mustang-troca').style.display = 'block';
       document.querySelector('.mustang-cor1').style.display = 'none';
       document.querySelector('.mustang-cor2').style.display = 'none';
       document.querySelector('.mustang-cor3').style.display = 'none';
       document.querySelector('.mustang-cor4').style.display = 'none';
       return activeElement.innerHTML;
-    }else if(activeElement.innerHTML === 'Preto'){
+    } else if (activeElement.innerHTML === 'Preto') {
       document.querySelector('.mustang-troca').style.display = 'none';
       document.querySelector('.mustang-cor1').style.display = 'none';
       document.querySelector('.mustang-cor2').style.display = 'block';
       document.querySelector('.mustang-cor3').style.display = 'none';
       document.querySelector('.mustang-cor4').style.display = 'none';
-      
+
       return activeElement.innerHTML;
-    }else if(activeElement.innerHTML === 'Vermelho'){
+    } else if (activeElement.innerHTML === 'Vermelho') {
       document.querySelector('.mustang-troca').style.display = 'none';
       document.querySelector('.mustang-cor1').style.display = 'none';
       document.querySelector('.mustang-cor2').style.display = 'none';
       document.querySelector('.mustang-cor3').style.display = 'block';
       document.querySelector('.mustang-cor4').style.display = 'none';
-      
+
       return activeElement.innerHTML;
-    }else if(activeElement.innerHTML === 'Cinza'){
+    } else if (activeElement.innerHTML === 'Cinza') {
       document.querySelector('.mustang-troca').style.display = 'none';
       document.querySelector('.mustang-cor1').style.display = 'block';
       document.querySelector('.mustang-cor2').style.display = 'none';
@@ -121,14 +121,41 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click', () => {
   const emailBoleto = document.querySelector('#email').value;
 
 
+
   // verificar correção de erro
   if (nomeBoleto !== '' && cpfBoleto !== '' && emailBoleto !== '') {
     // window.alert('Compra realizada com sucesso!');
     document.querySelector('#resumo-compra').style.display = 'block';
+
   } else {
-    window.alert('Preencha todos os campos para finalizar a compra!');
     document.querySelector('#nome').focus();
   }
+
+});
+
+// checa se os input tem algo, se não tiver a borda e a sombra ficam vermelhos
+
+
+const inputsBoleto = document.querySelectorAll('#boleto-form input');
+
+function checarInput(input) {
+  if (input.value.trim() === '') {
+    input.classList.add('error');
+  } else {
+    input.classList.remove('error');
+  }
+}
+
+inputsBoleto.forEach(input => {
+  input.addEventListener('input', function () {
+    checarInput(input);
+  });
+});
+
+document.querySelector('#btnRevizarBoleto').addEventListener('click', function () {
+  inputsBoleto.forEach(input => {
+    checarInput(input);
+  });
 });
 
 // Botão de Revizar Cartao
@@ -146,9 +173,57 @@ document.querySelector('#btnRevizarCartao').addEventListener('click', () => {
     // window.alert('Compra realizada com sucesso!');
     document.querySelector('#resumo-compra').style.display = 'block';
   } else {
-    window.alert('Preencha todos os campos para finalizar a compra!');
     document.querySelector('#nome-cartao').focus();
   }
+});
+
+// checa se os input tem algo, se não tiver a borda e a sombra ficam vermelhos
+
+const inputsCartao = document.querySelectorAll('#cartao-form input');
+
+inputsCartao.forEach(input => {
+  input.addEventListener('input', function () {
+    checarInput(input);
+  });
+});
+
+document.querySelector('#btnRevizarBoleto').addEventListener('click', function () {
+  inputsCartao.forEach(input => {
+    checarInput(input);
+  });
+});
+
+document.querySelector('#btnRevizarCartao').addEventListener('click', function () {
+  inputsCartao.forEach(input => {
+    checarInput(input);
+  });
+});
+
+
+// checa se os selects tem algo, se não tiver a borda e a sombra ficam vermelhos
+
+const selectsCartao = document.querySelectorAll('.validade-cartao select');
+
+function checarSelect(select) {
+  if (select.value === '') {
+    select.classList.add('error');
+  } else {
+    select.classList.remove('error');
+  }
+}
+
+document.querySelector('#btnRevizarCartao').addEventListener('click', function() {
+  selectsCartao.forEach(select => {
+    checarSelect(select);
+  });
+});
+
+selectsCartao.forEach(select => {
+  select.addEventListener('change', function() {
+    if (select.classList.contains('error') && select.value !== '') {
+      select.classList.remove('error');
+    }
+  });
 });
 
 // Finalizar
@@ -165,26 +240,26 @@ document.querySelector('#btnFinalizar').addEventListener('click', function () {
     classAtual.classList.toggle('hover-finaliza');
   }, 600);
 
-  setTimeout(function() {
+  setTimeout(function () {
     var container = document.querySelector('.hover-finaliza')
-      container.style.display = 'none';
-  }, 7000); 
+    container.style.display = 'none';
+  }, 7000);
 });
 
 //Adicionando Blur
-document.querySelector('#btnFinalizar').addEventListener('click', function() {
+document.querySelector('#btnFinalizar').addEventListener('click', function () {
   var blur = document.querySelector('.container-geral');
-  setTimeout(function(){
-    blur.classList.toggle('blur-geral'); 
-  },100);
+  setTimeout(function () {
+    blur.classList.toggle('blur-geral');
+  }, 100);
 
   setTimeout(function () {
-    blur.classList.remove('blur-geral'); 
+    blur.classList.remove('blur-geral');
   }, 7000);
 })
 
 
-// // Muda cor svg 
+// // Muda cor svg
 // document.querySelector('#btnFinalizar').addEventListener('click', function () {
 //   var classAtual = document.querySelector('#Capa_1');
 //   setTimeout(function () {
