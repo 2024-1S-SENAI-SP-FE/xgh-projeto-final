@@ -17,8 +17,6 @@
 
 }
 
-
-
 body {
     /* overflow: hidden; */
     height: 100vh;
@@ -26,8 +24,6 @@ body {
     overflow-x: hidden;
 
 }
-
-
 
 ::-webkit-scrollbar-track {
     background-color: transparent;
@@ -177,7 +173,6 @@ h2 {
 .cinza.active {
     transform: scale(1.1);
     transition: 0.7s;
-    z-index: 1;
     opacity: 1;
     cursor: pointer;
 }
@@ -259,7 +254,7 @@ h2 {
 .cinza:hover {
     transform: scale(1.1);
     transition: 0.7s;
-    z-index: 1;
+
     opacity: 1;
     cursor: pointer;
 }
@@ -358,27 +353,25 @@ input[type="checkbox"] {
 
 }
 
+input {
+    outline: none;
+}
+
 .container-frete input {
+    height: 2rem;
+    background-color: #f4f4f4;
+    border: none;
     margin-left: 5px;
     width: 13rem;
-    border-radius: 10px;
-    border: 2px solid #3e6ae1;
+    border-radius: 4px;
     padding: 2px;
     padding-left: 10px;
-}
-
-.container-frete:hover {
-    cursor: pointer;
-}
-
-#CEP {
-    box-shadow: 0 0 3px #3e6ae1;
+    outline: none;
 }
 
 #CEP:focus {
-    outline: none;
-    box-shadow: 0 0 8px #3e6ae1;
-    transition: 0.4s;
+    border: 1px solid #4CAF50;
+    transition: 0.8s;
 }
 
 
@@ -388,12 +381,14 @@ input[type="checkbox"] {
     font-size: small;
     font-weight: bolder;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #4CAF50;
     padding: 4px;
-    border-radius: 2rem;
+    border-radius: 4px;
     width: 6rem;
     margin-left: 1rem;
     cursor: pointer;
+    border: none;
+    height: 2rem;
 }
 
 .resultado-frete {
@@ -583,7 +578,7 @@ label {
     text-transform: none;
 }
 
-.validade-cartao select {
+.select-form {
     width: 50%;
     padding: 8px;
     margin-bottom: 10px;
@@ -593,6 +588,11 @@ label {
     border: 2px solid #3e6ae1;
     box-shadow: 0 0 3px #3e6ae1;
     outline: none;
+}
+
+.error {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
 }
 
 .validade-cartao select:focus {
