@@ -133,7 +133,27 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click', () => {
 
 });
 
-// checa se os input tem algo, se não tiver a borda e a sombra ficam vermelhos
+
+// Botão de Revizar Cartao
+document.querySelector('#btnRevizarCartao').addEventListener('click', () => {
+  const pagCartao = document.querySelector('#pag-cartao').style.display;
+  
+  const nomeCartao = document.querySelector('#nome-cartao').value;
+  const numeroCartao = document.querySelector('#numero-cartao').value;
+  const mesCartao = document.querySelector('#mes').value;
+  const anoCartao = document.querySelector('#ano').value;
+  const cvvCartao = document.querySelector('#cvv').value;
+  
+  // verificar correção de erro
+  if ((nomeCartao !== '') && (numeroCartao !== '') && (mesCartao !== '') && (anoCartao !== '') && (cvvCartao !== '')) {
+    // window.alert('Compra realizada com sucesso!');
+    document.querySelector('#resumo-compra').style.display = 'block';
+  } else {
+    document.querySelector('#nome-cartao').focus();
+  }
+});
+
+// checa se os inputs do boleto têm algo, se não tiver a borda e a sombra ficam vermelhos
 
 
 const inputsBoleto = document.querySelectorAll('#boleto-form input');
@@ -158,25 +178,6 @@ document.querySelector('#btnRevizarBoleto').addEventListener('click', function (
   });
 });
 
-// Botão de Revizar Cartao
-document.querySelector('#btnRevizarCartao').addEventListener('click', () => {
-  const pagCartao = document.querySelector('#pag-cartao').style.display;
-
-  const nomeCartao = document.querySelector('#nome-cartao').value;
-  const numeroCartao = document.querySelector('#numero-cartao').value;
-  const mesCartao = document.querySelector('#mes').value;
-  const anoCartao = document.querySelector('#ano').value;
-  const cvvCartao = document.querySelector('#cvv').value;
-
-  // verificar correção de erro
-  if ((nomeCartao !== '') && (numeroCartao !== '') && (mesCartao !== '') && (anoCartao !== '') && (cvvCartao !== '')) {
-    // window.alert('Compra realizada com sucesso!');
-    document.querySelector('#resumo-compra').style.display = 'block';
-  } else {
-    document.querySelector('#nome-cartao').focus();
-  }
-});
-
 // checa se os input tem algo, se não tiver a borda e a sombra ficam vermelhos
 
 const inputsCartao = document.querySelectorAll('#cartao-form input');
@@ -187,8 +188,8 @@ inputsCartao.forEach(input => {
   });
 });
 
-document.querySelector('#btnRevizarBoleto').addEventListener('click', function () {
-  inputsCartao.forEach(input => {
+inputsCartao.forEach(input => {
+  input.addEventListener('input', function () {
     checarInput(input);
   });
 });
