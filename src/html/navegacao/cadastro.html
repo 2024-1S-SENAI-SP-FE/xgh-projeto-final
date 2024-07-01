@@ -90,6 +90,30 @@
     <!-- <script src="/src/js/login.js"></script> -->
     <script src="/src/js/translate.js"></script>
     <script>
+        const inputs = document.querySelectorAll('.grupo-input input');
+
+        function checarInput(input) {
+            if (input.value.trim() === '') {
+                input.classList.add('error');
+            } else {
+                input.classList.remove('error');
+            }
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', function () {
+                checarInput(input);
+            });
+        });
+
+        document.querySelector('#btn-cadastrar').addEventListener('click', function () {
+            inputs.forEach(input => {
+                checarInput(input);
+            });
+        });
+
+    </script>
+    <script>
         // Botão de cadastro
         document.querySelector('#btn-cadastrar').addEventListener('click', () => {
             validaSenha();
