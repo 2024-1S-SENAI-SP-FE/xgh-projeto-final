@@ -4,10 +4,40 @@
     box-sizing: border-box;
 }
 
+#troca-idioma:hover {
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+#svgLogin:hover {
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+#troca-idioma {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+#svgLogin {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+
 @media screen and (min-width: 1366px) {
     /* HEADER  */
 
-    #home-mobile{
+    #home-mobile {
         display: none;
     }
 
@@ -43,6 +73,8 @@
 
     .icones-menu {
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
     }
 
@@ -68,7 +100,6 @@
     header {
         z-index: 2;
     }
-
 
 
 
@@ -130,7 +161,7 @@
     }
 
     .comemoracao:hover {
-        background-color: #eeeeee;
+        background-color: rgba(225, 225, 225, 0.2);
         border-radius: 5px;
     }
 
@@ -140,7 +171,7 @@
 
     /* Erro de hover */
     .sobre-nos:hover {
-        background-color: #eeeeee;
+        background-color: rgba(225, 225, 225, 0.2);
         border-radius: 5px;
     }
 
@@ -173,7 +204,7 @@
         justify-content: center;
     }
 
-    .logo-conteiner > svg {
+    .logo-conteiner>svg {
         margin-top: 15px;
     }
 
@@ -232,7 +263,7 @@
 
     /* HEADER  */
 
-    #home-mobile{
+    #home-mobile {
         display: none;
     }
 
@@ -399,7 +430,7 @@
         justify-content: center;
     }
 
-    .logo-conteiner > svg {
+    .logo-conteiner>svg {
         margin-top: 15px;
     }
 
@@ -490,7 +521,7 @@
         justify-content: center;
     }
 
-    .logo-conteiner > svg {
+    .logo-conteiner>svg {
         margin-top: 15px;
     }
 
@@ -579,7 +610,7 @@
         justify-content: center;
     }
 
-    .logo-conteiner > svg {
+    .logo-conteiner>svg {
         margin-top: 15px;
     }
 
