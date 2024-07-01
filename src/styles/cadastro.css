@@ -7,6 +7,11 @@
     font-family: "DM Sans", sans-serif;
 }
 
+.error {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+}
+
 main {
     height: 100vh;
 }
@@ -46,7 +51,15 @@ h1 {
     font-weight: 500;
 }
 
+input:focus {
+    outline: none;
+    transition: 0.6s;
+    border: 1px solid rgba(62, 106, 225, 1);
+    box-shadow: 0 0 3px rgba(62, 106, 225, 1);
+}
+
 input {
+    outline: none;
     padding-left: 10px;
     margin: 8px 0 8px 0;
     border: none;

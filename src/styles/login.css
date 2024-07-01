@@ -18,6 +18,7 @@ main {
 }
 
 .login {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +76,16 @@ span {
     margin-top: 16px;
 }
 
+input:focus {
+    outline: none;
+    transition: 0.6s;
+    border: 2px solid rgba(62, 106, 225, 1);
+    box-shadow: 0 0 3px rgba(62, 106, 225, 1);
+}
+
 input {
+    transition: 0.6s;
+    outline: none;
     padding-left: 10px;
     margin: 8px 0 8px 0;
     border: none;
@@ -83,6 +93,16 @@ input {
     height: 2.4rem;
     width: 100%;
     border-radius: 4px;
+}
+
+.error {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+}
+
+.logado {
+    border: 2px solid rgba(76, 175, 80, 1);
+    box-shadow: 0 0 3px rgba(76, 175, 80, 1);
 }
 
 .senha {
@@ -93,11 +113,10 @@ input {
 }
 
 .senha button {
-    padding-right: 10px;
-    cursor: pointer;
-    height: 40px;
+    display: inline-flex;
+    right: 40%;
+    position: absolute;
     border: none;
-    background-color: #F4F4F4;
 }
 
 .btnCadastra a{
