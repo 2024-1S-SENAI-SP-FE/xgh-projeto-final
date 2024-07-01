@@ -233,23 +233,23 @@ document.querySelector('#btnFinalizar').addEventListener('click', () => {
 })
 
 document.querySelector('#btnFinalizar').addEventListener('click', function () {
-  var conteudo = document.querySelector('.container-finalizar');
+  const conteudo = document.querySelector('.container-finalizar');
   conteudo.style.display = 'flex';
 
-  var classAtual = document.querySelector('#finaliza-compra');
+  const classAtual = document.querySelector('#finaliza-compra');
   setTimeout(function () {
     classAtual.classList.toggle('hover-finaliza');
   }, 600);
 
   setTimeout(function () {
-    var container = document.querySelector('.hover-finaliza')
+    const container = document.querySelector('.hover-finaliza')
     container.style.display = 'none';
   }, 7000);
 });
 
 //Adicionando Blur
 document.querySelector('#btnFinalizar').addEventListener('click', function () {
-  var blur = document.querySelector('.container-geral');
+  const blur = document.querySelector('.container-geral');
   setTimeout(function () {
     blur.classList.toggle('blur-geral');
   }, 100);
