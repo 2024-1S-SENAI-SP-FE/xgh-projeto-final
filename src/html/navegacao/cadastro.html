@@ -112,6 +112,40 @@
             });
         });
 
+        const p = document.createElement('p');
+
+        const nome = document.querySelector('#nome-cadastro');
+        const email = document.querySelector('#email-cadastro');
+        const senha = document.querySelector('#senha-cadastro');
+        const confirmaSenha = document.querySelector('#confirmaSenha-cadastro');
+        const btnCadastrar = document.querySelector('#btn-cadastrar');
+
+        function checarInput1(input1) {
+            if (input1.value.trim() === '') {
+                p.innerHTML = ('Introduza um nome');
+            }
+        }
+
+        function checarInput2(input2) {
+            if (input2.value.trim() === '') {
+                p.innerHTML = ('Introduza um e-email');
+            }
+        }
+
+        function checarInput2(input3) {
+            if (input3.value.trim() === '') {
+                p.innerHTML = ('Introduza uma senha');
+            }
+        }
+
+        function checarInput2(input4) {
+            if (input4.value.trim() === '') {
+                p.innerHTML = ('Introduza uma senha que coincida com a de cima');
+            }
+        }
+
+        
+
     </script>
     <script>
         // Botão de cadastro
