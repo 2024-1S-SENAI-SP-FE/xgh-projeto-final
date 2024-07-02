@@ -11,7 +11,7 @@
 
 body {
     font-family: NeueHaas;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar-track {
@@ -35,14 +35,14 @@ h1 {
 }
 
 .comemoracao-text {
-    height: 110vh;
+    height: 80vh;
 }
 
 .texto-historia {
-    max-width: 55rem;
+    max-width: 75rem;
     text-align: justify;
     line-height: 1.9rem;
-    margin-bottom: 1.2rem;
+    margin: 1rem 1.2rem;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
 }
