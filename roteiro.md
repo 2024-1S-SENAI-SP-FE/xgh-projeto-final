@@ -3,6 +3,7 @@
 1. CTRL + F5 (atualizar tradutor);
 2. Npm install json-server + npm start (atualizar tela de cadastro);
 3. Teste de som;
+4. Mudar endereço do localhost no arquivo 'login.js'
 
 <!-- Roteiro de apresentação -->
 
