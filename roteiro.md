@@ -39,7 +39,7 @@
 6. Sobre nós (Kétcia)
     - missão, visão, valores (ficticio)
 
-7. Página de Login
+7. Página de Login (Magno)
     - Login
     - Cadastro
     - Recuperação de Senha
