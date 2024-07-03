@@ -91,7 +91,29 @@ document.querySelector('#btnLogin').addEventListener('click', function () {
   inputs.forEach(input => {
     checarInput(input);
   });
+
+  const email = document.querySelector('#email');
+  const senha = document.querySelector('#password');
+
+  pErro(email, senha);
 });
+
+// Adiciona mensagem de erro, caso não tenha nada dentro do input
+
+function pErro(email, senha) {
+  if (email.classList.contains('error')) {
+      document.querySelector('#msg1').innerText = 'Introduza um email válido';
+  } else {
+      document.querySelector('#msg1').innerText = '';
+  }
+
+  if (senha.classList.contains('error')) {
+      document.querySelector('#msg2').innerText = 'Introduza uma senha válida';
+  } else {
+      document.querySelector('#msg2').innerText = '';
+  }
+}
+
 
 // Muda cor dos inputs para verde, caso o usuário esteja logado
 
