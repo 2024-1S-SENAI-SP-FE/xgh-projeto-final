@@ -12,6 +12,30 @@
     box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
 }
 
+.grupo-input p {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
+button {
+    border: none;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.senha button {
+    display: inline-flex;
+    right: 40%;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
 main {
     height: 100vh;
 }
@@ -33,6 +57,7 @@ h1 {
 }
 
 .cadastro {
+    position: relative;
     display: flex;
     justify-content: center;
 }
