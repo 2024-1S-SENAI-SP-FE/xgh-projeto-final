@@ -1,4 +1,3 @@
-# Documentação do Projeto
 
 ## Sobre Nós
 
