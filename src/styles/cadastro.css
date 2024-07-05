@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+.error {
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+}
+
+.grupo-input p {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
+button {
+    border: none;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.senha button {
+    display: inline-flex;
+    right: 40%;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    height: 100vh;
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 36px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.container-cadastro {
+    margin-top: 2rem;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cadastro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo-input {
+    padding-bottom: 16px;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+}
+
+.grupo-input label {
+    vertical-align: inherit;
+    font-size: 14px;
+    color: #444444;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: none;
+    transition: 0.6s;
+    border: 1px solid rgba(62, 106, 225, 1);
+    box-shadow: 0 0 3px rgba(62, 106, 225, 1);
+}
+
+input {
+    outline: none;
+    padding-left: 10px;
+    margin: 8px 0 8px 0;
+    border: none;
+    background-color: #F4F4F4;
+    height: 2.4rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#btn-cadastrar {
+    color: #fff;
+    background-color: #3E6AE1;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    width: 80%;
+    height: 2.4rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        margin-top: 6rem;
+    }
+}
+/* <==============HEADER===============> */
+
+.menu-navegacao>ul {
+    display: inline-flex;
+    gap: 5rem;
+    font-weight: 100;
+}
+
+.menu-navegacao {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0.5rem;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-family: NeueHaas, sans-serif;
+    font-size: 1rem;
+}
+
+.icones-menu button {
+    padding-right   : 16px;
+    border: none;
+    background: none;
+}
+
+.icones-menu {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.logo-menu {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nome-mustang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-menu a svg {
+    width: 100px;
+}
+
+.nome-mustang img {
+    width: 100px;
+}
+
+header {
+    z-index: 2;
+}
+
+.img-header {
+    filter: grayscale(100%) brightness(0%);
+}
+
+/* <===================FOOTER====================> */
+
+footer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* padding-bottom: 1%; */
+}
+
+.copyright {
+    font-size: 14px;
+    color: #393c41;
+}

@@ -1,0 +1,99 @@
+.alinhaCarousel{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+     margin-top: 2rem;
+}
+
+.container-carousel{
+    flex: 0 0 auto;
+    height: auto;
+}
+
+
+.carousel {
+   position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+   
+   
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.carousel-item {
+    position: relative;
+    display: inline-block;
+    min-width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+.carousel-item iframe {
+    width: 100%;
+    border: none;
+    
+}
+
+.carousel-item img {
+    margin-left: 50px;
+    margin-top: 60px;
+    width:550px;
+}
+
+#buttons {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size:20px;
+    padding: 4px;
+    cursor: pointer;
+    
+}
+   
+
+.btscarcom{
+    display: none;
+
+}
+
+
+
+.carousel-item:hover .btscarcom {
+    display: flex; 
+
+}
+
+.btretroceder {
+    left: 10px;
+}
+
+.btavançar {
+    right: 10px;
+}
+
+.mustang-troca{
+    display: block;
+}
+.mustang-cor1{
+    display: none;
+}
+.mustang-cor2{
+    display: none;
+}
+.mustang-cor3{
+    display: none;
+}
+.mustang-cor4{
+    display: none;
+}

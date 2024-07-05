@@ -1,0 +1,66 @@
+@font-face {
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: NeueHaas;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: NeueHaas;
+}
+
+.comemoracao-text {
+    height: 80vh;
+}
+
+.texto-historia {
+    max-width: 75rem;
+    text-align: justify;
+    line-height: 1.9rem;
+    margin: 1rem 1.2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+span {
+    color: rgb(2, 2, 168);
+    border-bottom: 2.5px solid black;
+}
+
+.conteudo-comemoracao {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-video {
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

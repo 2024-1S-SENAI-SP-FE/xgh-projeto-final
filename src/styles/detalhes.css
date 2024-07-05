@@ -1,0 +1,1698 @@
+@font-face {
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+/* <==============HOME==============> */
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: NeueHaas;
+}
+
+button {
+    cursor: pointer;
+}
+
+.invisivel {
+    display: none;
+}
+
+.topo {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.content-end {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 9px;
+    border-radius: 4px;
+}
+
+.topoHome {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 9px;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1366px) {
+
+    #home {
+        bottom: 0;
+        height: 91.5vh;
+        /* mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.5) 90%); */
+    }
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    h1,
+    h2 {
+        color: #FFFFFF;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
+
+    .titulo {
+        font-size: 24px;
+        color: #FFFFFF;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+
+    .botao {
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 60px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .content-end {
+        position: absolute;
+        top: 88%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
+
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 14px;
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        /* background-color: #000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%); */
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
+
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 14px;
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+    }
+
+    .titulo1 {
+        font-size: 28px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 14px;
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    /* desabilitar navegaçao pra nao aparecer ao recarregar */
+    #header {
+        display: none;
+    }
+
+    /* "home" */
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    #home {
+        bottom: 0;
+        height: 100vh;
+    }
+
+    h1,
+    h2 {
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: .7rem;
+    }
+
+    .titulo1 {
+        font-size: 15px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 10px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 10%)
+    }
+
+    .content-end {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 15px;
+        color: #fff;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro .topo {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* "home" */
+
+    #home {
+        bottom: 0;
+        height: 89vh;
+        /* mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.5) 90%); */
+    }
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    h1,
+    h2 {
+        color: #FFFFFF;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .titulo1 {
+        font-size: 25px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 15px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 20%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
+
+    .titulo {
+        font-size: 24px;
+        color: #FFFFFF;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+
+    .atributos {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .botao {
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 60px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .content-end {
+        position: absolute;
+        top: 88%;
+        /* Centraliza verticalmente */
+        left: 50%;
+        /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        /*Move a div de volta 50% do seu próprio tamanho em ambas as direções*/
+    }
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 450px) {
+
+    /* desabilitar navegaçao pra nao aparecer ao recarregar */
+    #header {
+        display: none;
+    }
+
+    /* "home" */
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    #home {
+        bottom: 0;
+        height: 100vh;
+    }
+
+    h1,
+    h2 {
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 15px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 20%)
+    }
+
+    .content-end {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .titulo {
+        font-size: 18px;
+        color: #fff;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 60px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro .topo {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 800px) {
+
+    /* desabilitar navegaçao pra nao aparecer ao recarregar */
+    #header {
+        display: none;
+    }
+
+    /* "home" */
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    #home {
+        bottom: 0;
+        height: 100vh;
+    }
+
+    h1,
+    h2 {
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 4.4rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .titulo1 {
+        font-size: 35px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 22px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 15%)
+    }
+
+    .content-end {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .atributos {
+        display: flex;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 23px;
+        color: #fff;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 21px;
+        color: #FFFFFF;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 20px 80px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+        width: 250px;
+    }
+
+
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+
+    /* desabilitar navegaçao pra nao aparecer ao recarregar */
+    #header {
+        display: none;
+    }
+
+    /* "home" */
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    #home {
+        bottom: 0;
+        height: 100vh;
+    }
+
+    h1,
+    h2 {
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 4.4rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .titulo1 {
+        font-size: 35px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 22px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 15%)
+    }
+
+    .content-end {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .atributos {
+        display: flex;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 23px;
+        color: #fff;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 21px;
+        color: #FFFFFF;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 20px 80px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+        width: 250px;
+    }
+
+
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+/* TABLET ESQUISITO E QUADRADO */
+
+@media screen and (width: 540px) and (height: 720px) {
+
+    /* desabilitar navegaçao pra nao aparecer ao recarregar */
+    #header {
+        display: none;
+    }
+
+    /* "home" */
+
+    #home img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+    }
+
+    #home {
+        bottom: 0;
+        height: 100vh;
+    }
+
+    h1,
+    h2 {
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .titulo1 {
+        font-size: 25px;
+        padding: 0 0 4px;
+    }
+
+    .titulo2 {
+        font-size: 16px;
+    }
+
+    .topoHome {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 15%)
+    }
+
+    .content-end {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 9px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .elementos {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .atributos {
+        display: flex;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 18px;
+        color: #fff;
+        padding: 0 0 4px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 20px 80px;
+        background-color: #3E6AE1;
+        transition: .3s;
+    }
+
+    .botao:hover {
+        background-color: #2E5CA1;
+
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+        width: 150px;
+    }
+
+
+
+    /* <===============SEGUNDA SESSÃO================> */
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #design {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #design img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* <====================TERCEIRA SESSÃO=====================> */
+
+    #interior .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #interior {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #interior img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+
+    #design .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* <==============QUARTA SESSÃO==============> */
+
+    #dentro img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #dentro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor .topo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px;
+        border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    #motor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #motor img {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #motor video {
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+
+}

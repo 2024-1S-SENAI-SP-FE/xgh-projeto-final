@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Div de suporte */
+#suporte {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 8px;
+    margin-right: 11px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+button {
+    border: none;
+}
+
+.load{
+    margin-top: 20%;
+    margin-left: 40%;
+    display: block;
+}
+
+.btn-suporte{
+    cursor: pointer;
+}
+
+/* Aba da janela suporte */
+.janela{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 8px;
+    margin-right: 11px;
+    margin-top: -11px;
+    border-radius: 8px 8px 0px 0px;
+    margin-left: -11px;
+}
+
+/* Botão Fechar da aba */
+.button-janela img{
+    display:inline;
+    justify-content:flex-end;
+    align-content: space-between;
+    margin-top: 2px;
+    width: 25px;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+.img-robo{
+    width: 40px;
+}
+
+.chat{
+    background-color: #f4f4f4;
+    width: 280px;
+    height: 80px;
+    border-radius: 8px;
+    margin-top: -2px;
+    animation-name: chat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes chat{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0.2;
+    }
+
+}
+
+.chat h2{
+    font-size: 15px;
+    padding-top: 9px;
+    padding-left: 12px;
+}
+
+/* Estilização dos botões */
+.chat button{
+    display: inline;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: #0044ff;
+    color: #f4f4f4;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.5px;
+    transition: 1s;
+}
+
+.chat button:hover{
+    transition: 1s;
+    background-color: #2121df;
+}
+
+.chat :nth-child(2){
+    margin-left: 10px;
+}
+
+.chat :nth-child(3){
+    margin-left: 10px;
+}
+
+/* Div de resposta1 */
+.resposta1-chat{
+    display: none;
+    background-color: #f4f4f4;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 160px;
+
+}
+
+.resposta1-chat :first-child{
+    display: flex;
+    justify-content: justify;
+    font-size: 15px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+.resposta1-chat :nth-child(2){
+    display: flex;
+    justify-content: justify;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.resposta1-chat :nth-child(3){
+    display: flex;
+    justify-content: justify;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    word-break:inherit;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+
+.resposta-cliente{
+    display:none;
+    background-color: #f4f4f4;;
+    width: 170px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 8px;
+    margin-left: 110px;
+}
+
+.resposta-cliente p{
+    font-size: 15px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.resposta1-chat{
+    display: none;
+    background-color: #f4f4f4;
+    width: 220px;
+    height: 140px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 2px;
+}

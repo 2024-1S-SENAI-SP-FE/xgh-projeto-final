@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 36px;
+    font-size: 2.4rem;
+}
+
+main {
+    height: 87vh;
+}
+
+.login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 30%;
+    height: 69vh;
+}
+
+.botoes {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes button {
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 2.4rem;
+}
+
+.elementos {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+
+span {
+    margin: 1.5rem;
+}
+
+.btnLogin:hover {
+    background-color: rgb(0, 68, 255, 1);
+    transition: 0.5s;
+}
+
+.btnLogin {
+    color: #fff;
+    background-color: #3E6AE1;
+    margin-bottom: 1.5rem;
+    margin-top: 16px;
+    transition: 0.5s;
+}
+
+input:focus {
+    outline: none;
+    transition: 0.6s;
+    border: 1px solid rgba(62, 106, 225, 1);
+    box-shadow: 0 0 3px rgba(62, 106, 225, 1);
+}
+
+input {
+    transition: 0.6s;
+    outline: none;
+    padding-left: 10px;
+    margin: 8px 0 8px 0;
+    border: none;
+    background-color: #F4F4F4;
+    height: 2.4rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.error {
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+}
+
+.elementos p {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
+#msg1, #msg2 {
+    transition: .5s;
+    padding-bottom: 1rem;
+}
+
+.logado {
+    border: 1px solid rgba(76, 175, 80, 1);
+    box-shadow: 0 0 3px rgba(76, 175, 80, 1);
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.senha button {
+    display: inline-flex;
+    right: 40%;
+    position: absolute;
+    border: none;
+}
+
+.btnCadastra:hover {
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.btnCadastra a{
+    text-decoration: none;
+}
+
+input:focus {
+    border: 1px #5c5e62;
+}
+
+label {
+    color: #5c5e62;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        margin-top: 6rem;
+    }
+}
+
+/* <==============HEADER===============> */
+
+.menu-navegacao>ul {
+    display: inline-flex;
+    gap: 5rem;
+    font-weight: 100;
+}
+
+.menu-navegacao {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-family: NeueHaas, sans-serif;
+    font-size: 1rem;
+}
+
+.icones-menu button {
+    padding-right: 16px;
+    border: none;
+    background: none;
+}
+
+.icones-menu {
+    display: inline-flex;
+}
+
+.logo-menu {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nome-mustang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-menu a svg {
+    width: 100px;
+}
+
+.nome-mustang img {
+    width: 100px;
+}
+
+header {
+    z-index: 2;
+}
+
+.img-header {
+    filter: grayscale(100%) brightness(0%);
+}
+
+/* <===================FOOTER====================> */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #393c41;
+}

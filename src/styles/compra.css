@@ -1,0 +1,791 @@
+@font-face {
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#footer {
+    display: none;
+
+}
+
+body {
+    /* overflow: hidden; */
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* GERAL  */
+
+h1,
+h2 {
+    font-family: NeueHaas;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+
+.conteudo {
+    margin-top: 20px;
+    height: 86vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+
+.setup-carros,
+.info-carros,
+.select-cores,
+.conteudo-seguro,
+.consulta-cep,
+.encomenda {
+    margin-right: 3rem;
+}
+
+
+.container-geral {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.blur-geral::before {
+    transition: 0.6s;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+/*  */
+
+/* PRIMEIRA SEÇÃO */
+
+.lista-setup ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.motor,
+.torque,
+.potencia {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    transition: 0.6s;
+    border-radius: 12px;
+}
+
+.nome-torque,
+.nome-motor,
+.nome-potencia {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-family: NeueHaas;
+    font-weight: bold;
+    border-bottom: 1.5px solid black;
+}
+
+.info-motor,
+.info-torque,
+.info-potencia {
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+
+/*  */
+
+/* SEGUNDA SEÇÃO  */
+
+.info-carros {
+    text-align: left;
+}
+
+.info-lista li {
+    padding: 1rem;
+    border: 2px solid #3e6ae1;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    box-shadow: 1px 7.5px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.7s;
+}
+
+.info-lista li:hover {
+    background-color: #f7f7f7;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+    transition: 0.7s;
+}
+
+
+/* TERCEIRA SEÇÃO  */
+.branco:hover,
+.azul:hover,
+.preto:hover,
+.vermelho:hover,
+.cinza:hover,
+.branco.active,
+.azul.active,
+.preto.active,
+.vermelho.active,
+.cinza.active {
+    transform: scale(1.1);
+    transition: 0.7s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.conteudo-cores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branco,
+.preto,
+.vermelho,
+.azul,
+.cinza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+
+.bola-branca {
+    display: flex;
+    background-color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: 0px 7px 8px black
+}
+
+.bola-azul {
+    display: flex;
+    background-color: #0000ff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: 0px 7px 8px black;
+}
+
+.bola-preta {
+    display: flex;
+    background-color: #000000;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: 0px 7px 8px black;
+}
+
+.bola-vermelha {
+    display: flex;
+    background-color: #ff0000;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: 0px 7px 8px black;
+}
+
+.bola-cinza {
+    display: flex;
+    background-color: #808080;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: 0px 7px 8px black
+}
+
+#texto-cor {
+    margin-top: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+
+.branco:hover,
+.azul:hover,
+.preto:hover,
+.vermelho:hover,
+.cinza:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+.conteudo-cores {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+}
+
+
+/*  */
+
+
+
+/* QUARTA SEÇÃO */
+
+.seguro-transporte,
+.seguro {
+    display: flex;
+}
+
+.seguro-transporte,
+.seguro {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.container-seguro {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.seguro-transporte,
+.seguro {
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.7s;
+    box-shadow: 1px 7.5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.seguro-transporte:hover,
+.seguro:hover {
+    transform: scale(1.03);
+    transition: 0.7s;
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.6);
+    background-color: #dedede5d;
+}
+
+.seguro-transporte svg,
+.seguro svg {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.seguro label,
+.seguro-transporte label {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bolder;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/*  */
+
+/* QUINTA SEÇÃO */
+#consulta-frete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container-frete {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-frete label {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+input {
+    outline: none;
+}
+
+.container-frete input {
+    height: 2rem;
+    background-color: #f4f4f4;
+    border: none;
+    margin-left: 5px;
+    width: 13rem;
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 10px;
+    outline: none;
+}
+
+#CEP:focus {
+    border: 1px solid #4CAF50;
+    transition: 0.8s;
+}
+
+
+
+#btnConsulta {
+    font-family: "DM Sans", sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 4px;
+    border-radius: 4px;
+    width: 6rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: none;
+    height: 2rem;
+}
+
+.resultado-frete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo-api {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+.valor,
+.endereco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.7s;
+
+}
+
+
+.endereco h4 {
+    font-family: NeueHaas;
+    margin-bottom: 3px;
+    font-size: large;
+}
+
+.valor h4 {
+    font-size: large;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    border: 1.3px solid #000000;
+    background-color: #000000;
+}
+
+/*  */
+
+/* SEXTA SEÇÃO */
+.conteudo-encomenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btEncomenda {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btnCompra {
+    background-color: #3e6ae1;
+    color: #ffffff;
+    width: 14rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: #ffffff;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.btnCompra:hover {
+    /* background-color: #2a4c7f; */
+    transition: 0.7s;
+    transform: scale(1.01);
+    box-shadow: 0 0 5px #3e6ae1,
+        0 0 10px #3e6ae1;
+}
+
+/*  */
+
+.forma-pagamento {
+    display: none;
+}
+
+.selecao-pagamento {
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+}
+
+.selecao-pagamento button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.btnBoleto {
+    padding-left: -250px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: underline 3px #ffffff;
+}
+
+.btnCartao {
+    margin-left: 200px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: underline 3px #ffffff;
+}
+
+
+.btnBoleto:hover {
+    text-decoration: underline 3px #3e6ae1;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+}
+
+.btnCartao:hover {
+    text-decoration: underline 3px #3e6ae1;
+    transition: 0.5s;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* ================ */
+/* Divs de forma de pagamento */
+
+.pag-boleto {
+    display: none;
+}
+
+.pag-cartao {
+    display: none;
+}
+
+/* ============== */
+/* Estilização dos forms */
+
+form {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-form {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 3px #3e6ae1;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.input-form:focus {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 8px #3e6ae1;
+    text-transform: uppercase;
+    outline: none;
+    transition: 0.4s;
+}
+
+#email {
+    text-transform: none;
+}
+
+.select-form {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 3px #3e6ae1;
+    outline: none;
+}
+
+.error {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+}
+
+.validade-cartao select:focus {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    border: 2px solid #3e6ae1;
+    box-shadow: 0 0 8px #3e6ae1;
+    outline: none;
+    transition: 0.4s;
+}
+
+.validade-cartao {
+    display: flex;
+}
+
+#btnRevizarCartao,
+#btnRevizarBoleto {
+    display: none;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+/* REVISAR COMPRA */
+.resumo-compra {
+    display: none;
+}
+
+.conteudo-resumo {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.conteudo-resumo h6 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex: 1;
+    text-align: left;
+}
+
+
+.conteudo-resumo p,
+#container-cor,
+#container-frete {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+#valor-carro,
+#valor-seguro-transporte,
+#seguro-veiculo,
+#container-cor,
+#container-frete,
+#imposto-veiculo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 1rem;
+}
+
+
+.conteudo-resumo hr {
+    border: 1px solid #d0d1d2;
+    border-radius: 100%;
+    width: 380px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#btnFinalizar {
+    background-color: #3e6ae1;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: #ffffff;
+    transition: 0.7s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#btnFinalizar:hover {
+    background-color: #32c432;
+    transition: 0.7s;
+    transform: scale(1.04);
+    box-shadow: 0 0 5px #32c432,
+        0 0 10px #32c432;
+}
+
+
+/*  */
+
+/* SECTION FINALIZA COMPRA */
+
+.conteudo-finalizar {
+    position: fixed;
+    top: 28%;
+    left: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#finaliza-compra {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    /* background-color: #ffffff; */
+    padding: 8rem;
+    display: none;
+    flex-direction: column;
+    width: 50vmax;
+    height: 20vmax;
+    border-radius: 2rem;
+    border: 2px solid #32c432;
+    margin-top: 5rem;
+    animation: grow 1s;
+    z-index: 2;
+}
+
+.hover-finaliza {
+    animation: grow 0.6s;
+    color: #ffffff;
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: #32c432;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    transition: 0.6s;
+    width: 50vmax;
+    height: 20vmax;
+    z-index: 2;
+}
+
+@keyframes grow {
+    0% {
+        width: 2px;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    100% {
+        border-radius: 2rem;
+        width: 50vmax;
+        height: 20vmax;
+        background-color: #32c432;
+    }
+}
+
+
+
+.svg-finalizar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#Capa_1 {
+    fill: white;
+    margin-top: 5px;
+}
+
+#finaliza-compra h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#finaliza-compra p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}

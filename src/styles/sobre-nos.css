@@ -1,0 +1,90 @@
+@font-face {
+    font-family: NeueHaas;
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 2.5rem;
+    font-family: NeueHaas;
+}
+
+body {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+.texto-sobre {
+    font-weight: 500;
+    font-size: 1.1rem;
+    max-width: 600px;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+}
+
+.texto-sobre b{
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+section{
+    padding: 2.9rem;
+}
+
+section:last-child{
+    padding: 0;
+}
+
+.container-nos{
+    padding: 4rem;
+}
+
+.container-nos,
+.container-missao,
+.container-visao,
+.container-valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.container-nos img{
+    width: 70vh;
+    height: 60vh;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+.container-missao img ,
+.container-visao img ,
+.container-valores img {
+    width: 80vh;
+    height: 60vh;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+
+.valores-empresa{
+    margin-bottom: 5rem;
+}
