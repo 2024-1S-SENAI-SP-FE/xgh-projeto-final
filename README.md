@@ -1,5 +1,12 @@
 # xgh-projeto-final
 
+## Visualize o projeto 
+
+![Imagem do projeto finalizado](src/img/print.PNG)
+
+<h4 align="center"><a href="https://2024-1s-senai-sp-fe.github.io/xgh-projeto-final/">Confira o projeto aqui</a></h4>
+
+
 ## Sobre Nós
 
 Este projeto consiste em uma página web que apresenta informações sobre a empresa Mustang, incluindo sua missão, visão e valores.
